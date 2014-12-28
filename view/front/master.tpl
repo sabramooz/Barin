@@ -3,6 +3,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>برین کارت</title>
     <link rel="stylesheet" type="text/css" href="view/front/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="view/front/css/custom.css">
