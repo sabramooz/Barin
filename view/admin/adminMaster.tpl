@@ -357,12 +357,12 @@
     </a>
     <ul>
         <li>
-            <a href="#">ثبت فروشگاه جدید</a>
+            <a href="?page=centerCreate">ثبت فروشگاه جدید</a>
         </li>
         <li>
-            <a href="#">ویرایش فروشگاه ها</a>
+            <a href="?page=centerEdit">ویرایش فروشگاه ها</a>
         </li>
-        <li><a href="#">حذف فروشگاه</a>
+        <li><a href="?page=centerDelete">حذف فروشگاه</a>
         </li>
     </ul>
 </li>

@@ -53,4 +53,5 @@
   }
   spl_autoload_register('autoload');
   require 'protected/message/msg_config.php';
+  require 'protected/configs/jdf.php';
 ?>
