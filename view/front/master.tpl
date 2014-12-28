@@ -227,8 +227,8 @@
             <hr>
             <div class="col-md-6 text-center">
             	<h2>نرم افزار موبایل</h2>
-            	<div class="btn-group"><a href="#" class="btn btn-success">اندروید</a><a href="#" class="btn btn-success"><i class="fa fa-android"></i></a></div>
-                <div class="btn-group"><a href="#" class="btn btn-success">آیفون</a><a href="#" class="btn btn-success"><i class="fa fa-apple"></i></a></div>
+            	<div class="btn-group"><a href="#" class="btn btn-app btn-lg">اندروید</a><a href="#" class="btn btn-lg btn-app"><i class="fa fa-android"></i></a></div>
+                <div class="btn-group"><a href="#" class="btn btn-app btn-lg">آیفون</a><a href="#" class="btn btn-lg btn-app"><i class="fa fa-apple"></i></a></div>
             </div>
             <div class="col-md-6 text-center" dir="rtl">
             	<h2>عضویت در خبرنامه</h2>

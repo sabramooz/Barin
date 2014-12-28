@@ -166,12 +166,12 @@ ul.town-choose{
     text-decoration: none;
 }
 footer{
-    border-top: solid 2px #333;
+    border-top: solid 2px #66afe9;
 
 }
 .footer-top{
     min-height: 300px;
-    background-color: #66afe9;
+    background-color: #333;
     padding: 40px;
     color: #fff;
 }
@@ -364,5 +364,12 @@ del{
 	float:right;
 	width:150px;
 	border-left:dotted 1px #333;
+	}
+.btn-app{
+	background-color:#777;
+	}
+.btn-app:hover{
+	background-color:#555;
+	color:#fff !important;
 	}
 
