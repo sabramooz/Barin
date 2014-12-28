@@ -80,22 +80,7 @@
     </a>
 
 </div>
-<div class="search-box">
-    <ul>
-        <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                <span class="fa fa-search"></span>
-            </a>
-            <div class="dropdown-menu  top-dropDown-1">
-                <h4>جستجو</h4>
-                <form>
-                    <input type="search" placeholder="کلمه مورد نظر را تایپ نمایید...">
-                </form>
-            </div>
 
-        </li>
-    </ul>
-</div>
 
 <!--Collapse navigation menu icon end -->
 <!--Top Navigation Start-->
@@ -311,12 +296,7 @@
     <img src="view/admin/images/userimage/avatar2-80.png" alt=""/>
     <div class="user-online-status"><span class="user-status is-online  "></span> </div>
 </div>
-<ul class="social-icon">
-    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-    <li><a href="#"><i class="fa fa-github"></i></a></li>
-    <li><a href="#"><i class="fa fa-bitbucket"></i></a></li>
-</ul>
+
 <!--Left navigation user details end-->
 
 <!--Phone Navigation Menu icon start-->

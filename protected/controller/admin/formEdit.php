@@ -15,10 +15,10 @@ class FormEdit{
 					foreach($content_rows as $content_row){
 						
 						if($content_row['text']==1){
-							$htmlForms .= "<label for='$content_row[name]'>$content_row[label]</label><input type='text' disabled name='$content_row[name]' required ><br>\n";
+							$htmlForms .= "<label for='$content_row[name]'>$content_row[label]</label><input type='text' disabled name='$content_row[name]' class='form-control disabled' required ><br>\n";
 							}
 						if($content_row['textarea']==1){
-							$htmlForms .= "<label for='$content_row[name]'>$content_row[label]</label><textarea disabled name='$content_row[name]' required ></textarea><br>\n";
+							$htmlForms .= "<label for='$content_row[name]'>$content_row[label]</label><textarea disabled name='$content_row[name]'  class='form-control' required ></textarea><br>\n";
 							}	
 					}
 					
@@ -32,7 +32,7 @@ class FormEdit{
 			
 					$this->form = FORMS::forms_SelectRow($_GET['id']);
 					if($this->form['activate']==1){
-						$htmlForms .="<label for='activate'>فعال</label><input checked type='checkbox' name='activate' ><br>\n";
+						$htmlForms .="<label for='activate'>فعال</label><input checked type='checkbox' name='activate'><br>\n";
 						}else{
 							$htmlForms .="<label for='activate'>فعال</label><input type='checkbox' name='activate' ><br>\n";
 					}

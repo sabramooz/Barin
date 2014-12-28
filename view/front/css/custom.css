@@ -166,7 +166,7 @@ ul.town-choose{
     text-decoration: none;
 }
 footer{
-    border-top: solid 2px #66afe9;
+    border-top: solid 2px #333;
 
 }
 .footer-top{
@@ -348,3 +348,21 @@ del{
     font-size: 18px;
     line-height: 40px;
 }
+.form-bg{
+	padding:30px;
+	/*background-image:url(../images/bg.jpg);*/
+	/*text-shadow:0 0 5px #333;*/
+	color:#333;
+	font-size:13px;
+	box-shadow:0 0 10px #333;
+	background-color:#FFF;
+	}
+.dropdown-menu{
+	width:800px;
+	}
+.dropdown-menu li{
+	float:right;
+	width:150px;
+	border-left:dotted 1px #333;
+	}
+

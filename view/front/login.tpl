@@ -1,5 +1,5 @@
 {load_presentation_object filename='login' assign='obj'}
-<div class="col-md-7 col-md-offset-2">
+<div class="col-md-7 col-md-offset-2 form-bg">
         <form class="form-horizontal" dir="rtl">
             <div class="form-group">
                 <label class="col-sm-2 col-xs-4 control-label pull-right">ایمیل</label>

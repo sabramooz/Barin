@@ -2,11 +2,11 @@
 <!-- Main Content Element  Start-->
   <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title">فرم ارتباط با ما</h3>
+    <h3 class="panel-title">ویرایش فرم</h3>
   </div>
   <div class="panel-body signup">
 
-		<ul>
+		<ul class="list-unstyled">
         {section name=i loop=$obj->forms}
                 <li>
                 	<a href="?page=formEdit&id={$obj->forms[i].id}">
@@ -15,10 +15,10 @@
                 </li>
         {/section}
         </ul>
-        <div class="row">
+        <div class="col-md-6">
         <form method="post">
         {$obj->formContent}
-        <input type='submit' name='go_activate' value='ثبت'>
+        <input type='submit' name='go_activate' class="btn btn-success" value='ثبت'>
         </form>
         </div>
     </div>

@@ -2,11 +2,11 @@
 <!-- Main Content Element  Start-->
   <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title">فرم ارتباط با ما</h3>
+    <h3 class="panel-title">پاسخ فرم</h3>
   </div>
   <div class="panel-body signup">
 
-		<ul>
+		<ul class="list-unstyled">
         {section name=i loop=$obj->forms}
                 <li>
                 	<a href="?page=formAnswers&id={$obj->forms[i].id}">
@@ -15,7 +15,7 @@
                 </li>
         {/section}
         </ul>
-        <table border="1">
+        <table border="1" class="table table-hover text-center">
         	<tr>
             {$obj->formsAnswersTitle}
             </tr>

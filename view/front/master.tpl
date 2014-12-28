@@ -21,7 +21,28 @@
             <ul class="nav navbar-nav navbar-right town-choose">
                 <li class="pull-right dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">تهران <i class="fa fa-caret-down"></i></a>
-                    <ul class="dropdown-menu" role="menu">
+                    <ul class="dropdown-menu col-md-3" role="menu">
+                        <li><a href="#">تهران</a></li>
+                        <li><a href="#">اصفهان</a></li>
+                        <li><a href="#">شیراز</a></li>
+                        <li><a href="#">مشهد</a></li>
+                        <li><a href="#">اهواز</a></li>
+                        <li><a href="#">قزوین</a></li>
+                        <li><a href="#">همدان</a></li>
+                        <li><a href="#">تهران</a></li>
+                        <li><a href="#">اصفهان</a></li>
+                        <li><a href="#">شیراز</a></li>
+                        <li><a href="#">مشهد</a></li>
+                        <li><a href="#">اهواز</a></li>
+                        <li><a href="#">قزوین</a></li>
+                        <li><a href="#">همدان</a></li>
+                        <li><a href="#">تهران</a></li>
+                        <li><a href="#">اصفهان</a></li>
+                        <li><a href="#">شیراز</a></li>
+                        <li><a href="#">مشهد</a></li>
+                        <li><a href="#">اهواز</a></li>
+                        <li><a href="#">قزوین</a></li>
+                        <li><a href="#">همدان</a></li>
                         <li><a href="#">تهران</a></li>
                         <li><a href="#">اصفهان</a></li>
                         <li><a href="#">شیراز</a></li>
@@ -52,7 +73,7 @@
             <a href="#"><i class="fa fa-user"></i></a>
         </div>
 
-        <div class="col-md-2 col-sm-4 col-xs-6"><a class="brand" href="#"><img class="img-responsive" src="view/front/images/logo.png"></a></div>
+        <div class="col-md-2 col-sm-4 col-xs-6"><a class="brand" href="?main"><img class="img-responsive" src="view/front/images/logo.png"></a></div>
         <div class="clearfix"></div>
 
     </header>
@@ -78,7 +99,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="pull-right active"><a href="#">صفحه اصلی <i class="fa fa-home"></i></a></li>
+                    <li class="pull-right active"><a href="?main">صفحه اصلی <i class="fa fa-home"></i></a></li>
                     <li class="pull-right "><a href="#">مراکز طرف قرارداد <i class="fa fa-home"></i></a></li>
                     <li class="pull-right "><a href="#">سفارش برین کارت <i class="fa fa-shopping-cart"></i></a></li>
                     <li class="pull-right "><a href="#">تماس با ما <i class="fa fa-envelope"></i></a></li>
@@ -202,11 +223,25 @@
                     <li><a href="#" class="social facebook"></a></li>
                 </ul>
             </div>
+            <div class="clearfix"></div>
+            <hr>
+            <div class="col-md-6 text-center">
+            	<h2>نرم افزار موبایل</h2>
+            	<div class="btn-group"><a href="#" class="btn btn-success">اندروید</a><a href="#" class="btn btn-success"><i class="fa fa-android"></i></a></div>
+                <div class="btn-group"><a href="#" class="btn btn-success">آیفون</a><a href="#" class="btn btn-success"><i class="fa fa-apple"></i></a></div>
+            </div>
+            <div class="col-md-6 text-center" dir="rtl">
+            	<h2>عضویت در خبرنامه</h2>
+            	<form class="form-inline">
+                	<input type="email" class="form-control" placeholder="ایمیل خود را وارد کنید"><input type="submit" class="btn btn-success" value="ثبت">
+                </form>
+            </div>
+            <div class="clearfix"></div>
         </div>
         <div class="clearfix"></div>
         <div class="footer-bottom">
             <p dir="rtl">کلیه حقوق مادی و معنوی این سایت متعلق به مجموعه یگانه نوآوران پویا می باشد.</p>
-            design by <a href="http://rayweb.ir"> rayweb </a>.
+            طراحی: <a href="http://rayweb.ir"> رای وب </a>
         </div>
     </footer>
 
