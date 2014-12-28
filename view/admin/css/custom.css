@@ -1,0 +1,56 @@
+@font-face {
+    font-family:'koodak';
+    src:url('../../front/fonts/BKoodakBold.eot');
+    src:url('../../front/fonts/BKoodakBold.eot#iefix') format('eot'),url('../../front/fonts/BKoodakBold.woff') format('woff'),url('../../front/fonts/BKoodakBold.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+body{
+    font-family: 'koodak', "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#main-content {
+	min-height:200px !important;
+	}
+/*  Tables style  */
+
+table {
+    background-color: transparent;
+	border: 1px solid #DDD;
+	margin-bottom: 20px;
+}
+table > tbody > tr:nth-child(2n+1) > td, table > tbody > tr:nth-child(2n+1) > th {
+    background-color: #F9F9F9;
+}
+table tr td , table tr th{
+    border: 1px solid #DDD;
+    line-height: 1.42857;
+    vertical-align: top;
+    border-top: 1px solid #DDD;
+}
+td.resource,th.resource {
+    text-align: center !important;
+	 padding:5px;
+}
+hr{
+	color:red;
+	}
+/*  Progress Bar style  */
+.progress {
+    height: 20px !important;
+    overflow: hidden;
+    background-color: #F5F5F5;
+    border-radius: 4px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1) inset;
+}
+
+.ram,.cpu{
+    color: #FFF;
+    text-align: center;
+    transition: width 2.0s ease 0s;
+}
+.ram{
+	background-color: #428BCA;
+}
+.cpu{
+	background-color: #FF6633;
+}
