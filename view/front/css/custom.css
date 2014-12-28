@@ -328,6 +328,12 @@ del{
 .google-plus:hover{
     background-image: url("../images/googleplus_c.png");
 }
+.cloob{
+    background-image: url("../images/cloob.png");
+}
+.cloob:hover{
+    background-image: url("../images/cloob_c.png");
+}
 .rss{
     background-image: url("../images/rss.png");
     left: 0;

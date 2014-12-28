@@ -52,6 +52,8 @@
                         <li><a href="#">همدان</a></li>
                     </ul>
                 </li>
+                <li class="pull-right "><a href="#">مراکز طرف قرارداد <i class="fa fa-home"></i></a></li>
+                <li class="pull-right "><a href="#">تماس با ما <i class="fa fa-envelope"></i></a></li>
             </ul>
         </div>
         <div class="col-md-4 col-xs-8 search">
@@ -100,9 +102,10 @@
 
                 <ul class="nav navbar-nav navbar-right">
                     <li class="pull-right active"><a href="?main">صفحه اصلی <i class="fa fa-home"></i></a></li>
-                    <li class="pull-right "><a href="#">مراکز طرف قرارداد <i class="fa fa-home"></i></a></li>
+                    <li class="pull-right "><a href="#">خدمات رفاهی<i class="fa fa-home"></i></a></li>
+                    <li class="pull-right "><a href="#">خدمات پزشکی <i class="fa fa-home"></i></a></li>
+                    <li class="pull-right "><a href="#">خدمات خرید کالا <i class="fa fa-home"></i></a></li>
                     <li class="pull-right "><a href="#">سفارش برین کارت <i class="fa fa-shopping-cart"></i></a></li>
-                    <li class="pull-right "><a href="#">تماس با ما <i class="fa fa-envelope"></i></a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -220,7 +223,7 @@
                     <li><a href="#" class="social facebook"></a></li>
                     <li><a href="#" class="social twitter"></a></li>
                     <li><a href="#" class="social google-plus"></a></li>
-                    <li><a href="#" class="social facebook"></a></li>
+                    <li><a href="#" class="social cloob"></a></li>
                 </ul>
             </div>
             <div class="clearfix"></div>
