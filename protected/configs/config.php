@@ -7,7 +7,7 @@
   
   define('ADMIN_TEMPLATE_DIR', SITE_ROOT . '/view/admin');
   define('ADMIN_CURRENT_THEME', ADMIN_TEMPLATE_DIR);
-  define('COMPILE_DIR', SITE_ROOT . '/casch');
+  define('COMPILE_DIR', SITE_ROOT . '/cache');
   define('PROTECTED_DIR', SITE_ROOT . '/protected/');
   define('COMPONENTS_DIR', PROTECTED_DIR . 'libs/components/');
   define('SMARTY_DIR', PROTECTED_DIR . 'libs/smarty/');
