@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 29, 2014 at 01:44 AM
+-- Generation Time: Dec 29, 2014 at 05:26 AM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -83,6 +83,37 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_centers_UpdateRow`(IN _id int, I
 BEGIN
    UPDATE `centers`
    SET `center_name` = _center_name, `center_manager` = _center_manager, `discount` = _discount, `price` = _price, `address` = _address, `tel` = _tel, `mobile` = _mobile, `website` = _website, `mail` = _mail, `left_date` = _left_date, `google_map` = _google_map, `code` = _code, `type_id` = _type_id, `city_id` = _city_id, `category_id` = _category_id 
+        WHERE `id` = _id;
+END$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_city_DeleteRow`(IN _id int)
+BEGIN
+    DELETE FROM `city` WHERE `id` = _id ;
+END$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_city_Insert`(IN _persian_name varchar(250), IN _latin_name varchar(250), IN _admin_id int)
+BEGIN
+   INSERT INTO `city`
+   (`persian_name` , `latin_name` , `admin_id` )
+         VALUES(_persian_name , _latin_name , _admin_id );
+END$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_city_SelectAll`()
+BEGIN
+    SET NAMES UTF8;
+	SELECT `id`, `persian_name`, `latin_name`, `admin_id` FROM `city` ;
+END$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_city_SelectRow`(IN _id int)
+BEGIN
+    SET NAMES UTF8;
+    SELECT `id`, `persian_name`, `latin_name`, `admin_id` FROM `city` WHERE `id` = _id;
+END$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_city_UpdateRow`(IN _id int, IN _persian_name varchar(250), IN _latin_name varchar(250), IN _admin_id int)
+BEGIN
+   UPDATE `city`
+   SET `persian_name` = _persian_name, `latin_name` = _latin_name, `admin_id` = _admin_id 
         WHERE `id` = _id;
 END$$
 
