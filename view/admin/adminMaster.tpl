@@ -293,8 +293,7 @@
 <section id="left-navigation">
 <!--Left navigation user details start-->
 <div class="user-image">
-    <img src="view/admin/images/userimage/avatar2-80.png" alt=""/>
-    <div class="user-online-status"><span class="user-status is-online  "></span> </div>
+    <img src="view/admin/images/userimage/avatar2-80.jpg" alt=""/>
 </div>
 
 <!--Left navigation user details end-->
@@ -341,10 +340,10 @@
     </a>
     <ul>
         <li>
-            <a href="#">ارسال اس ام اس</a>
+            <a href="?page=sendSms">ارسال اس ام اس</a>
         </li>
         <li>
-            <a href="#">اس ام اس های دریافتی</a>
+            <a href="?page=receiveSms">اس ام اس های دریافتی</a>
         </li>
         <li><a href="#">مانده حساب اس ام اس</a>
         </li>
@@ -387,7 +386,7 @@
     </a>
     <ul>
         <li>
-            <a href="#">تغییر رمز عبور</a>
+            <a href="?page=changePass">تغییر رمز عبور</a>
         </li>
         <li>
             <a href="#">ویرایش اطلاعات شخصی</a>

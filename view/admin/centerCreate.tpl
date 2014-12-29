@@ -81,9 +81,63 @@
             <div class="form-group">
             	<label class="col-sm-2 col-xs-12  control-label " for="left_date">
                 <span class="glyphicon glyphicon-asterisk optional"></span>تاریخ اتمام تخفیف : </label>
-            	<div class="col-sm-4 col-md-3 col-xs-12 ">
-            		<input type="text" name="left_date" tabindex="2" class="form-control">
-            	</div>
+            	<div class="col-xs-1">
+                    <select class="form-control" name="left_date_year" tabindex="14">
+                        <option>1393</option>
+                        <option>1394</option>
+                    </select>
+                    </div>
+                    <div class="col-xs-1">
+                    <select class="form-control" name="left_date_month" tabindex="14">
+                        <option value="01">فروردین</option>
+                        <option value="02">اردیبهشت</option>
+                        <option value="03">خرداد</option>
+                        <option value="04">تیر</option>
+                        <option value="05">مرداد</option>
+                        <option value="06">شهریور</option>
+                        <option value="07">مهر</option>
+                        <option value="08">آبان</option>
+                        <option value="09">آذر</option>
+                        <option value="10">دی</option>
+                        <option value="11">بهمن</option>
+                        <option value="12">اسفند</option>
+                    </select>
+                    </div>
+                    <div class="col-xs-1">
+                    <select class="form-control" name="left_date_day" tabindex="14">
+                        <option value="01">1</option>
+                        <option value="02">2</option>
+                        <option value="03">3</option>
+                        <option value="04">4</option>
+                        <option value="05">5</option>
+                        <option value="06">6</option>
+                        <option value="07">7</option>
+                        <option value="08">8</option>
+                        <option value="09">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                    </div>
             </div>
             
             <div class="form-group">
@@ -130,7 +184,7 @@
             	<input type="reset" class="btn btn-warning btn-block" value="ویرایش" tabindex="6">
             </div>
             <div class="col-sm-2 "> 
-            	<input type="submit" class="btn btn-success btn-block" name="go_form" value="ثبت فرم" tabindex="7">
+            	<input type="submit" class="btn btn-success btn-block" name="center_register" value="ثبت فرم" tabindex="7">
             </div>
 
     </form>
