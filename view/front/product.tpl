@@ -1,4 +1,4 @@
-{load_presentation_object filename='login' assign='obj'}
+{load_presentation_object filename='product' assign='obj'}
 <div class="col-md-6 text-center" dir="rtl">
     <h3>مشخصات فروشنده</h3>
     <hr>

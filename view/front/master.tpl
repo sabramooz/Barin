@@ -20,37 +20,12 @@
     <div class="navbar-top navbar-fixed-top">
         <div class="col-xs-4 pull-right town-choose">
             <ul class="nav navbar-nav navbar-right town-choose">
-                <li class="pull-right dropdown">
+                <li class="pull-right dropdown active">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">تهران <i class="fa fa-caret-down"></i></a>
                     <ul class="dropdown-menu col-md-3" role="menu">
-                        <li><a href="#">تهران</a></li>
-                        <li><a href="#">اصفهان</a></li>
-                        <li><a href="#">شیراز</a></li>
-                        <li><a href="#">مشهد</a></li>
-                        <li><a href="#">اهواز</a></li>
-                        <li><a href="#">قزوین</a></li>
-                        <li><a href="#">همدان</a></li>
-                        <li><a href="#">تهران</a></li>
-                        <li><a href="#">اصفهان</a></li>
-                        <li><a href="#">شیراز</a></li>
-                        <li><a href="#">مشهد</a></li>
-                        <li><a href="#">اهواز</a></li>
-                        <li><a href="#">قزوین</a></li>
-                        <li><a href="#">همدان</a></li>
-                        <li><a href="#">تهران</a></li>
-                        <li><a href="#">اصفهان</a></li>
-                        <li><a href="#">شیراز</a></li>
-                        <li><a href="#">مشهد</a></li>
-                        <li><a href="#">اهواز</a></li>
-                        <li><a href="#">قزوین</a></li>
-                        <li><a href="#">همدان</a></li>
-                        <li><a href="#">تهران</a></li>
-                        <li><a href="#">اصفهان</a></li>
-                        <li><a href="#">شیراز</a></li>
-                        <li><a href="#">مشهد</a></li>
-                        <li><a href="#">اهواز</a></li>
-                        <li><a href="#">قزوین</a></li>
-                        <li><a href="#">همدان</a></li>
+                    {section name=i loop=$obj->city}
+                        <li><a href="?city={$obj->city[i].latin_name}">{$obj->city[i].persian_name}</a></li>
+                    {/section}   
                     </ul>
                 </li>
                 <li class="pull-right "><a href="#">مراکز طرف قرارداد <i class="fa fa-home"></i></a></li>
@@ -102,7 +77,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="pull-right active"><a href="?main">صفحه اصلی <i class="fa fa-home"></i></a></li>
+                    <li class="pull-right active"><a href="?page=main">صفحه اصلی <i class="fa fa-home"></i></a></li>
                     <li class="pull-right "><a href="#">خدمات رفاهی<i class="fa fa-home"></i></a></li>
                     <li class="pull-right "><a href="#">خدمات پزشکی <i class="fa fa-home"></i></a></li>
                     <li class="pull-right "><a href="#">خدمات خرید کالا <i class="fa fa-home"></i></a></li>
@@ -111,64 +86,11 @@
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
-    <section class="top-content container">
-        <div class="slide-show col-md-7">
-            <!-- Jssor Slider Begin -->
-            <!-- You can move inline styles to css file or css block. -->
-            <div id="slider1_container" style="position: relative; width: 600px; height: 500px; background-color: #000; overflow: hidden; ">
-
-                <!-- Loading Screen -->
-                <div u="loading" style="position: absolute; top: 0; left: 0;">
-                    <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
-                background-color: #000; top: 0; left: 0;width: 100%;height:100%;">
-                    </div>
-                    <div style="position: absolute; display: block; background: url(images/loading.gif) no-repeat center center;
-                top: 0; left: 0;width: 100%;height:100%;">
-                    </div>
-                </div>
-
-                <!-- Slides Container -->
-                <div u="slides" style="cursor: move; position: absolute; left: 0; top: 0; width: 600px; height: 500px;
-            overflow: hidden;">
-                    <div>
-                        <a u=image href="#"><img src="view/front/images/1.jpg" /></a>
-                    </div>
-                    <div>
-                        <a u=image href="#"><img src="view/front/images/2.jpg" /></a>
-                    </div>
-                    <div>
-                        <a u=image href="#"><img src="view/front/images/3.jpg" /></a>
-                    </div>
-                    <div>
-                        <a u=image href="#"><img src="view/front/images/4.jpg" /></a>
-                    </div>
-                </div>
-                <!-- bullet navigator container -->
-                <div u="navigator" class="jssorb13" style="position: absolute; bottom: 16px; right: 6px;">
-                    <!-- bullet navigator item prototype -->
-                    <div u="prototype" style="POSITION: absolute; WIDTH: 21px; HEIGHT: 21px;"></div>
-                </div>
-                <!-- Bullet Navigator Skin End -->
-                <a style="display: none" href="#">jquery photo gallery</a>
-            </div>
-            <!-- Jssor Slider End -->
-        </div>
-        <div class="col-md-5">
-            <div class="text-center">
-                <br>
-                <h2 class="text-center">پیشنهاد ویژه <i class="fa fa-bullhorn"></i></h2>
-                <h3 class="text-center">پذیرایی ویژه در رستوران لوکس طهرانی</h3>
-                <p class="description">پذیرایی لوکس در رستوران شیک لوکس طهرانی با منوی باز با 50% تخفیف و پرداخت تنها 10,000 تومان به جای 20,000 تومان</p>
-                <a class="off text-center">50%<p>تخفیف</p></a>
-                <div class="time-remain text-center">
-                    <h5>زمان باقی مانده</h5>
-                    <p class="digital" id="defaultCountdown" dir="rtl"></p>
-                </div>
-                <br>
-                <a class="btn btn-info btn-block">مشاهده <i class="fa fa-eye"></i></a>
-            </div>
-        </div>
-    </section>
+    
+ {if isset($obj->top)}   
+	{include file={$obj->top}} 
+ {/if}   
+    
     <div class="clearfix"></div>
     <hr>
     <section class="side-bar col-sm-3 hidden-xs text-center">
