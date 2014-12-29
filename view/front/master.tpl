@@ -24,8 +24,8 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">تهران <i class="fa fa-caret-down"></i></a>
                     <ul class="dropdown-menu col-md-3" role="menu">
                     {section name=i loop=$obj->city}
-                        <li><a href="?city={$obj->city[i].latin_name}">{$obj->city[i].persian_name}</a></li>
-                    {/section}   
+                        <li><a href="?city={$obj->city[i].latin_name}">( {$obj->array[i].count} ) {$obj->city[i].persian_name}</a></li>
+                    {/section}
                     </ul>
                 </li>
                 <li class="pull-right "><a href="#">مراکز طرف قرارداد <i class="fa fa-home"></i></a></li>

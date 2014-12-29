@@ -22,17 +22,17 @@ Class CENTERS
         DatabaseHandler::Close(); 
         return DatabaseHandler::Execute($sql, $params);
     } 
-     public static function centers_UpdateRow($id, $center_name, $center_manager, $discount, $price, $address, $tel, $mobile, $website, $mail, $left_date, $google_map, $code, $type_id, $city_id, $category_id)
+     public static function centers_UpdateRow($id, $center_name, $center_manager, $discount, $address, $tel, $mobile, $website, $mail, $type_id, $city_id, $category_id, $image, $detail, $left_date, $google_map, $code)
     {
-        $sql = 'CALL `sp_centers_UpdateRow`(:id, :center_name, :center_manager, :discount, :price, :address, :tel, :mobile, :website, :mail, :left_date, :google_map, :code, :type_id, :city_id, :category_id)';
-        $params = array (':id' => $id, ':center_name' => $center_name, ':center_manager' => $center_manager, ':discount' => $discount, ':price' => $price, ':address' => $address, ':tel' => $tel, ':mobile' => $mobile, ':website' => $website, ':mail' => $mail, ':left_date' => $left_date, ':google_map' => $google_map, ':code' => $code, ':type_id' => $type_id, ':city_id' => $city_id, ':category_id' => $category_id);
+        $sql = 'CALL `sp_centers_UpdateRow`(:id, :center_name, :center_manager, :discount, :address, :tel, :mobile, :website, :mail, :type_id, :city_id, :category_id, :image, :detail, :left_date, :google_map, :code)';
+        $params = array (':id' => $id, ':center_name' => $center_name, ':center_manager' => $center_manager, ':discount' => $discount, ':address' => $address, ':tel' => $tel, ':mobile' => $mobile, ':website' => $website, ':mail' => $mail, ':type_id' => $type_id, ':city_id' => $city_id, ':category_id' => $category_id, ':image' => $image, ':detail' => $detail, ':left_date' => $left_date, ':google_map' => $google_map, ':code' => $code);
         DatabaseHandler::Close(); 
         return DatabaseHandler::Execute($sql, $params);
     }
-     public static function centers_Insert($center_name, $center_manager, $discount, $price, $address, $tel, $mobile, $website, $mail, $left_date, $google_map, $code, $type_id, $city_id, $category_id)
+     public static function centers_Insert($center_name, $center_manager, $discount, $address, $tel, $mobile, $website, $mail, $type_id, $city_id, $category_id, $image, $detail, $left_date, $google_map, $code)
     {
-        $sql = 'CALL `sp_centers_Insert`(:center_name, :center_manager, :discount, :price, :address, :tel, :mobile, :website, :mail, :left_date, :google_map, :code, :type_id, :city_id, :category_id)';
-        $params = array (':center_name' => $center_name, ':center_manager' => $center_manager, ':discount' => $discount, ':price' => $price, ':address' => $address, ':tel' => $tel, ':mobile' => $mobile, ':website' => $website, ':mail' => $mail, ':left_date' => $left_date, ':google_map' => $google_map, ':code' => $code, ':type_id' => $type_id, ':city_id' => $city_id, ':category_id' => $category_id);
+        $sql = 'CALL `sp_centers_Insert`(:center_name, :center_manager, :discount, :address, :tel, :mobile, :website, :mail, :type_id, :city_id, :category_id, :image, :detail, :left_date, :google_map, :code)';
+        $params = array (':center_name' => $center_name, ':center_manager' => $center_manager, ':discount' => $discount, ':address' => $address, ':tel' => $tel, ':mobile' => $mobile, ':website' => $website, ':mail' => $mail, ':type_id' => $type_id, ':city_id' => $city_id, ':category_id' => $category_id, ':image' => $image, ':detail' => $detail, ':left_date' => $left_date, ':google_map' => $google_map, ':code' => $code);
         DatabaseHandler::Close(); 
         return DatabaseHandler::Execute($sql, $params);
     }
