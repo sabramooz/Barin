@@ -10,6 +10,10 @@
       ;
       function __construct()
       {
+		  //echo $_GET['city'];
+		  //echo $_GET['cat_id'];
+		  //echo $_GET['id'];
+		  
 		  ## liste shahr ha + tedade marakez dar shahr ha ##
 		    $this->city = CITY::city_SelectAll();
 			$this->array = array();

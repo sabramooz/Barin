@@ -1,2 +1,9 @@
-#RewriteEngine On
-#RewriteRule ^([^/]*)$ /index.php?page=$1 [L]
+RewriteEngine On
+
+RewriteRule ^([^/]*)/([^/]*)/$ index.php?user=$1&page=$2
+ 
+RewriteRule ^([^/]*)/$ index.php?city=$1
+
+RewriteRule ^([^/]*)/([0-9]*)/$ index.php?city=$1&cat_id=$2
+
+RewriteRule ^([^/]*)/([0-9]*)/([0-9]*)/$ index.php?city=$1&cat_id=$2&id=$3
