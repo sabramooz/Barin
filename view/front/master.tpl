@@ -21,7 +21,7 @@
         <div class="col-xs-4 pull-right town-choose">
             <ul class="nav navbar-nav navbar-right town-choose">
                 <li class="pull-right dropdown active">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">تهران <i class="fa fa-caret-down"></i></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-caret-down"></i> تهران</a>
                     <ul class="dropdown-menu col-md-3" role="menu">
                     {section name=i loop=$obj->city}
                         <li><a href="http://localhost/barin/{$obj->city[i].latin_name}/">( {$obj->array[i].count} ) {$obj->city[i].persian_name}</a></li>

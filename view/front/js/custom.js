@@ -26,5 +26,7 @@ $(function () {
         $('#defaultCountdown').countdown({until: austDay});
         $('#year').text(austDay.getFullYear());
     });
+	
+$('#myModal').modal('toggle')
 
 

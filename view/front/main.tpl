@@ -131,3 +131,58 @@
         </div>
         <div class="clearfix"></div>
         <hr>
+<!-- MODAL -->
+<div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h2 class="modal-title text-center" id="myModalLabel">تا ۹۰٪ تخفیف بگیرید!</h2>
+      </div>
+      <div class="modal-body" dir="rtl">
+        <p>barincard.ir  تنها پرتال استثنایی در ایران می باشد که به شما اجازه دسترسی به بهترین پیشنهادات در سطح شهر را می دهد. مواردی از قبیل سلامتی، ورزش رستوران ها و بسیار بیشتر... </p>
+        <p>برای اطلاع از تخفیفان‌های روزانه ایمیل خود را وارد کنید</p>
+        <p>
+        	<form class="form-inline">
+            	<input type="email" class="form-control" placeholder="ایمیل خود را وارد کنید"><input type="submit" class="btn btn-success" value="ثبت">
+            </form>
+        </p>
+        <hr>
+        <p>
+        	<div class="col-md-3">
+                <div class="content">
+                    <img src="http://localhost/barin/view/front/images/logo.jpg" class="img-responsive">
+                    <h4 class="text-right">عنوان</h4>
+                    <p class="price" dir="rtl"><del>5000 تومان</del> / 1000 تومان</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="content">
+                    <img src="http://localhost/barin/view/front/images/logo.jpg" class="img-responsive">
+                    <h4 class="text-right">عنوان</h4>
+                    <p class="price" dir="rtl"><del>5000 تومان</del> / 1000 تومان</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="content">
+                    <img src="http://localhost/barin/view/front/images/logo.jpg" class="img-responsive">
+                    <h4 class="text-right">عنوان</h4>
+                    <p class="price" dir="rtl"><del>5000 تومان</del> / 1000 تومان</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="content">
+                    <img src="http://localhost/barin/view/front/images/logo.jpg" class="img-responsive">
+                    <h4 class="text-right">عنوان</h4>
+                    <p class="price" dir="rtl"><del>5000 تومان</del> / 1000 تومان</p>
+                </div>
+            </div>
+        </p>
+      </div>
+      <div class="clearfix"></div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">بستن</button>
+      </div>
+    </div>
+  </div>
+</div>
