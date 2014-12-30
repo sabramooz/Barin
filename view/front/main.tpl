@@ -1,69 +1,17 @@
 {load_presentation_object filename='main' assign='obj'}
 <h2 class="text-center">پیشنهادهای امروز</h2>
+		{section name=i loop=$obj->result}
         <div class="col-md-4">
             <div class="content">
                 <img src="http://localhost/barin/view/front/images/logo.jpg" class="img-responsive">
-                <h4 class="text-right">عنوان</h4>
-                <p class="price" dir="rtl"><del>5000 تومان</del> /  1000 تومان</p>
+                <h4 class="text-right">{$obj->result[i].center_name}</h4>
+                <p class="price" dir="rtl">{$obj->result[i].discount} درصد تخفیف</p>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="content">
-                <img src="http://localhost/barin/view/front/images/logo.jpg" class="img-responsive">
-                <h4 class="text-right">عنوان</h4>
-                <p class="price" dir="rtl"><del>5000 تومان</del> / 1000 تومان</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="content">
-                <img src="http://localhost/barin/view/front/images/logo.jpg" class="img-responsive">
-                <h4 class="text-right">عنوان</h4>
-                <p class="price" dir="rtl"><del>5000 تومان</del> / 1000 تومان</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="content">
-                <img src="http://localhost/barin/view/front/images/logo.jpg" class="img-responsive">
-                <h4 class="text-right">عنوان</h4>
-                <p class="price" dir="rtl"><del>5000 تومان</del> / 1000 تومان</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="content">
-                <img src="http://localhost/barin/view/front/images/logo.jpg" class="img-responsive">
-                <h4 class="text-right">عنوان</h4>
-                <p class="price" dir="rtl"><del>5000 تومان</del> / 1000 تومان</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="content">
-                <img src="http://localhost/barin/view/front/images/logo.jpg" class="img-responsive">
-                <h4 class="text-right">عنوان</h4>
-                <p class="price" dir="rtl"><del>5000 تومان</del> / 1000 تومان</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="content">
-                <img src="http://localhost/barin/view/front/images/logo.jpg" class="img-responsive">
-                <h4 class="text-right">عنوان</h4>
-                <p class="price" dir="rtl"><del>5000 تومان</del> / 1000 تومان</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="content">
-                <img src="http://localhost/barin/view/front/images/logo.jpg" class="img-responsive">
-                <h4 class="text-right">عنوان</h4>
-                <p class="price" dir="rtl"><del>5000 تومان</del> / 1000 تومان</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="content">
-                <img src="http://localhost/barin/view/front/images/logo.jpg" class="img-responsive">
-                <h4 class="text-right">عنوان</h4>
-                <p class="price" dir="rtl"><del>5000 تومان</del> / 1000 تومان</p>
-            </div>
-        </div>
+		{/section}
+        
         <div class="clearfix"></div>
+        
         <hr>
         <h2 class="text-right">رفاهی</h2>
         <div class="col-md-4">
@@ -87,51 +35,9 @@
                 <p class="price" dir="rtl"><del>5000 تومان</del> / 1000 تومان</p>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="content">
-                <img src="http://localhost/barin/view/front/images/logo.jpg" class="img-responsive">
-                <h4 class="text-right">عنوان</h4>
-                <p class="price" dir="rtl"><del>5000 تومان</del> / 1000 تومان</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="content">
-                <img src="http://localhost/barin/view/front/images/logo.jpg" class="img-responsive">
-                <h4 class="text-right">عنوان</h4>
-                <p class="price" dir="rtl"><del>5000 تومان</del> / 1000 تومان</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="content">
-                <img src="http://localhost/barin/view/front/images/logo.jpg" class="img-responsive">
-                <h4 class="text-right">عنوان</h4>
-                <p class="price" dir="rtl"><del>5000 تومان</del> / 1000 تومان</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="content">
-                <img src="http://localhost/barin/view/front/images/logo.jpg" class="img-responsive">
-                <h4 class="text-right">عنوان</h4>
-                <p class="price" dir="rtl"><del>5000 تومان</del> / 1000 تومان</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="content">
-                <img src="http://localhost/barin/view/front/images/logo.jpg" class="img-responsive">
-                <h4 class="text-right">عنوان</h4>
-                <p class="price" dir="rtl"><del>5000 تومان</del> / 1000 تومان</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="content">
-                <img src="http://localhost/barin/view/front/images/logo.jpg" class="img-responsive">
-                <h4 class="text-right">عنوان</h4>
-                <p class="price" dir="rtl"><del>5000 تومان</del> / 1000 تومان</p>
-            </div>
-        </div>
+        
         <div class="clearfix"></div>
-        <hr>
-<!-- MODAL -->
+        <hr><!-- MODAL -->
 <div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
