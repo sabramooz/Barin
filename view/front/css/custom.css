@@ -41,7 +41,7 @@ a{
     height: 50px;
     background-color: #444444;
     width: 100%;
-    padding-right: 50px;
+    
 }
 .navbar-top ul li ul li{
     text-align: right;
@@ -114,9 +114,17 @@ nav{
 .search{
     margin-top: 5px;
 }
+.search ul{
+	padding-left:10px;	
+	margin-top: -5px !important;
+	font-size:16px;
+}
+.search a{
+    color: #ffffff;
+}
 .town-choose{
     margin-top: 0 !important;
-    font-size: 20px;
+    font-size: 18px;
 
 }
 .town-choose a{

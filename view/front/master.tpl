@@ -18,21 +18,24 @@
 </head>
 <body>
     <div class="navbar-top navbar-fixed-top">
-        <div class="col-xs-4 pull-right town-choose">
+        <div class="col-xs-7 col-md-6 pull-right town-choose">
             <ul class="nav navbar-nav navbar-right town-choose">
+            	<li class="pull-right"><a></a></li>
                 <li class="pull-right dropdown active">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-caret-down"></i> تهران</a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-caret-down"></i> استان تهران <i class="fa fa-map-marker"></i></a>
                     <ul class="dropdown-menu col-md-3" role="menu">
                     {section name=i loop=$obj->city}
                         <li><a href="http://localhost/barin/{$obj->city[i].latin_name}/">( {$obj->array[i].count} ) {$obj->city[i].persian_name}</a></li>
                     {/section}
                     </ul>
                 </li>
-                <li class="pull-right "><a href="#">مراکز طرف قرارداد <i class="fa fa-home"></i></a></li>
-                <li class="pull-right "><a href="#">تماس با ما <i class="fa fa-envelope"></i></a></li>
+                <li class="pull-right hidden-xs"><a href="#">مراکز طرف قرارداد <i class="fa fa-home"></i></a></li>
+                <li class="pull-right hidden-xs"><a href="#">تماس با ما <i class="fa fa-envelope"></i></a></li>
+                
             </ul>
         </div>
-        <div class="col-md-4 col-xs-8 search">
+        <div class="col-md-6 col-xs-5 search">
+        	<ul class="nav navbar-nav pull-right visible-lg"><li class="active"><a href="callto:09123456789">09123456789</a></li></ul>
             <div class="input-group">
                 <input type="text" class="form-control" dir="rtl" placeholder="جستجو...">
                 <span class="input-group-btn">
@@ -78,10 +81,10 @@
 
                 <ul class="nav navbar-nav navbar-right">
                     <li class="pull-right active"><a href="?page=main">صفحه اصلی <i class="fa fa-home"></i></a></li>
-                    <li class="pull-right "><a href="#">خدمات رفاهی<i class="fa fa-home"></i></a></li>
-                    <li class="pull-right "><a href="#">خدمات پزشکی <i class="fa fa-home"></i></a></li>
-                    <li class="pull-right "><a href="#">خدمات خرید کالا <i class="fa fa-home"></i></a></li>
-                    <li class="pull-right "><a href="#">سفارش برین کارت <i class="fa fa-shopping-cart"></i></a></li>
+                    <li class="pull-right "><a href="#">خدمات رفاهی <i class="fa fa-cutlery"></i></a></li>
+                    <li class="pull-right "><a href="#">خدمات پزشکی <i class="fa fa-plus-square"></i></a></li>
+                    <li class="pull-right "><a href="#">خدمات خرید کالا <i class="fa fa-shopping-cart"></i></a></li>
+                    <li class="pull-right "><a href="#">سفارش برین کارت <i class="fa fa-credit-card"></i></a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
