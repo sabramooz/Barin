@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>برین کارت</title>
-    <link rel="stylesheet" type="text/css" href="http://127.0.0.1/barin/view/front/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="http://127.0.0.1/barin/view/front/css/custom.css">
-    <link rel="stylesheet" type="text/css" href="http://127.0.0.1/barin/view/front/css/slider.css">
-    <link rel="stylesheet" type="text/css" href="http://127.0.0.1/barin/view/front/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="http://127.0.0.1/barin/view/front/css/jquery.countdown.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/barin/view/front/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/barin/view/front/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/barin/view/front/css/slider.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/barin/view/front/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/barin/view/front/css/jquery.countdown.css">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -24,7 +24,7 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">تهران <i class="fa fa-caret-down"></i></a>
                     <ul class="dropdown-menu col-md-3" role="menu">
                     {section name=i loop=$obj->city}
-                        <li><a href="http://127.0.0.1/barin/{$obj->city[i].latin_name}/">( {$obj->array[i].count} ) {$obj->city[i].persian_name}</a></li>
+                        <li><a href="http://localhost/barin/{$obj->city[i].latin_name}/">( {$obj->array[i].count} ) {$obj->city[i].persian_name}</a></li>
                     {/section}
                     </ul>
                 </li>
@@ -43,15 +43,15 @@
     </div>
     <header class="container-fluid header-top">
         <div class="col-md-2 col-xs-6 member pull-right text-right hidden-xs">
-            <a href="http://127.0.0.1/barin/user/login/">ورود کاربر<span class="fa fa-sign-in"></span></a>
-            <a href="http://127.0.0.1/barin/user/signup/">ثبت نام کنید<span class="fa fa-user"></span></a>
+            <a href="http://localhost/barin/user/login/">ورود کاربر<span class="fa fa-sign-in"></span></a>
+            <a href="http://localhost/barin/user/signup/">ثبت نام کنید<span class="fa fa-user"></span></a>
         </div>
         <div class="member-xs visible-xs pull-right text-right">
             <a href="#"><i class="fa fa-sign-in"></i></a>
             <a href="#"><i class="fa fa-user"></i></a>
         </div>
 
-        <div class="col-md-2 col-sm-4 col-xs-6"><a class="brand" href="?main"><img class="img-responsive" src="http://127.0.0.1/barin/view/front/images/logo.png"></a></div>
+        <div class="col-md-2 col-sm-4 col-xs-6"><a class="brand" href="?main"><img class="img-responsive" src="http://localhost/barin/view/front/images/logo.png"></a></div>
         <div class="clearfix"></div>
 
     </header>
@@ -97,18 +97,18 @@
         <div class="panel panel-primary text-center">
             <div class="panel-heading">نماد اعتماد ملی الکترونیک</div>
             <div class="panel-body">
-                <img src="http://127.0.0.1/barin/view/front/images/namad1.png">
+                <img src="http://localhost/barin/view/front/images/namad1.png">
             </div>
         </div>
 
-        <div class="advertise"><img src="http://127.0.0.1/barin/view/front/images/esam.jpg"> </div>
-        <div class="advertise"><img src="http://127.0.0.1/barin/view/front/images/elecomp-winners.jpg"> </div>
-        <div class="advertise"><img src="http://127.0.0.1/barin/view/front/images/esam.jpg"> </div>
-        <div class="advertise"><img src="http://127.0.0.1/barin/view/front/images/elecomp-winners.jpg"> </div>
-        <div class="advertise"><img src="http://127.0.0.1/barin/view/front/images/esam.jpg"> </div>
-        <div class="advertise"><img src="http://127.0.0.1/barin/view/front/images/elecomp-winners.jpg"> </div>
-        <div class="advertise"><img src="http://127.0.0.1/barin/view/front/images/esam.jpg"> </div>
-        <div class="advertise"><img src="http://127.0.0.1/barin/view/front/images/elecomp-winners.jpg"> </div>
+        <div class="advertise"><img src="http://localhost/barin/view/front/images/esam.jpg"> </div>
+        <div class="advertise"><img src="http://localhost/barin/view/front/images/elecomp-winners.jpg"> </div>
+        <div class="advertise"><img src="http://localhost/barin/view/front/images/esam.jpg"> </div>
+        <div class="advertise"><img src="http://localhost/barin/view/front/images/elecomp-winners.jpg"> </div>
+        <div class="advertise"><img src="http://localhost/barin/view/front/images/esam.jpg"> </div>
+        <div class="advertise"><img src="http://localhost/barin/view/front/images/elecomp-winners.jpg"> </div>
+        <div class="advertise"><img src="http://localhost/barin/view/front/images/esam.jpg"> </div>
+        <div class="advertise"><img src="http://localhost/barin/view/front/images/elecomp-winners.jpg"> </div>
     </section>
     <section class="main-content col-sm-9">
     
@@ -171,13 +171,13 @@
         </div>
     </footer>
 
-<script src="http://127.0.0.1/barin/view/front/js/jquery.js"></script>
-<script src="http://127.0.0.1/barin/view/front/js/jssor.js"></script>
-<script src="http://127.0.0.1/barin/view/front/js/jssor.slider.min.js"></script>
-<script src="http://127.0.0.1/barin/view/front/js/slider.js"></script>
-<script src="http://127.0.0.1/barin/view/front/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="http://127.0.0.1/barin/view/front/js/jquery.plugin.js"></script>
-<script type="text/javascript" src="http://127.0.0.1/barin/view/front/js/jquery.countdown.js"></script>
-<script src="http://127.0.0.1/barin/view/front/js/custom.js"></script>
+<script src="http://localhost/barin/view/front/js/jquery.js"></script>
+<script src="http://localhost/barin/view/front/js/jssor.js"></script>
+<script src="http://localhost/barin/view/front/js/jssor.slider.min.js"></script>
+<script src="http://localhost/barin/view/front/js/slider.js"></script>
+<script src="http://localhost/barin/view/front/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://localhost/barin/view/front/js/jquery.plugin.js"></script>
+<script type="text/javascript" src="http://localhost/barin/view/front/js/jquery.countdown.js"></script>
+<script src="http://localhost/barin/view/front/js/custom.js"></script>
 </body>
 </html>
