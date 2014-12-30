@@ -21,9 +21,9 @@
 
 
 $(function () {
-        var austDay = new Date();
-        austDay = new Date(2014, 12, 5);
-        $('#defaultCountdown').countdown({until: austDay});
+        var newYear = new Date(); 
+		newYear = new Date(2015, 0, 0); 
+		$('#defaultCountdown').countdown({until: newYear});
         $('#year').text(austDay.getFullYear());
     });
 	

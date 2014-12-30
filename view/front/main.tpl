@@ -47,7 +47,7 @@
       </div>
       <div class="modal-body" dir="rtl">
         <p>barincard.ir  تنها پرتال استثنایی در ایران می باشد که به شما اجازه دسترسی به بهترین پیشنهادات در سطح شهر را می دهد. مواردی از قبیل سلامتی، ورزش رستوران ها و بسیار بیشتر... </p>
-        <p>برای اطلاع از تخفیفان‌های روزانه ایمیل خود را وارد کنید</p>
+        <p>برای اطلاع از برین کارت ‌های روزانه ایمیل خود را وارد کنید</p>
         <div>
         	<form class="form-inline">
             	<input type="email" class="form-control" placeholder="ایمیل خود را وارد کنید"><input type="submit" class="btn btn-success" value="ثبت">
