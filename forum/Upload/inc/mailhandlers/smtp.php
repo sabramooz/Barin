@@ -159,7 +159,7 @@ class SmtpMail extends MailHandler
 			$this->host = $mybb->settings['smtp_host'];
 		}
 
-		$local = array('127.0.0.1', '::1', 'localhost');
+		$local = array('localhost', '::1', 'localhost');
 		if(!in_array($this->host, $local))
 		{
 			if(function_exists('gethostname') && gethostname() !== false)

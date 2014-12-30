@@ -2,7 +2,7 @@
 -- version 4.1.14
 -- http://www.phpmyadmin.net
 --
--- Host: 127.0.0.1
+-- Host: localhost
 -- Generation Time: Dec 29, 2014 at 05:41 AM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
