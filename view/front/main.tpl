@@ -43,18 +43,18 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h2 class="modal-title text-center" id="myModalLabel">تا ۹۰٪ تخفیف بگیرید!</h2>
+        <h2 class="modal-title text-center" id="myModalLabel" dir="rtl">تا ۹۰٪ تخفیف بگیرید!</h2>
       </div>
       <div class="modal-body" dir="rtl">
         <p>barincard.ir  تنها پرتال استثنایی در ایران می باشد که به شما اجازه دسترسی به بهترین پیشنهادات در سطح شهر را می دهد. مواردی از قبیل سلامتی، ورزش رستوران ها و بسیار بیشتر... </p>
         <p>برای اطلاع از تخفیفان‌های روزانه ایمیل خود را وارد کنید</p>
-        <p>
+        <div>
         	<form class="form-inline">
             	<input type="email" class="form-control" placeholder="ایمیل خود را وارد کنید"><input type="submit" class="btn btn-success" value="ثبت">
             </form>
-        </p>
+        </div>
         <hr>
-        <p>
+        <div>
         	<div class="col-md-3">
                 <div class="content">
                     <img src="http://localhost/barin/view/front/images/logo.jpg" class="img-responsive">
@@ -83,7 +83,10 @@
                     <p class="price" dir="rtl"><del>5000 تومان</del> / 1000 تومان</p>
                 </div>
             </div>
-        </p>
+        </div>
+        <div class="text-center">
+        	<img src="http://localhost/barin/view/front/images/featured.png">
+        </div>
       </div>
       <div class="clearfix"></div>
       <div class="modal-footer">
