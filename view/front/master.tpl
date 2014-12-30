@@ -133,13 +133,14 @@
                 </ul>
             </div>
             <div class="col-md-4 text-center">
-                <h1>درباره ما</h1>
+                <h1>درباره برین</h1>
                 <hr>
                 <ul class="list-unstyled">
                     <li><a href="#">برین کارت چیست؟</a> </li>
                     <li><a href="#">تماس با ما</a> </li>
                     <li><a href="#">شرایط اخذ نمایندگی</a> </li>
                     <li><a href="#">دانلود لیست کامل مراکز</a> </li>
+                    <li><a href="#">برین در جراید</a> </li>
                 </ul>
             </div>
             <div class="col-md-4 text-center">
@@ -155,7 +156,7 @@
             <div class="clearfix"></div>
             <hr>
             <div class="col-md-6 text-center">
-            	<h2>نرم افزار موبایل</h2>
+            	<h2>نرم افزار موبایل برین کارت</h2>
             	<div class="btn-group"><a href="#" class="btn btn-app btn-lg">اندروید</a><a href="#" class="btn btn-lg btn-app"><i class="fa fa-android"></i></a></div>
                 <div class="btn-group"><a href="#" class="btn btn-app btn-lg">آیفون</a><a href="#" class="btn btn-lg btn-app"><i class="fa fa-apple"></i></a></div>
             </div>
