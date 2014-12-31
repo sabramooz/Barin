@@ -345,7 +345,7 @@
         <li>
             <a href="?page=receiveSms">اس ام اس های دریافتی</a>
         </li>
-        <li><a href="#">مانده حساب اس ام اس</a>
+        <li><a href="?page=credit">مانده حساب اس ام اس</a>
         </li>
     </ul>
 </li>

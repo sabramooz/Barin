@@ -6,23 +6,10 @@
   </div>
   <div class="panel-body signup">
 
-	
-        <table border="1" class="table table-hover text-center">
-        	<tr>
-            	<th class="resource">ردیف</th>
-                <th  class="resource">همراه ارسال کننده</th>
-                <th  class="resource">متن اس ام اس</th>
-            </tr>
-               
-                	<tr>
-                    	<td>س</td>
-                    	<td>س</td>
-						 <td>س</td>
 
-                        
-               		</tr>
-        		
-        </table>
+                  {section name=i loop=$obj->result}
+                        <p>{$obj->result[i]}</p>
+                  {/section}
         
     </div>
 <!-- Main Content Element  End-->

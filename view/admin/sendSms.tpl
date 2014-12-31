@@ -11,7 +11,7 @@
             	<label class="col-sm-2 col-xs-12  control-label" for="password">
                 <span class="glyphicon glyphicon-asterisk optional"></span>شماره مورد نظر: </label>
                 <div class="col-sm-4 col-md-3 col-xs-12 ">
-                	<input type="password" name="password" tabindex="1" autofocus class="form-control">
+                	<input type="text" name="to" tabindex="1" autofocus class="form-control">
             	</div>
             </div>
             <div class="form-group">
@@ -31,7 +31,7 @@
             </div>
 
     </form>
-
+	{$obj->error}
 		
       
     </div>

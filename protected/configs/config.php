@@ -14,12 +14,22 @@
   define('SMARTY_PLUGINS', PROTECTED_DIR . 'libs/smarty_plugins');
   define('ALLOW_CHANGE_THEME', true);
   define('SITE_LANG', 'en');
-  define('DB_PERSISTENCY', 'true');
+  
+    #### DB config ######
+    define('DB_PERSISTENCY', 'true');
     define('DB_SERVER', 'localhost');
     define('DB_USERNAME', 'root');
     define('DB_PASSWORD', '');
     define('DB_DATABASE', 'barin');
     define('PDO_DSN', 'mysql:host=' . DB_SERVER . ';dbname=' . DB_DATABASE);
+	
+	
+	### SMS Config #####
+	define('URL_API' , 'http://api.payamak-panel.com');
+	define('USERNAME' , '9124077897');
+	define('PASSWORD' , '3755');
+	define('FROM' , '10007120270229');
+	
   function autoload($class) 
   {
    //echo $class;
