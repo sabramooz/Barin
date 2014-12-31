@@ -53,7 +53,7 @@
                     <p class="digital" id="defaultCountdown" dir="rtl"></p>
                 </div>
                 <br>
-                <a href="?page=product" class="btn btn-info btn-block">مشاهده <i class="fa fa-eye"></i></a>
+                <a href="?page=product" class="btn btn-info btn-block">مشاهده و خرید کارت <i class="fa fa-eye"></i></a>
             </div>
         </div>
     </section>
