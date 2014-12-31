@@ -30,7 +30,7 @@
                     </ul>
                 </li>
                 <li class="pull-right hidden-xs"><a href="#">مراکز طرف قرارداد <i class="fa fa-home"></i></a></li>
-                <li class="pull-right hidden-xs"><a href="#">تماس با ما <i class="fa fa-envelope"></i></a></li>
+                <li class="pull-right hidden-xs"><a href="http://localhost/barin/user/contact/">تماس با ما <i class="fa fa-envelope"></i></a></li>
                 
             </ul>
         </div>
@@ -104,14 +104,14 @@
             </div>
         </div>
 
-        <div class="advertise"><img src="http://localhost/barin/view/front/images/rayweb.jpg"> </div>
-        <div class="advertise"><img src="http://localhost/barin/view/front/images/rayweb.gif"> </div>
-        <div class="advertise"><img src="http://localhost/barin/view/front/images/rayweb.jpg"> </div>
-        <div class="advertise"><img src="http://localhost/barin/view/front/images/rayweb.gif"> </div>
-        <div class="advertise"><img src="http://localhost/barin/view/front/images/rayweb.jpg"> </div>
-        <div class="advertise"><img src="http://localhost/barin/view/front/images/rayweb.gif"> </div>
-        <div class="advertise"><img src="http://localhost/barin/view/front/images/rayweb.jpg"> </div>
-        <div class="advertise"><img src="http://localhost/barin/view/front/images/rayweb.gif"> </div>
+        <div class="advertise"><a href="#"><img src="http://localhost/barin/view/front/images/advertise.gif"> </a></div>
+        <div class="advertise"><a href="http://rayweb.ir"><img src="http://localhost/barin/view/front/images/rayweb.gif"> </a></div>
+        <div class="advertise"><a href="#"><img src="http://localhost/barin/view/front/images/advertise.gif"> </a></div>
+        <div class="advertise"><a href="http://rayweb.ir"><img src="http://localhost/barin/view/front/images/rayweb.gif"> </a></div>
+        <div class="advertise"><a href="#"><img src="http://localhost/barin/view/front/images/advertise.gif"> </a></div>
+        <div class="advertise"><a href="http://rayweb.ir"><img src="http://localhost/barin/view/front/images/rayweb.gif"> </a></div>
+        <div class="advertise"><a href="#"><img src="http://localhost/barin/view/front/images/advertise.gif"> </a></div>
+        <div class="advertise"><a href="http://rayweb.ir"><img src="http://localhost/barin/view/front/images/rayweb.gif"> </a></div>
     </section>
     <section class="main-content col-sm-9">
     
@@ -162,7 +162,7 @@
             </div>
             <div class="col-md-4 text-center">
             	<h2>یگانه نوآوران پویا</h2>
-            	<img src="http://localhost/barin/view/front/images/logo.png" class="img-responsive">
+            	<a href="?page=main"><img src="http://localhost/barin/view/front/images/logo-white.png"></a>
             </div>
             <div class="col-md-4 text-center" dir="rtl">
             	<h2>عضویت در خبرنامه</h2>

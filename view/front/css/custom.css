@@ -389,4 +389,26 @@ del{
 .modal-body{
 	font-size:18px;
 	}
-
+.comment-part{
+	padding:10px;
+	}
+.comment-main{
+	margin-bottom:20px;
+	}
+.comment-reply{
+	margin-top:10px;
+	padding-right:50px;
+	}
+.user-detail{
+	color: #66afe9;
+	}
+.comment-date{
+	font-size:10px;
+	}
+.user-comment{
+	
+	}
+.new-comment{
+	margin-top:20px;
+	padding:15px;
+	}
