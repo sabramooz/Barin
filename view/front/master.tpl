@@ -29,7 +29,7 @@
                     {/section}
                     </ul>
                 </li>
-                <li class="pull-right hidden-xs"><a href="#">مراکز طرف قرارداد <i class="fa fa-home"></i></a></li>
+                <li class="pull-right hidden-xs"><a href="http://localhost/barin/user/centers/">مراکز طرف قرارداد <i class="fa fa-home"></i></a></li>
                 <li class="pull-right hidden-xs"><a href="http://localhost/barin/user/contact/">تماس با ما <i class="fa fa-envelope"></i></a></li>
                 
             </ul>
