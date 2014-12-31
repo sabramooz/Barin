@@ -187,5 +187,10 @@
 <script type="text/javascript" src="http://localhost/barin/view/front/js/jquery.plugin.js"></script>
 <script type="text/javascript" src="http://localhost/barin/view/front/js/jquery.countdown.js"></script>
 <script src="http://localhost/barin/view/front/js/custom.js"></script>
+<script src="http://localhost/barin/view/front/js/timeago.js"></script>
+<script src="http://localhost/barin/view/front/js/jquery.timeago.fa.js"></script>
+<script>
+	  $(".timeago").timeago();
+</script>
 </body>
 </html>

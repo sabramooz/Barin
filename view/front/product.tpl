@@ -37,44 +37,15 @@
 <div class="comment" dir="rtl">
 	<h3>نظرات</h3>
     <div class="comment-part">
-    	<form method="post">
-        	<div class="user-image col-sm-1 pull-right"><img src="http://localhost/barin/view/front/images/human.jpg" class="img-responsive"></div>
-            <div class="user-comment col-sm-11 pull-right">
-                <h4 class="user-detail">نام کاربر</h4>
-                <p class="comment-date">دیروز</p>
-                <p class="comment-main">سلام دوستان من سری پیش 20 تا نت برگ خریدم. کیفیت غذاهاشون و برخورد پرسنل واقعا عالی بود از نت برگ و سالی تشکر می کنم</p>
-                
-                <div class="comment-reply">
-                    <h4 class="user-detail">نام کاربر</h4>
-                    <p class="comment-date">دیروز</p>
-                    <p >سپیده عزیز، از اینکه نظر خود را با ما در میان گذاشتید بسیار از شما سپاسگزاریم.</p><br>
-            	</div>
-                <textarea class="form-control"></textarea>
-                <input type="submit" class="btn btn-success" name="sub_comment" value="ارسال">
-            </div>  
-            <div class="clearfix"></div>
-            <hr>
-            <div class="user-image col-sm-1 pull-right"><img src="http://localhost/barin/view/front/images/human.jpg" class="img-responsive"></div>
-            <div class="user-comment col-sm-11 pull-right">
-                <h4 class="user-detail">نام کاربر</h4>
-                <p class="comment-date">دیروز</p>
-                <p class="comment-main">سلام دوستان من سری پیش 20 تا نت برگ خریدم. کیفیت غذاهاشون و برخورد پرسنل واقعا عالی بود از نت برگ و سالی تشکر می کنم</p>
-                
-                <div class="comment-reply">
-                    <h4 class="user-detail">نام کاربر</h4>
-                    <p class="comment-date">دیروز</p>
-                    <p >سپیده عزیز، از اینکه نظر خود را با ما در میان گذاشتید بسیار از شما سپاسگزاریم.</p><br>
-            	</div>
-                <textarea class="form-control"></textarea>
-                <input type="submit" class="btn btn-success" name="sub_comment" value="ارسال">
-            </div>  
-            <div class="clearfix"></div>
-            <hr>		
+        	{$obj->comments}
+          <form method="post">    		
             <div class="new-comment">
             	<h3>نظرات شما</h3>
-            	<textarea class="form-control"></textarea>
-                <input type="submit" class="btn btn-success" name="sub_comment" value="ارسال">
+            	<textarea class="form-control" name="text" rows="5"></textarea>
+                <input type="hidden" name="center_id" value="1">
+                <input type="submit" class="btn btn-success" name="comment" value="ارسال">
             </div>
         </form>
     </div>
 </div>
+

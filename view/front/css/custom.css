@@ -394,10 +394,14 @@ del{
 	}
 .comment-main{
 	margin-bottom:20px;
+	font-size:18px;
 	}
 .comment-reply{
 	margin-top:10px;
+	margin-bottom:10px;
 	padding-right:50px;
+	background-color:#eee;
+	border:solid 1px #66afe9;
 	}
 .user-detail{
 	color: #66afe9;
@@ -406,11 +410,20 @@ del{
 	font-size:10px;
 	}
 .user-comment{
-	
+	background-color:#FFF;
+	padding:10px
+	}
+.user-comment textarea{
+	resize:none;
+	margin-bottom:10px;
 	}
 .new-comment{
 	margin-top:20px;
 	padding:15px;
+	}
+.new-comment textarea{
+	resize:none;
+	margin-bottom:10px;
 	}
 .centers{
 	font-size:18px;
