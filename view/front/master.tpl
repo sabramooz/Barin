@@ -22,7 +22,7 @@
             <ul class="nav navbar-nav navbar-right town-choose">
             	<li class="pull-right"><a></a></li>
                 <li class="pull-right dropdown active">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-caret-down"></i> استان تهران <i class="fa fa-map-marker"></i></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-caret-down"></i> استان {$obj->persian_name} <i class="fa fa-map-marker"></i></a>
                     <ul class="dropdown-menu col-md-3" role="menu">
                     {section name=i loop=$obj->city}
                         <li><a href="http://localhost/barin/{$obj->city[i].latin_name}/">( {$obj->array[i].count} ) {$obj->city[i].persian_name}</a></li>
@@ -44,7 +44,7 @@
             </div><!-- /input-group -->
         </div>
     </div>
-    <header class="container-fluid header-top" style="background-color:#FFF;background-position:50px 0;background-image: url('http://localhost/barin/view/front/images/cities/1.jpg');">
+    <header class="container-fluid header-top" style="{$obj->style}">
         <div class="col-md-2 col-xs-6 member pull-right text-right hidden-xs">
             <a href="http://localhost/barin/user/login/">ورود کاربر<span class="fa fa-sign-in"></span></a>
             <a href="http://localhost/barin/user/signup/">ثبت نام کنید<span class="fa fa-user"></span></a>
