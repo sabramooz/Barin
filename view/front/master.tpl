@@ -35,7 +35,7 @@
             </ul>
         </div>
         <div class="col-md-6 col-xs-5 search">
-        	<ul class="nav navbar-nav pull-right visible-lg"><li class="active"><a href="callto:09123456789">09123456789</a></li></ul>
+        	<ul class="nav navbar-nav pull-right visible-lg"><li class="active"><a href="callto:09123456789"><i class="fa fa-phone"></i>09123456789</a></li></ul>
             <div class="input-group">
                 <input type="text" class="form-control" dir="rtl" placeholder="جستجو...">
                 <span class="input-group-btn">
@@ -104,14 +104,14 @@
             </div>
         </div>
 
-        <div class="advertise"><img src="http://localhost/barin/view/front/images/esam.jpg"> </div>
-        <div class="advertise"><img src="http://localhost/barin/view/front/images/elecomp-winners.jpg"> </div>
-        <div class="advertise"><img src="http://localhost/barin/view/front/images/esam.jpg"> </div>
-        <div class="advertise"><img src="http://localhost/barin/view/front/images/elecomp-winners.jpg"> </div>
-        <div class="advertise"><img src="http://localhost/barin/view/front/images/esam.jpg"> </div>
-        <div class="advertise"><img src="http://localhost/barin/view/front/images/elecomp-winners.jpg"> </div>
-        <div class="advertise"><img src="http://localhost/barin/view/front/images/esam.jpg"> </div>
-        <div class="advertise"><img src="http://localhost/barin/view/front/images/elecomp-winners.jpg"> </div>
+        <div class="advertise"><img src="http://localhost/barin/view/front/images/rayweb.jpg"> </div>
+        <div class="advertise"><img src="http://localhost/barin/view/front/images/rayweb.gif"> </div>
+        <div class="advertise"><img src="http://localhost/barin/view/front/images/rayweb.jpg"> </div>
+        <div class="advertise"><img src="http://localhost/barin/view/front/images/rayweb.gif"> </div>
+        <div class="advertise"><img src="http://localhost/barin/view/front/images/rayweb.jpg"> </div>
+        <div class="advertise"><img src="http://localhost/barin/view/front/images/rayweb.gif"> </div>
+        <div class="advertise"><img src="http://localhost/barin/view/front/images/rayweb.jpg"> </div>
+        <div class="advertise"><img src="http://localhost/barin/view/front/images/rayweb.gif"> </div>
     </section>
     <section class="main-content col-sm-9">
     
@@ -155,12 +155,16 @@
             </div>
             <div class="clearfix"></div>
             <hr>
-            <div class="col-md-6 text-center">
+            <div class="col-md-4 text-center">
             	<h2>نرم افزار موبایل برین کارت</h2>
             	<div class="btn-group"><a href="#" class="btn btn-app btn-lg">اندروید</a><a href="#" class="btn btn-lg btn-app"><i class="fa fa-android"></i></a></div>
                 <div class="btn-group"><a href="#" class="btn btn-app btn-lg">آیفون</a><a href="#" class="btn btn-lg btn-app"><i class="fa fa-apple"></i></a></div>
             </div>
-            <div class="col-md-6 text-center" dir="rtl">
+            <div class="col-md-4 text-center">
+            	<h2>یگانه نوآوران پویا</h2>
+            	<img src="http://localhost/barin/view/front/images/logo.png" class="img-responsive">
+            </div>
+            <div class="col-md-4 text-center" dir="rtl">
             	<h2>عضویت در خبرنامه</h2>
             	<form class="form-inline">
                 	<input type="email" class="form-control" placeholder="ایمیل خود را وارد کنید"><input type="submit" class="btn btn-success" value="ثبت">
