@@ -14,7 +14,8 @@
 		  //echo $_GET['cat_id'];
 		  //echo $_GET['id'];
 		  if(!isset($_GET['city'])){
-			  header("Location: http://localhost/barin/tehran/");
+			  //header("Location: http://localhost/barin/tehran/");
+			  $_GET['city'] = 'tehran';
 			  }
 		  ## liste shahr ha + tedade marakez dar shahr ha ##
 		    $this->city = CITY::city_SelectAll();

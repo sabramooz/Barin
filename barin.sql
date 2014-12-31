@@ -2,8 +2,8 @@
 -- version 4.1.14
 -- http://www.phpmyadmin.net
 --
--- Host: localhost
--- Generation Time: Dec 29, 2014 at 09:35 PM
+-- Host: 127.0.0.1
+-- Generation Time: Dec 31, 2014 at 02:13 AM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -1728,7 +1728,7 @@ CREATE TABLE IF NOT EXISTS `forms` (
   `activate` tinyint(1) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `latin_name` (`latin_name`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=28 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1744,7 +1744,7 @@ CREATE TABLE IF NOT EXISTS `form_content` (
   `textarea` tinyint(1) NOT NULL,
   `forms_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=51 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
