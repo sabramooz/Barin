@@ -44,7 +44,7 @@
             </div><!-- /input-group -->
         </div>
     </div>
-    <header class="container-fluid header-top">
+    <header class="container-fluid header-top" style="background-color:#FFF;background-position:50px 0;background-image: url('http://localhost/barin/view/front/images/cities/1.jpg');">
         <div class="col-md-2 col-xs-6 member pull-right text-right hidden-xs">
             <a href="http://localhost/barin/user/login/">ورود کاربر<span class="fa fa-sign-in"></span></a>
             <a href="http://localhost/barin/user/signup/">ثبت نام کنید<span class="fa fa-user"></span></a>
@@ -54,7 +54,7 @@
             <a href="#"><i class="fa fa-user"></i></a>
         </div>
 
-        <div class="col-md-2 col-sm-4 col-xs-6"><a class="brand" href="?main"><img class="img-responsive" src="http://localhost/barin/view/front/images/logo.png"></a></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><a class="brand" href="?main"><img class="img-responsive" src="http://localhost/barin/view/front/images/logo.png"></a></div>
         <div class="clearfix"></div>
 
     </header>

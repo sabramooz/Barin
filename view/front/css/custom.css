@@ -31,10 +31,10 @@ a{
 .header-top{
     padding-left: 20px;
     border-top: solid 2px #66afe9;
-    background-image: url("../images/light_texture2245.jpg");
     background-size: cover;
     padding-top: 100px;
     padding-bottom: 50px;
+	background-repeat:no-repeat;
 }
 .navbar-top{
     border-top: solid 2px #66afe9;
