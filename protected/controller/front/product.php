@@ -31,7 +31,7 @@
 				$this->comments .= '
 					<form method="post">
 						<div class="user-image col-sm-1 pull-right">
-							<img src="http://localhost/barin/view/front/images/human.jpg" class="img-responsive"></div>
+							<img src="'.SITE_ADDRESS.'view/front/images/human.jpg" class="img-responsive"></div>
 						<div class="user-comment col-sm-11 pull-right">
 							<h4 class="user-detail">'.$row['first_name'].'</h4>
 							<p class="comment-date timeago" dir="rtl" title="'.$row['date'].'"></p>

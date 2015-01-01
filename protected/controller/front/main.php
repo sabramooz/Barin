@@ -3,9 +3,13 @@
   {
 	  
 		  
-      public $latin_name,$result,$refahi,$kharidkala,$pezeshki,$modal = '';
+      public $latin_name,$result,$site_address,$refahi,$kharidkala,$pezeshki,$modal = '';
       function __construct()
       {
+		
+		########### define for htaccess #############
+		  $this->site_address = SITE_ADDRESS;
+		#############################################
 		  
 		##### modal session #########
 		if(!isset($_SESSION['modal'])){

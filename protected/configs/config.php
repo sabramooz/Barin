@@ -3,6 +3,10 @@
 	#error_reporting(E_ALL);
 	#ini_set('display_errors','1');
 	### smarty config ####
+	
+  //define('SITE_ADDRESS','http://barincard.com/');
+  define('SITE_ADDRESS','http://localhost/barin/');	
+
   define('SITE_ROOT', dirname(dirname(dirname(__FILE__))));
   define('FRONT_TEMPLATE_DIR', SITE_ROOT . '/view/front');
   define('FRONT_CURRENT_THEME', FRONT_TEMPLATE_DIR);
@@ -57,10 +61,7 @@
     else if(file_exists('protected/models/model.' . $class . '.php')){
         include 'protected/models/model.' . $class . '.php';
 		
-	}else if(!file_exists('protected/models/model.' . $class . '.php')){
-		$class2 = strtolower($class);
-   		include 'protected/models/model.' . $class2 . '.php';
-		}
+	}
         else{
             echo COMPONENTS_DIR . 'class.' . $class . '.php';
         }

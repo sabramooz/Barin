@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 31, 2014 at 02:13 AM
+-- Generation Time: Jan 01, 2015 at 03:07 PM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -201,6 +201,43 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_form_content_UpdateRow`(IN _id i
 BEGIN
    UPDATE `form_content`
    SET `name` = _name, `label` = _label, `text` = _text, `textarea` = _textarea, `forms_id` = _forms_id 
+        WHERE `id` = _id;
+END$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_log_DeleteRow`(IN _id int)
+BEGIN
+    DELETE FROM `log` WHERE `id` = _id ;
+END$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_log_Insert`(IN _HTTP_USER_AGENT varchar(255), IN _REMOTE_ADDR varchar(255), IN _QUERY_STRING varchar(255), IN _REQUEST_URI varchar(255), IN _REQUEST_TIME bigint, IN _CITY int)
+BEGIN
+   INSERT INTO `log`
+   (`HTTP_USER_AGENT` , `REMOTE_ADDR` , `QUERY_STRING` , `REQUEST_URI` , `REQUEST_TIME` , `CITY` )
+         VALUES(_HTTP_USER_AGENT , _REMOTE_ADDR , _QUERY_STRING , _REQUEST_URI , _REQUEST_TIME , _CITY );
+END$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_log_SelectAll`()
+BEGIN
+    SET NAMES UTF8;
+	SELECT `id`, `HTTP_USER_AGENT`, `REMOTE_ADDR`, `QUERY_STRING`, `REQUEST_URI`, `REQUEST_TIME`, `CITY` FROM `log` ;
+END$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_log_SelectRow`(IN _id int)
+BEGIN
+    SET NAMES UTF8;
+    SELECT `id`, `HTTP_USER_AGENT`, `REMOTE_ADDR`, `QUERY_STRING`, `REQUEST_URI`, `REQUEST_TIME`, `CITY` FROM `log` WHERE `id` = _id;
+END$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_log_SelectSomeRows`(IN _count int)
+BEGIN
+    SET NAMES UTF8;
+    SELECT `id`, `HTTP_USER_AGENT`, `REMOTE_ADDR`, `QUERY_STRING`, `REQUEST_URI`, `REQUEST_TIME`, `CITY` FROM `log` LIMIT _count;
+END$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_log_UpdateRow`(IN _id int, IN _HTTP_USER_AGENT varchar(255), IN _REMOTE_ADDR varchar(255), IN _QUERY_STRING varchar(255), IN _REQUEST_URI varchar(255), IN _REQUEST_TIME bigint, IN _CITY int)
+BEGIN
+   UPDATE `log`
+   SET `HTTP_USER_AGENT` = _HTTP_USER_AGENT, `REMOTE_ADDR` = _REMOTE_ADDR, `QUERY_STRING` = _QUERY_STRING, `REQUEST_URI` = _REQUEST_URI, `REQUEST_TIME` = _REQUEST_TIME, `CITY` = _CITY 
         WHERE `id` = _id;
 END$$
 
@@ -1758,6 +1795,61 @@ CREATE TABLE IF NOT EXISTS `images` (
   `center_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `log`
+--
+
+CREATE TABLE IF NOT EXISTS `log` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `HTTP_USER_AGENT` varchar(255) NOT NULL,
+  `REMOTE_ADDR` varchar(255) NOT NULL,
+  `QUERY_STRING` varchar(255) NOT NULL,
+  `REQUEST_URI` varchar(255) NOT NULL,
+  `REQUEST_TIME` bigint(20) NOT NULL,
+  `CITY` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=33 ;
+
+--
+-- Dumping data for table `log`
+--
+
+INSERT INTO `log` (`id`, `HTTP_USER_AGENT`, `REMOTE_ADDR`, `QUERY_STRING`, `REQUEST_URI`, `REQUEST_TIME`, `CITY`) VALUES
+(1, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '127.0.0.1', '', '/barin/', 1420112189, 0),
+(2, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '127.0.0.2', 'user=user&page=login', '/barin/user/login/', 1420112196, 0),
+(3, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '127.0.0.3', '', '/barin/', 1420112198, 0),
+(4, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '127.0.0.3', '', '/barin/', 1420112201, 0),
+(5, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '127.0.0.1', '', '/barin/', 1420112203, 0),
+(6, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '127.0.0.1', 'city=boushehr', '/barin/boushehr/', 1420112350, 0),
+(7, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '127.0.0.4', 'city=boushehr', '/barin/boushehr/', 1420112379, 7),
+(8, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '127.0.0.5', '', '/Barin/', 1420113195, 8),
+(9, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '127.0.0.6', '', '/Barin/index.php/images/loading.gif', 1420113203, 8),
+(10, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '127.0.0.1', '', '/Barin/index.php', 1420113206, 8),
+(11, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '127.0.0.1', '', '/Barin/', 1420113212, 8),
+(12, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '127.0.0.1', '', '/Barin/', 1420113233, 8),
+(13, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '127.0.0.1', '', '/Barin/', 1420113249, 8),
+(14, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '127.0.0.1', '', '/Barin/', 1420115226, 8),
+(15, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '127.0.0.1', '', '/Barin/', 1420115255, 8),
+(16, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '127.0.0.1', '', '/Barin/', 1420116365, 8),
+(17, 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36', '127.0.0.1', '', '/barin/', 1420116460, 8),
+(18, 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36', '127.0.0.1', '', '/barin/', 1420116541, 8),
+(19, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '127.0.0.1', '', '/Barin/', 1420116621, 8),
+(20, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '127.0.0.1', 'city=tehran', '/barin/tehran/', 1420116669, 8),
+(21, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '127.0.0.1', 'city=tehran', '/barin/tehran/', 1420116675, 8),
+(22, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '127.0.0.1', 'city=tehran', '/barin/tehran/', 1420116704, 8),
+(23, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '127.0.0.1', 'city=tehran', '/barin/tehran/?page=main', 1420116713, 8),
+(24, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '127.0.0.1', '', '/barin/', 1420116718, 8),
+(25, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '127.0.0.1', '', '/barin/', 1420116721, 8),
+(26, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '127.0.0.1', '', '/barin/', 1420116742, 8),
+(27, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '127.0.0.1', '', '/barin/', 1420116751, 8),
+(28, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '127.0.0.1', '', '/barin/', 1420117017, 8),
+(29, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '127.0.0.1', 'page=product', '/barin/?page=product', 1420117028, 8),
+(30, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '127.0.0.1', 'page=product', '/barin/?page=product', 1420117104, 8),
+(31, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '127.0.0.1', 'page=product', '/barin/?page=product', 1420117620, 8),
+(32, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '127.0.0.1', 'page=product', '/barin/?page=product', 1420117698, 8);
 
 -- --------------------------------------------------------
 

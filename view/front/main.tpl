@@ -4,13 +4,13 @@
         <div class="col-md-4">
             <div class="content">
                 <img src="{if $obj->result[i].image}
-                			http://localhost/barin/view/front/images/{$obj->result[i].image}
+                			{$obj->site_address}view/front/images/{$obj->result[i].image}
                            {else}
-                            http://localhost/barin/view/front/images/logo.jpg
+                            {$obj->site_address}view/front/images/logo.jpg
                            {/if}" class="img-responsive">
                 <h4 class="text-right">{$obj->result[i].center_name}</h4>
                 <p class="price" dir="rtl">{$obj->result[i].discount} درصد تخفیف</p>
-                <a href="http://localhost/barin/{$obj->latin_name}/{$obj->result[i].type_id}/{$obj->result[i].id}/"> مشاهده </a>
+                <a href="{$obj->site_address}{$obj->latin_name}/{$obj->result[i].type_id}/{$obj->result[i].id}/"> مشاهده </a>
             </div>
         </div>
 		{/section} 
@@ -21,7 +21,7 @@
         {section name=i loop=$obj->refahi}
         <div class="col-md-4">
             <div class="content">
-                <img src="http://localhost/barin/view/front/images/logo.jpg" class="img-responsive">
+                <img src="{$obj->site_address}view/front/images/logo.jpg" class="img-responsive">
                 <h4 class="text-right">{$obj->refahi[i].center_name}</h4>
                 <p class="price" dir="rtl">{$obj->refahi[i].discount} درصد تخفیف</p>
             </div>
@@ -34,7 +34,7 @@
         {section name=i loop=$obj->pezeshki}
         <div class="col-md-4">
             <div class="content">
-                <img src="http://localhost/barin/view/front/images/logo.jpg" class="img-responsive">
+                <img src="{$obj->site_address}view/front/images/logo.jpg" class="img-responsive">
                 <h4 class="text-right">{$obj->pezeshki[i].center_name}</h4>
                 <p class="price" dir="rtl">{$obj->pezeshki[i].discount} درصد تخفیف</p>
             </div>
@@ -47,7 +47,7 @@
         {section name=i loop=$obj->kharidkala}
         <div class="col-md-4">
             <div class="content">
-                <img src="http://localhost/barin/view/front/images/logo.jpg" class="img-responsive">
+                <img src="{$obj->site_address}view/front/images/logo.jpg" class="img-responsive">
                 <h4 class="text-right">{$obj->kharidkala[i].center_name}</h4>
                 <p class="price" dir="rtl">{$obj->kharidkala[i].discount} درصد تخفیف</p>
             </div>
@@ -77,35 +77,35 @@
         <div>
         	<div class="col-md-3">
                 <div class="content">
-                    <img src="http://localhost/barin/view/front/images/logo.jpg" class="img-responsive">
+                    <img src="{$obj->site_address}view/front/images/logo.jpg" class="img-responsive">
                     <h4 class="text-right">عنوان</h4>
                     <p class="price" dir="rtl"><del>5000 تومان</del> / 1000 تومان</p>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="content">
-                    <img src="http://localhost/barin/view/front/images/logo.jpg" class="img-responsive">
+                    <img src="{$obj->site_address}view/front/images/logo.jpg" class="img-responsive">
                     <h4 class="text-right">عنوان</h4>
                     <p class="price" dir="rtl"><del>5000 تومان</del> / 1000 تومان</p>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="content">
-                    <img src="http://localhost/barin/view/front/images/logo.jpg" class="img-responsive">
+                    <img src="{$obj->site_address}view/front/images/logo.jpg" class="img-responsive">
                     <h4 class="text-right">عنوان</h4>
                     <p class="price" dir="rtl"><del>5000 تومان</del> / 1000 تومان</p>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="content">
-                    <img src="http://localhost/barin/view/front/images/logo.jpg" class="img-responsive">
+                    <img src="{$obj->site_address}view/front/images/logo.jpg" class="img-responsive">
                     <h4 class="text-right">عنوان</h4>
                     <p class="price" dir="rtl"><del>5000 تومان</del> / 1000 تومان</p>
                 </div>
             </div>
         </div>
         <div class="text-center">
-        	<img src="http://localhost/barin/view/front/images/featured.png">
+        	<img src="{$obj->site_address}view/front/images/featured.png">
         </div>
       </div>
       <div class="clearfix"></div>

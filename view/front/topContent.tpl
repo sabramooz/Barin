@@ -19,16 +19,16 @@
                 <div u="slides" style="cursor: move; position: absolute; left: 0; top: 0; width: 600px; height: 500px;
             overflow: hidden;">
                     <div>
-                        <a u=image href="#"><img src="http://localhost/barin/view/front/images/1.jpg" /></a>
+                        <a u=image href="#"><img src="{$obj->site_address}view/front/images/1.jpg" /></a>
                     </div>
                     <div>
-                        <a u=image href="#"><img src="http://localhost/barin/view/front/images/2.jpg" /></a>
+                        <a u=image href="#"><img src="{$obj->site_address}view/front/images/2.jpg" /></a>
                     </div>
                     <div>
-                        <a u=image href="#"><img src="http://localhost/barin/view/front/images/3.jpg" /></a>
+                        <a u=image href="#"><img src="{$obj->site_address}view/front/images/3.jpg" /></a>
                     </div>
                     <div>
-                        <a u=image href="#"><img src="http://localhost/barin/view/front/images/4.jpg" /></a>
+                        <a u=image href="#"><img src="{$obj->site_address}view/front/images/4.jpg" /></a>
                     </div>
                 </div>
                 <!-- bullet navigator container -->

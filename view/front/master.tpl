@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>برین کارت</title>
-    <link rel="stylesheet" type="text/css" href="http://localhost/barin/view/front/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="http://localhost/barin/view/front/css/custom.css">
-    <link rel="stylesheet" type="text/css" href="http://localhost/barin/view/front/css/slider.css">
-    <link rel="stylesheet" type="text/css" href="http://localhost/barin/view/front/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="http://localhost/barin/view/front/css/jquery.countdown.css">
+    <link rel="stylesheet" type="text/css" href="{$obj->site_address}view/front/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{$obj->site_address}view/front/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="{$obj->site_address}view/front/css/slider.css">
+    <link rel="stylesheet" type="text/css" href="{$obj->site_address}view/front/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{$obj->site_address}view/front/css/jquery.countdown.css">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -25,12 +25,12 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-caret-down"></i> استان {$obj->persian_name} <i class="fa fa-map-marker"></i></a>
                     <ul class="dropdown-menu col-md-3" role="menu">
                     {section name=i loop=$obj->city}
-                        <li><a href="http://localhost/barin/{$obj->city[i].latin_name}/">( {$obj->array[i].count} ) {$obj->city[i].persian_name}</a></li>
+                        <li><a href="{$obj->site_address}{$obj->city[i].latin_name}/">( {$obj->array[i].count} ) {$obj->city[i].persian_name}</a></li>
                     {/section}
                     </ul>
                 </li>
-                <li class="pull-right hidden-xs"><a href="http://localhost/barin/user/centers/">مراکز طرف قرارداد <i class="fa fa-home"></i></a></li>
-                <li class="pull-right hidden-xs"><a href="http://localhost/barin/user/contact/">تماس با ما <i class="fa fa-envelope"></i></a></li>
+                <li class="pull-right hidden-xs"><a href="{$obj->site_address}user/centers/">مراکز طرف قرارداد <i class="fa fa-home"></i></a></li>
+                <li class="pull-right hidden-xs"><a href="{$obj->site_address}user/contact/">تماس با ما <i class="fa fa-envelope"></i></a></li>
                 
             </ul>
         </div>
@@ -46,15 +46,15 @@
     </div>
     <header class="container-fluid header-top" style="{$obj->style}">
         <div class="col-md-2 col-xs-6 member pull-right text-right hidden-xs">
-            <a href="http://localhost/barin/user/login/">ورود کاربر<span class="fa fa-sign-in"></span></a>
-            <a href="http://localhost/barin/user/signup/">ثبت نام کنید<span class="fa fa-user"></span></a>
+            <a href="{$obj->site_address}user/login/">ورود کاربر<span class="fa fa-sign-in"></span></a>
+            <a href="{$obj->site_address}user/signup/">ثبت نام کنید<span class="fa fa-user"></span></a>
         </div>
         <div class="member-xs visible-xs pull-right text-right">
             <a href="#"><i class="fa fa-sign-in"></i></a>
             <a href="#"><i class="fa fa-user"></i></a>
         </div>
 
-        <div class="col-md-3 col-sm-4 col-xs-6"><a class="brand" href="?main"><img class="img-responsive" src="http://localhost/barin/view/front/images/logo.png"></a></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><a class="brand" href="?main"><img class="img-responsive" src="{$obj->site_address}view/front/images/logo.png"></a></div>
         <div class="clearfix"></div>
 
     </header>
@@ -100,18 +100,18 @@
         <div class="panel panel-primary text-center">
             <div class="panel-heading">نماد اعتماد ملی الکترونیک</div>
             <div class="panel-body">
-                <img src="http://localhost/barin/view/front/images/namad1.png">
+                <img src="{$obj->site_address}view/front/images/namad1.png">
             </div>
         </div>
 
-        <div class="advertise"><a href="#"><img src="http://localhost/barin/view/front/images/advertise.gif"> </a></div>
-        <div class="advertise"><a href="http://rayweb.ir"><img src="http://localhost/barin/view/front/images/rayweb.gif"> </a></div>
-        <div class="advertise"><a href="#"><img src="http://localhost/barin/view/front/images/advertise.gif"> </a></div>
-        <div class="advertise"><a href="http://rayweb.ir"><img src="http://localhost/barin/view/front/images/rayweb.gif"> </a></div>
-        <div class="advertise"><a href="#"><img src="http://localhost/barin/view/front/images/advertise.gif"> </a></div>
-        <div class="advertise"><a href="http://rayweb.ir"><img src="http://localhost/barin/view/front/images/rayweb.gif"> </a></div>
-        <div class="advertise"><a href="#"><img src="http://localhost/barin/view/front/images/advertise.gif"> </a></div>
-        <div class="advertise"><a href="http://rayweb.ir"><img src="http://localhost/barin/view/front/images/rayweb.gif"> </a></div>
+        <div class="advertise"><a href="#"><img src="{$obj->site_address}view/front/images/advertise.gif"> </a></div>
+        <div class="advertise"><a href="http://rayweb.ir"><img src="{$obj->site_address}view/front/images/rayweb.gif"> </a></div>
+        <div class="advertise"><a href="#"><img src="{$obj->site_address}view/front/images/advertise.gif"> </a></div>
+        <div class="advertise"><a href="http://rayweb.ir"><img src="{$obj->site_address}view/front/images/rayweb.gif"> </a></div>
+        <div class="advertise"><a href="#"><img src="{$obj->site_address}view/front/images/advertise.gif"> </a></div>
+        <div class="advertise"><a href="http://rayweb.ir"><img src="{$obj->site_address}view/front/images/rayweb.gif"> </a></div>
+        <div class="advertise"><a href="#"><img src="{$obj->site_address}view/front/images/advertise.gif"> </a></div>
+        <div class="advertise"><a href="http://rayweb.ir"><img src="{$obj->site_address}view/front/images/rayweb.gif"> </a></div>
     </section>
     <section class="main-content col-sm-9">
     
@@ -162,7 +162,7 @@
             </div>
             <div class="col-md-4 text-center">
             	<h2>یگانه نوآوران پویا</h2>
-            	<a href="?page=main"><img src="http://localhost/barin/view/front/images/logo-white.png"></a>
+            	<a href="?page=main"><img src="{$obj->site_address}view/front/images/logo-white.png"></a>
             </div>
             <div class="col-md-4 text-center" dir="rtl">
             	<h2>عضویت در خبرنامه</h2>
@@ -179,16 +179,16 @@
         </div>
     </footer>
 
-<script src="http://localhost/barin/view/front/js/jquery.js"></script>
-<script src="http://localhost/barin/view/front/js/jssor.js"></script>
-<script src="http://localhost/barin/view/front/js/jssor.slider.min.js"></script>
-<script src="http://localhost/barin/view/front/js/slider.js"></script>
-<script src="http://localhost/barin/view/front/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="http://localhost/barin/view/front/js/jquery.plugin.js"></script>
-<script type="text/javascript" src="http://localhost/barin/view/front/js/jquery.countdown.js"></script>
-<script src="http://localhost/barin/view/front/js/custom.js"></script>
-<script src="http://localhost/barin/view/front/js/timeago.js"></script>
-<script src="http://localhost/barin/view/front/js/jquery.timeago.fa.js"></script>
+<script src="{$obj->site_address}view/front/js/jquery.js"></script>
+<script src="{$obj->site_address}view/front/js/jssor.js"></script>
+<script src="{$obj->site_address}view/front/js/jssor.slider.min.js"></script>
+<script src="{$obj->site_address}view/front/js/slider.js"></script>
+<script src="{$obj->site_address}view/front/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{$obj->site_address}view/front/js/jquery.plugin.js"></script>
+<script type="text/javascript" src="{$obj->site_address}view/front/js/jquery.countdown.js"></script>
+<script src="{$obj->site_address}view/front/js/custom.js"></script>
+<script src="{$obj->site_address}view/front/js/timeago.js"></script>
+<script src="{$obj->site_address}view/front/js/jquery.timeago.fa.js"></script>
 <script>
 	  $(".timeago").timeago();
 </script>
