@@ -26,11 +26,22 @@
 			$start = ($_GET['page_id'] - 1) * $perPage;
 			}
 			
-	   $query = "SELECT * FROM centers WHERE (city_id='$city_id' AND discount<>0 AND type_id='$cat_id') ORDER BY id DESC LIMIT $start,$perPage ";
+	
+	   if($_GET['cat_id'] == 4){
+		    $query = "SELECT * FROM centers WHERE (city_id='$city_id' AND discount<>0 ) ORDER BY id DESC LIMIT $start,$perPage ";
+	   		$total_query = "SELECT COUNT(id) FROM centers WHERE (city_id='$city_id' AND discount<>0 ) ; ";
+			$this->type_name = 'تمامی مراکز';
+		}else{
+			     $query = "SELECT * FROM centers WHERE (city_id='$city_id' AND discount<>0 AND type_id='$cat_id') ORDER BY id DESC LIMIT $start,$perPage ";
+	   			 $total_query = "SELECT COUNT(id) FROM centers WHERE (city_id='$city_id' AND discount<>0 AND type_id='$cat_id') ; "; 
+		 }
+	   
        $this->result = databasehandler::getAll($query);
 
 		
-		$total_query = "SELECT COUNT(id) FROM centers WHERE (city_id='$city_id' AND discount<>0 AND type_id='$cat_id') ; ";
+		
+		
+		
 		$this->count_rows = databasehandler::getOne($total_query);
 		$counter = ceil($this->count_rows / $perPage);
 		

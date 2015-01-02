@@ -20,7 +20,7 @@
             overflow: hidden;">
             {section name=i loop=$obj->images}
                     <div>
-                        <a u=image href="#"><img src="{$obj->site_address}view/front/images/upload/{$obj->city}/{$obj->images[i].name}.jpg" /></a>
+                        <a u=image href="#"><img src="{$obj->site_address}view/front/images/centers/{$obj->city}/{$obj->images[i].name}" /></a>
                     </div>
              {/section}
                 </div>
