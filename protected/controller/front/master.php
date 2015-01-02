@@ -47,12 +47,22 @@
           if(isset($_GET['page']))
           {
               $this->page = $_GET['page'];
+			  echo $this->page;
           }
-		  if($this->page == 'main' || $this->page == 'product'){
-			 $this->top = 'topContent.tpl'; 
+		  if(!isset($_GET['cat_id']) && !isset($_GET['id'])){
+			 $this->top = 'topContent.tpl';
 			  }
           $this->page .= '.tpl';
          
+		 if(isset($_GET['cat_id']) && isset($_GET['id'])){
+			 $this->page = 'product.tpl'; 
+			 }
+			 
+		if(isset($_GET['cat_id']) && !isset($_GET['id'])){
+			 $this->page = 'productShow.tpl'; 
+			 }
+			 
+		 
 		 #### log ####
 		 $HTTP_USER_AGENT = $_SERVER['HTTP_USER_AGENT'];
 		 $REMOTE_ADDR = $_SERVER['REMOTE_ADDR'];

@@ -75,6 +75,7 @@ jQuery(document).ready(function ($) {
         else
             window.setTimeout(ScaleSlider, 30);
     }
+	 
 
     ScaleSlider();
 

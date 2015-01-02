@@ -2,9 +2,40 @@
   class Product
   {
      public $comments = '';
+	 public $result;
+	 public $city;
+	 public $images,$site_address;
+	 
       function __construct()
       {
+		  ########### define for htaccess #############
+		  $this->site_address = SITE_ADDRESS;
+		  #############################################
 		  
+		  
+		  $this->result = DatabaseHandler::getRow("SELECT * FROM centers WHERE id = '$_GET[id]' ;");
+		  $this->images = DatabaseHandler::getAll("SELECT * FROM images WHERE center_id = '$_GET[id]' ;");  
+			
+			
+			
+		 $this->city = $_GET['city'];
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 		  if(isset($_POST['sub_comment'])){
 			  $date = time();
 				$send_reply_query = "INSERT INTO `comment`(`id`, `text`, `user_id`, `parent_id`, 
