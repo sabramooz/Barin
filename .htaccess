@@ -4,6 +4,6 @@ RewriteRule ^([^/]*)/([^/]*)/$ index.php?user=$1&page=$2
  
 RewriteRule ^([^/]*)/$ index.php?city=$1
 
-RewriteRule ^([^/]*)/([0-9]*)/$ index.php?city=$1&cat_id=$2
+RewriteRule ^([^/]*)/([0-9]*)/([^/]*)/([0-9]*)/$ index.php?city=$1&cat_id=$2&page_title=$3&page_id=$4
 
 RewriteRule ^([^/]*)/([0-9]*)/([0-9]*)/$ index.php?city=$1&cat_id=$2&id=$3

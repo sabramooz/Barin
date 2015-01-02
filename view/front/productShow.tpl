@@ -1,5 +1,5 @@
 {load_presentation_object filename='productShow' assign='obj'}
-<h2 class="text-center"> رفاهی در تهران </h2>
+<h2 class="text-center"> {$obj->type_name} در {$obj->persian_name}</h2>
 		{section name=i loop=$obj->result}
         <div class="col-md-4">
             <div class="content">
