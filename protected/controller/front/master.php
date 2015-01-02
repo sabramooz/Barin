@@ -9,6 +9,7 @@
 	   ,$style
 	   ,$persian_name
 	   ,$site_address
+	   ,$city_name
        ,$userInfo = array() 
       ;
       function __construct()
@@ -61,7 +62,7 @@
 		if(isset($_GET['cat_id']) && !isset($_GET['id'])){
 			 $this->page = 'productShow.tpl'; 
 			 }
-			 
+		$this->city_name = $_GET['city']; 
 		 
 		 #### log ####
 		 $HTTP_USER_AGENT = $_SERVER['HTTP_USER_AGENT'];

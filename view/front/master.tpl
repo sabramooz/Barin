@@ -80,11 +80,11 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="pull-right active"><a href="?page=main">صفحه اصلی <i class="fa fa-home"></i></a></li>
-                    <li class="pull-right "><a href="#">خدمات رفاهی <i class="fa fa-cutlery"></i></a></li>
-                    <li class="pull-right "><a href="#">خدمات پزشکی <i class="fa fa-plus-square"></i></a></li>
-                    <li class="pull-right "><a href="#">خدمات خرید کالا <i class="fa fa-shopping-cart"></i></a></li>
-                    <li class="pull-right "><a href="#">سفارش برین کارت <i class="fa fa-credit-card"></i></a></li>
+                    <li class="pull-right active"><a href="{$obj->site_address}">صفحه اصلی <i class="fa fa-home"></i></a></li>
+                    <li class="pull-right "><a href="{$obj->site_address}{$obj->city_name}/1/page/1/">خدمات رفاهی <i class="fa fa-cutlery"></i></a></li>
+                    <li class="pull-right "><a href="{$obj->site_address}{$obj->city_name}/2/page/1/">خدمات پزشکی <i class="fa fa-plus-square"></i></a></li>
+                    <li class="pull-right "><a href="{$obj->site_address}{$obj->city_name}/3/page/1/">خدمات خرید کالا <i class="fa fa-shopping-cart"></i></a></li>
+                    <li class="pull-right "><a href="{$obj->site_address}user/buy/">سفارش برین کارت <i class="fa fa-credit-card"></i></a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->

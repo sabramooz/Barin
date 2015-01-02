@@ -16,3 +16,8 @@
 		{/section} 
         <div class="clearfix"></div> 
 </div>
+<div class="text-center">
+{if !empty($obj->output)}
+	{$obj->output}
+{/if}
+</div>
