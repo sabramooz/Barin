@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>برین کارت</title>
+    <link rel="icon" href="{$obj->site_address}favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="{$obj->site_address}view/front/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="{$obj->site_address}view/front/css/custom.css">
     <link rel="stylesheet" type="text/css" href="{$obj->site_address}view/front/css/slider.css">
@@ -136,11 +137,11 @@
                 <h1>درباره برین</h1>
                 <hr>
                 <ul class="list-unstyled">
-                    <li><a href="#">برین کارت چیست؟</a> </li>
+                    <li><a href="{$obj->site_address}user/aboutUs/">برین کارت چیست؟</a> </li>
                     <li><a href="{$obj->site_address}user/contact/">تماس با ما</a> </li>
-                    <li><a href="#">شرایط اخذ نمایندگی</a> </li>
+                    <li><a href="{$obj->site_address}user/agents/">شرایط اخذ نمایندگی</a> </li>
                     <li><a href="#">دانلود لیست کامل مراکز</a> </li>
-                    <li><a href="#">برین در جراید</a> </li>
+                    <li><a href="{$obj->site_address}user/newsletter/">برین در جراید</a> </li>
                     <li><a href="http://forum.barincard.com">تالار گفتمان</a> </li>
                 </ul>
             </div>
