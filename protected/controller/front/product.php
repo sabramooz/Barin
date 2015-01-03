@@ -19,22 +19,7 @@
 			
 			
 		 $this->city = $_GET['city'];
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+	
 			
 		  if(isset($_POST['sub_comment'])){
 			  $date = time();

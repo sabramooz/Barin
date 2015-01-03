@@ -2,7 +2,7 @@
   class ProductShow
   {
 	  	  
-      public $latin_name,$result,$site_address,$persian_name,$type_name,$count_rows;
+      public $latin_name,$result,$site_address,$persian_name,$type_name,$count_rows,$city_name;
 	  public $output ='';
 	  
       function __construct()
@@ -28,24 +28,36 @@
 			
 	
 	   if($_GET['cat_id'] == 4){
-		    $query = "SELECT * FROM centers WHERE (city_id='$city_id' AND discount<>0 ) ORDER BY id DESC LIMIT $start,$perPage ";
+		    $query = "SELECT centers.id AS item_id ,centers.discount,centers.center_name,centers.city_id,centers.type_id,
+								images.id,images.name,images.center_id
+									FROM centers
+										LEFT JOIN images ON centers.id = images.center_id
+			 									WHERE (centers.city_id='$city_id' AND centers.discount<>0 ) ORDER BY images.name DESC LIMIT $start,$perPage ";
+							
 	   		$total_query = "SELECT COUNT(id) FROM centers WHERE (city_id='$city_id' AND discount<>0 ) ; ";
 			$this->type_name = 'تمامی مراکز';
 		}else{
-			     $query = "SELECT * FROM centers WHERE (city_id='$city_id' AND discount<>0 AND type_id='$cat_id') ORDER BY id DESC LIMIT $start,$perPage ";
+			     $query = "SELECT 
+				 centers.id AS item_id ,centers.discount,centers.center_name,centers.city_id,centers.type_id,
+								images.id,images.name,images.center_id
+				  FROM centers
+						LEFT JOIN images ON centers.id = images.center_id
+			 				WHERE (centers.city_id='$city_id' AND centers.discount<>0 AND centers.type_id='$cat_id') ORDER BY images.name DESC LIMIT $start,$perPage ";
+				 
+				 
 	   			 $total_query = "SELECT COUNT(id) FROM centers WHERE (city_id='$city_id' AND discount<>0 AND type_id='$cat_id') ; "; 
 		 }
 	   
        $this->result = databasehandler::getAll($query);
 
-		
+		//var_dump($this->result);
 		
 		
 		
 		$this->count_rows = databasehandler::getOne($total_query);
 		$counter = ceil($this->count_rows / $perPage);
 		
-		
+		$this->city = $_GET['city'];
 		$city = $_GET['city'];
 		$cat_id = $_GET['cat_id'];
 		

@@ -61,7 +61,7 @@
             <hr>
             <p>شماره مدیر: {$obj->result.mobile}</p>
             <hr>
-            <p>شماره مدیر: {$obj->result.website}</p>
+            <p>وب سایت: {$obj->result.website}</p>
         </div>
     </div>
     <hr>
