@@ -1,0 +1,26 @@
+{load_presentation_object filename='rss' assign='obj'}
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:sy="http://purl.org/rss/1.0/modules/syndication/">
+<channel>
+<title>برین کارت</title>
+<link>http://www.pontikis.net</link>
+<description>مراکز طرف قرارداد</description>
+<pubDate>Sun, 21 Dec 2014 09:32:31 UTC</pubDate>
+<category></category>
+<language>en</language>
+<item>
+<title>sdsd</title>
+<link>#</link>
+<description>سیسی</description>
+<category>ds</category>
+</item>
+<item>
+<title>sdsd</title>
+<link>#</link>
+<description></description>
+<category>ds</category>
+</item>
+</channel></rss>
