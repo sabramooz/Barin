@@ -232,6 +232,9 @@ footer{
     transition: all .5s;
 
 }
+.content img{
+	min-height:200px;
+	}
 .content:hover{
     border: solid 1px #66afe9;
     box-shadow: 0 0 20px #ccc;
