@@ -13,7 +13,7 @@
 		  #############################################
 		  
 		  
-		  $this->result = DatabaseHandler::getRow("SELECT * FROM centers WHERE id = '$_GET[id]' ;");
+		  $this->result = DatabaseHandler::getRow("SELECT * FROM centers WHERE id = '$_GET[id]';");
 		  $this->images = DatabaseHandler::getAll("SELECT * FROM images WHERE center_id = '$_GET[id]' ;");  
 			
 			

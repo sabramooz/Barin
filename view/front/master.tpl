@@ -35,7 +35,7 @@
             </ul>
         </div>
         <div class="col-md-6 col-xs-5 search">
-        	<ul class="nav navbar-nav pull-right visible-lg"><li class="active"><a href="callto:09123456789"><i class="fa fa-phone"></i>09123456789</a></li></ul>
+        	<ul class="nav navbar-nav pull-right visible-lg"><li class="active"><a href="callto:09123456789"><i class="fa fa-phone"></i> 88759591 </a></li></ul>
             <div class="input-group">
                 <input type="text" class="form-control" dir="rtl" placeholder="جستجو...">
                 <span class="input-group-btn">
@@ -80,7 +80,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="pull-right active"><a href="{$obj->site_address}">صفحه اصلی <i class="fa fa-home"></i></a></li>
+                    <li class="pull-right active"><a href="{$obj->site_address}{$obj->city_name}/">صفحه اصلی <i class="fa fa-home"></i></a></li>
                     <li class="pull-right "><a href="{$obj->site_address}{$obj->city_name}/1/page/1/">خدمات رفاهی <i class="fa fa-cutlery"></i></a></li>
                     <li class="pull-right "><a href="{$obj->site_address}{$obj->city_name}/2/page/1/">خدمات پزشکی <i class="fa fa-plus-square"></i></a></li>
                     <li class="pull-right "><a href="{$obj->site_address}{$obj->city_name}/3/page/1/">خدمات خرید کالا <i class="fa fa-shopping-cart"></i></a></li>
@@ -137,10 +137,11 @@
                 <hr>
                 <ul class="list-unstyled">
                     <li><a href="#">برین کارت چیست؟</a> </li>
-                    <li><a href="#">تماس با ما</a> </li>
+                    <li><a href="{$obj->site_address}user/contact/">تماس با ما</a> </li>
                     <li><a href="#">شرایط اخذ نمایندگی</a> </li>
                     <li><a href="#">دانلود لیست کامل مراکز</a> </li>
                     <li><a href="#">برین در جراید</a> </li>
+                    <li><a href="http://forum.barincard.com">تالار گفتمان</a> </li>
                 </ul>
             </div>
             <div class="col-md-4 text-center">

@@ -32,7 +32,9 @@
 								images.id,images.name,images.center_id
 									FROM centers
 										LEFT JOIN images ON centers.id = images.center_id
-			 									WHERE (centers.city_id='$city_id' AND centers.discount<>0 ) ORDER BY images.name DESC LIMIT $start,$perPage ";
+			 									WHERE (centers.city_id='$city_id' AND centers.discount<>0 )
+												 GROUP BY (centers.id)
+												 ORDER BY images.name DESC LIMIT $start,$perPage ";
 							
 	   		$total_query = "SELECT COUNT(id) FROM centers WHERE (city_id='$city_id' AND discount<>0 ) ; ";
 			$this->type_name = 'تمامی مراکز';
@@ -42,7 +44,9 @@
 								images.id,images.name,images.center_id
 				  FROM centers
 						LEFT JOIN images ON centers.id = images.center_id
-			 				WHERE (centers.city_id='$city_id' AND centers.discount<>0 AND centers.type_id='$cat_id') ORDER BY images.name DESC LIMIT $start,$perPage ";
+			 				WHERE (centers.city_id='$city_id' AND centers.discount<>0 AND centers.type_id='$cat_id')
+							 GROUP BY (centers.id)
+							 ORDER BY images.name DESC LIMIT $start,$perPage ";
 				 
 				 
 	   			 $total_query = "SELECT COUNT(id) FROM centers WHERE (city_id='$city_id' AND discount<>0 AND type_id='$cat_id') ; "; 
