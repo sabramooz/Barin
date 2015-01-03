@@ -3,14 +3,14 @@
 		{section name=i loop=$obj->result}
         <div class="col-md-4">
             <div class="content">
-                <img src="{if $obj->result[i].image}
-                			{$obj->site_address}view/front/images/{$obj->result[i].image}
-                           {else}
-                            {$obj->site_address}view/front/images/logo.jpg
-                           {/if}" class="img-responsive">
+                {if $obj->result[i].name}
+                			<img src="{$obj->site_address}view/front/images/centers/{$obj->city}/{$obj->result[i].name}" class="img-responsive">
+                {else}
+                            <img src="{$obj->site_address}view/front/images/no_image.jpg" class="img-responsive">
+                 {/if}
                 <h4 class="text-right">{$obj->result[i].center_name}</h4>
                 <p class="price" dir="rtl">{$obj->result[i].discount} درصد تخفیف</p>
-                <a href="{$obj->site_address}{$obj->latin_name}/{$obj->result[i].type_id}/{$obj->result[i].id}/"> مشاهده </a>
+                <a href="{$obj->site_address}{$obj->latin_name}/{$obj->result[i].type_id}/{$obj->result[i].item_id}/"> مشاهده </a>
             </div>
         </div>
 		{/section} 
@@ -21,9 +21,14 @@
         {section name=i loop=$obj->refahi}
         <div class="col-md-4">
             <div class="content">
-                <img src="{$obj->site_address}view/front/images/logo.jpg" class="img-responsive">
+                {if $obj->refahi[i].name}
+                			<img src="{$obj->site_address}view/front/images/centers/{$obj->city}/{$obj->refahi[i].name}" class="img-responsive">
+                {else}
+                            <img src="{$obj->site_address}view/front/images/no_image.jpg" class="img-responsive">
+                 {/if}
                 <h4 class="text-right">{$obj->refahi[i].center_name}</h4>
                 <p class="price" dir="rtl">{$obj->refahi[i].discount} درصد تخفیف</p>
+                <a href="{$obj->site_address}{$obj->latin_name}/{$obj->refahi[i].type_id}/{$obj->refahi[i].item_id}/"> مشاهده </a>
             </div>
         </div>
 		{/section}
@@ -34,9 +39,14 @@
         {section name=i loop=$obj->pezeshki}
         <div class="col-md-4">
             <div class="content">
-                <img src="{$obj->site_address}view/front/images/logo.jpg" class="img-responsive">
+                {if $obj->pezeshki[i].name}
+                			<img src="{$obj->site_address}view/front/images/centers/{$obj->city}/{$obj->pezeshki[i].name}" class="img-responsive">
+                {else}
+                            <img src="{$obj->site_address}view/front/images/no_image.jpg" class="img-responsive">
+                 {/if}
                 <h4 class="text-right">{$obj->pezeshki[i].center_name}</h4>
                 <p class="price" dir="rtl">{$obj->pezeshki[i].discount} درصد تخفیف</p>
+                <a href="{$obj->site_address}{$obj->latin_name}/{$obj->pezeshki[i].type_id}/{$obj->pezeshki[i].item_id}/"> مشاهده </a>
             </div>
         </div>
 		{/section}
@@ -44,12 +54,17 @@
         <hr>
         
         <h2 class="text-right">خدمات خرید کالا</h2>
-        {section name=i loop=$obj->kharidkala}
+        {section name=j loop=$obj->kharidkala}
         <div class="col-md-4">
             <div class="content">
-                <img src="{$obj->site_address}view/front/images/logo.jpg" class="img-responsive">
-                <h4 class="text-right">{$obj->kharidkala[i].center_name}</h4>
-                <p class="price" dir="rtl">{$obj->kharidkala[i].discount} درصد تخفیف</p>
+                {if $obj->kharidkala[j].name}
+                			<img src="{$obj->site_address}view/front/images/centers/{$obj->city}/{$obj->kharidkala[j].name}" class="img-responsive">
+                {else}
+                            <img src="{$obj->site_address}view/front/images/no_image.jpg" class="img-responsive">
+                {/if}
+                <h4 class="text-right">{$obj->kharidkala[j].center_name}</h4>
+                <p class="price" dir="rtl">{$obj->kharidkala[j].discount} درصد تخفیف</p>
+                <a href="{$obj->site_address}{$obj->latin_name}/{$obj->kharidkala[j].type_id}/{$obj->kharidkala[j].item_id}/"> مشاهده </a>
             </div>
         </div>
 		{/section}
