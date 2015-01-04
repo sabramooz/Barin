@@ -99,6 +99,7 @@ class rss_feed  {
  
     // connect to database
     $conn = new mysqli($this->db_settings["db_server"], $this->db_settings["db_user"], $this->db_settings["db_passwd"], $this->db_settings["db_name"]);
+	$conn->set_charset('utf8');
  
     // check connection
     if ($conn->connect_error) {
@@ -107,7 +108,7 @@ class rss_feed  {
  
     // create array with topic IDs
     $a_topic_ids = array();
-    $sql = 'SELECT * FROM centers ';
+    $sql = 'SELECT * FROM centers ;';
      // 'WHERE date_published <= ' . "'" . $conn->real_escape_string($rss_date) . "'" .
      // 'AND date_published IS NOT NULL ' .
      // 'ORDER BY date_published DESC ' .
@@ -131,7 +132,7 @@ class rss_feed  {
     foreach($a_topic_ids as $topic_id) {
  
       // get topic properties
-      $sql='SELECT * FROM centers WHERE id=' . $topic_id;
+      $sql=' SELECT * FROM centers WHERE id=' . $topic_id;
       $rs=$conn->query($sql);
  
       if($rs === false) {
