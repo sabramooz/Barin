@@ -319,6 +319,12 @@
 </li>
 
 <li>
+    <a href="?page=log">
+        <i class="fa fa-home"></i> <span>بازدید کاربران</span>
+    </a>
+</li>
+
+<li>
     <a href="#">
         <i class="fa fa-file"></i> <span>مدیریت فرم ها</span>
     </a>
