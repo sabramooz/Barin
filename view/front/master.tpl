@@ -37,7 +37,7 @@
         </div>
         <div class="col-md-6 col-xs-5 search">
         	<ul class="nav navbar-nav pull-right visible-lg"><li class="active"><a href="callto:09123456789"><i class="fa fa-phone"></i> 88759591 </a></li></ul>
-            <div class="input-group">
+            <div class="input-group hidden-xs">
                 <input type="text" class="form-control" dir="rtl" placeholder="جستجو...">
                 <span class="input-group-btn">
                     <button class="btn btn-info" type="button"><i class="fa fa-search"></i></button>
@@ -45,7 +45,9 @@
             </div><!-- /input-group -->
         </div>
     </div>
-    <header class="container-fluid header-top" style="{$obj->style}">
+    <div class="xs-top visible-xs">
+    </div>
+    <header class="container-fluid header-top hidden-xs" style="{$obj->style}">
         <div class="col-md-2 col-xs-6 member pull-right text-right hidden-xs">
             <a href="{$obj->site_address}user/login/">ورود کاربر<span class="fa fa-sign-in"></span></a>
             <a href="{$obj->site_address}user/signup/">ثبت نام کنید<span class="fa fa-user"></span></a>
@@ -86,6 +88,8 @@
                     <li class="pull-right "><a href="{$obj->site_address}{$obj->city_name}/2/page/1/">خدمات پزشکی <i class="fa fa-plus-square"></i></a></li>
                     <li class="pull-right "><a href="{$obj->site_address}{$obj->city_name}/3/page/1/">خدمات خرید کالا <i class="fa fa-shopping-cart"></i></a></li>
                     <li class="pull-right "><a href="{$obj->site_address}user/buy/">سفارش برین کارت <i class="fa fa-credit-card"></i></a></li>
+                    <li class="visible-xs"><a href="{$obj->site_address}user/login/">ورود کاربر <i class="fa fa-sign-in"></i></a></li>
+                    <li class="visible-xs"><a href="{$obj->site_address}user/signup/">ثبت نام <i class="fa fa-user"></i></a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
