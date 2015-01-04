@@ -43,6 +43,9 @@ a{
     width: 100%;
     
 }
+.xs-top{
+	height:50px;	
+}
 .navbar-top ul li ul li{
     text-align: right;
 }
