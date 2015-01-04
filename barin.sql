@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.1.14
+-- version 4.0.4
 -- http://www.phpmyadmin.net
 --
--- Host: 127.0.0.1
--- Generation Time: Jan 03, 2015 at 06:28 PM
--- Server version: 5.6.17
--- PHP Version: 5.5.12
+-- Host: localhost
+-- Generation Time: Jan 04, 2015 at 10:48 AM
+-- Server version: 5.6.12-log
+-- PHP Version: 5.4.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -19,253 +19,286 @@ SET time_zone = "+00:00";
 --
 -- Database: `barin`
 --
+CREATE DATABASE IF NOT EXISTS `barin` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `barin`;
 
 DELIMITER $$
 --
 -- Procedures
 --
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_category_DeleteRow`(IN _id int)
+CREATE PROCEDURE `sp_admins_DeleteRow`(IN _id int)
+BEGIN
+    DELETE FROM `admins` WHERE `id` = _id ;
+END$$
+
+CREATE PROCEDURE `sp_admins_Insert`(IN _first_name varchar(250), IN _last_name varchar(250), IN _melli_code varchar(250), IN _mobile varchar(250), IN _mail varchar(250), IN _password varchar(250), IN _permission int, IN _city_id int)
+BEGIN
+   INSERT INTO `admins`
+   (`first_name` , `last_name` , `melli_code` , `mobile` , `mail` , `password` , `permission` , `city_id` )
+         VALUES(_first_name , _last_name , _melli_code , _mobile , _mail , _password , _permission , _city_id );
+END$$
+
+CREATE PROCEDURE `sp_admins_SelectAll`()
+BEGIN
+    SET NAMES UTF8;
+	SELECT `id`, `first_name`, `last_name`, `melli_code`, `mobile`, `mail`, `password`, `permission`, `city_id` FROM `admins` ;
+END$$
+
+CREATE PROCEDURE `sp_admins_SelectRow`(IN _id int)
+BEGIN
+    SET NAMES UTF8;
+    SELECT `id`, `first_name`, `last_name`, `melli_code`, `mobile`, `mail`, `password`, `permission`, `city_id` FROM `admins` WHERE `id` = _id;
+END$$
+
+CREATE PROCEDURE `sp_admins_UpdateRow`(IN _id int, IN _first_name varchar(250), IN _last_name varchar(250), IN _melli_code varchar(250), IN _mobile varchar(250), IN _mail varchar(250), IN _password varchar(250), IN _permission int, IN _city_id int)
+BEGIN
+   UPDATE `admins`
+   SET `first_name` = _first_name, `last_name` = _last_name, `melli_code` = _melli_code, `mobile` = _mobile, `mail` = _mail, `password` = _password, `permission` = _permission, `city_id` = _city_id 
+        WHERE `id` = _id;
+END$$
+
+CREATE PROCEDURE `sp_category_DeleteRow`(IN _id int)
 BEGIN
     DELETE FROM `category` WHERE `id` = _id ;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_category_Insert`(IN _category_name varchar(250))
+CREATE PROCEDURE `sp_category_Insert`(IN _category_name varchar(250))
 BEGIN
    INSERT INTO `category`
    (`category_name` )
          VALUES(_category_name );
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_category_SelectAll`()
+CREATE PROCEDURE `sp_category_SelectAll`()
 BEGIN
     SET NAMES UTF8;
 	SELECT `id`, `category_name` FROM `category` ;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_category_SelectRow`(IN _id int)
+CREATE PROCEDURE `sp_category_SelectRow`(IN _id int)
 BEGIN
     SET NAMES UTF8;
     SELECT `id`, `category_name` FROM `category` WHERE `id` = _id;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_category_UpdateRow`(IN _id int, IN _category_name varchar(250))
+CREATE PROCEDURE `sp_category_UpdateRow`(IN _id int, IN _category_name varchar(250))
 BEGIN
    UPDATE `category`
    SET `category_name` = _category_name 
         WHERE `id` = _id;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_centers_DeleteRow`(IN _id int)
+CREATE PROCEDURE `sp_centers_DeleteRow`(IN _id int)
 BEGIN
     DELETE FROM `centers` WHERE `id` = _id ;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_centers_Insert`(IN _center_name varchar(250), IN _center_manager varchar(250), IN _discount int, IN _address text, IN _tel varchar(250), IN _mobile varchar(250), IN _website varchar(250), IN _mail varchar(250), IN _type_id int, IN _city_id int, IN _category_id varchar(250), IN _image varchar(250), IN _detail text, IN _left_date bigint, IN _google_map varchar(250), IN _code varchar(250))
+CREATE PROCEDURE `sp_centers_Insert`(IN _center_name varchar(250), IN _center_manager varchar(250), IN _discount int, IN _address text, IN _tel varchar(250), IN _mobile varchar(250), IN _website varchar(250), IN _mail varchar(250), IN _type_id int, IN _city_id int, IN _category_id varchar(250), IN _image varchar(250), IN _detail text, IN _left_date bigint, IN _google_map varchar(250), IN _code varchar(250))
 BEGIN
    INSERT INTO `centers`
    (`center_name` , `center_manager` , `discount` , `address` , `tel` , `mobile` , `website` , `mail` , `type_id` , `city_id` , `category_id` , `image` , `detail` , `left_date` , `google_map` , `code` )
          VALUES(_center_name , _center_manager , _discount , _address , _tel , _mobile , _website , _mail , _type_id , _city_id , _category_id , _image , _detail , _left_date , _google_map , _code );
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_centers_SelectAll`()
+CREATE PROCEDURE `sp_centers_SelectAll`()
 BEGIN
     SET NAMES UTF8;
 	SELECT `id`, `center_name`, `center_manager`, `discount`, `address`, `tel`, `mobile`, `website`, `mail`, `type_id`, `city_id`, `category_id`, `image`, `detail`, `left_date`, `google_map`, `code` FROM `centers` ;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_centers_SelectRow`(IN _id int)
+CREATE PROCEDURE `sp_centers_SelectRow`(IN _id int)
 BEGIN
     SET NAMES UTF8;
     SELECT `id`, `center_name`, `center_manager`, `discount`, `address`, `tel`, `mobile`, `website`, `mail`, `type_id`, `city_id`, `category_id`, `image`, `detail`, `left_date`, `google_map`, `code` FROM `centers` WHERE `id` = _id;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_centers_UpdateRow`(IN _id int, IN _center_name varchar(250), IN _center_manager varchar(250), IN _discount int, IN _address text, IN _tel varchar(250), IN _mobile varchar(250), IN _website varchar(250), IN _mail varchar(250), IN _type_id int, IN _city_id int, IN _category_id varchar(250), IN _image varchar(250), IN _detail text, IN _left_date bigint, IN _google_map varchar(250), IN _code varchar(250))
+CREATE PROCEDURE `sp_centers_UpdateRow`(IN _id int, IN _center_name varchar(250), IN _center_manager varchar(250), IN _discount int, IN _address text, IN _tel varchar(250), IN _mobile varchar(250), IN _website varchar(250), IN _mail varchar(250), IN _type_id int, IN _city_id int, IN _category_id varchar(250), IN _image varchar(250), IN _detail text, IN _left_date bigint, IN _google_map varchar(250), IN _code varchar(250))
 BEGIN
    UPDATE `centers`
    SET `center_name` = _center_name, `center_manager` = _center_manager, `discount` = _discount, `address` = _address, `tel` = _tel, `mobile` = _mobile, `website` = _website, `mail` = _mail, `type_id` = _type_id, `city_id` = _city_id, `category_id` = _category_id, `image` = _image, `detail` = _detail, `left_date` = _left_date, `google_map` = _google_map, `code` = _code 
         WHERE `id` = _id;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_city_DeleteRow`(IN _id int)
+CREATE PROCEDURE `sp_city_DeleteRow`(IN _id int)
 BEGIN
     DELETE FROM `city` WHERE `id` = _id ;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_city_Insert`(IN _persian_name varchar(250), IN _latin_name varchar(250), IN _admin_id int)
+CREATE PROCEDURE `sp_city_Insert`(IN _persian_name varchar(250), IN _latin_name varchar(250), IN _admin_id int)
 BEGIN
    INSERT INTO `city`
    (`persian_name` , `latin_name` , `admin_id` )
          VALUES(_persian_name , _latin_name , _admin_id );
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_city_SelectAll`()
+CREATE PROCEDURE `sp_city_SelectAll`()
 BEGIN
     SET NAMES UTF8;
 	SELECT `id`, `persian_name`, `latin_name`, `admin_id` FROM `city` ;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_city_SelectRow`(IN _id int)
+CREATE PROCEDURE `sp_city_SelectRow`(IN _id int)
 BEGIN
     SET NAMES UTF8;
     SELECT `id`, `persian_name`, `latin_name`, `admin_id` FROM `city` WHERE `id` = _id;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_city_UpdateRow`(IN _id int, IN _persian_name varchar(250), IN _latin_name varchar(250), IN _admin_id int)
+CREATE PROCEDURE `sp_city_UpdateRow`(IN _id int, IN _persian_name varchar(250), IN _latin_name varchar(250), IN _admin_id int)
 BEGIN
    UPDATE `city`
    SET `persian_name` = _persian_name, `latin_name` = _latin_name, `admin_id` = _admin_id 
         WHERE `id` = _id;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_forms_DeleteRow`(IN _id int)
+CREATE PROCEDURE `sp_forms_DeleteRow`(IN _id int)
 BEGIN
     DELETE FROM `forms` WHERE `id` = _id ;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_forms_Insert`(IN _latin_name varchar(250), IN _persian_name varchar(250), IN _activate tinyint)
+CREATE PROCEDURE `sp_forms_Insert`(IN _latin_name varchar(250), IN _persian_name varchar(250), IN _activate tinyint)
 BEGIN
    INSERT INTO `forms`
    (`latin_name` , `persian_name` , `activate` )
          VALUES(_latin_name , _persian_name , _activate );
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_forms_SelectAll`()
+CREATE PROCEDURE `sp_forms_SelectAll`()
 BEGIN
     SET NAMES UTF8;
 	SELECT `id`, `latin_name`, `persian_name`, `activate` FROM `forms` ;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_forms_SelectAllWhereActivate`()
+CREATE PROCEDURE `sp_forms_SelectAllWhereActivate`()
 BEGIN
     SET NAMES UTF8;
 	SELECT `id`, `latin_name`, `persian_name`, `activate` FROM `forms` WHERE `activate`=1  ;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_forms_SelectRow`(IN _id int)
+CREATE PROCEDURE `sp_forms_SelectRow`(IN _id int)
 BEGIN
     SET NAMES UTF8;
     SELECT `id`, `latin_name`, `persian_name`, `activate` FROM `forms` WHERE `id` = _id;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_forms_SelectRowByLatinName`(IN _latin_name VARCHAR(250))
+CREATE PROCEDURE `sp_forms_SelectRowByLatinName`(IN _latin_name VARCHAR(250))
 BEGIN
     SET NAMES UTF8;
     SELECT `id`, `latin_name`, `persian_name`, `activate` FROM `forms` WHERE `latin_name` = _latin_name;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_forms_UpdateActivate`(IN _id int, IN _activate tinyint)
+CREATE PROCEDURE `sp_forms_UpdateActivate`(IN _id int, IN _activate tinyint)
 BEGIN
    UPDATE `forms`
    SET  `activate` = _activate 
         WHERE `id` = _id;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_forms_UpdateRow`(IN _id int, IN _latin_name varchar(250), IN _persian_name varchar(250), IN _activate tinyint)
+CREATE PROCEDURE `sp_forms_UpdateRow`(IN _id int, IN _latin_name varchar(250), IN _persian_name varchar(250), IN _activate tinyint)
 BEGIN
    UPDATE `forms`
    SET `latin_name` = _latin_name, `persian_name` = _persian_name, `activate` = _activate 
         WHERE `id` = _id;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_form_content_DeleteRow`(IN _id int)
+CREATE PROCEDURE `sp_form_content_DeleteRow`(IN _id int)
 BEGIN
     DELETE FROM `form_content` WHERE `id` = _id ;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_form_content_Insert`(IN _name varchar(250), IN _label varchar(250), IN _text tinyint, IN _textarea tinyint, IN _forms_id int)
+CREATE PROCEDURE `sp_form_content_Insert`(IN _name varchar(250), IN _label varchar(250), IN _text tinyint, IN _textarea tinyint, IN _forms_id int)
 BEGIN
    INSERT INTO `form_content`
    (`name` , `label` , `text` , `textarea` , `forms_id` )
          VALUES(_name , _label , _text , _textarea , _forms_id );
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_form_content_SelectAll`()
+CREATE PROCEDURE `sp_form_content_SelectAll`()
 BEGIN
     SET NAMES UTF8;
 	SELECT `id`, `name`, `label`, `text`, `textarea`, `forms_id` FROM `form_content` ;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_form_content_SelectRow`(IN _id int)
+CREATE PROCEDURE `sp_form_content_SelectRow`(IN _id int)
 BEGIN
     SET NAMES UTF8;
     SELECT `id`, `name`, `label`, `text`, `textarea`, `forms_id` FROM `form_content` WHERE `id` = _id;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_form_content_SelectRowByFormId`(IN _forms_id int)
+CREATE PROCEDURE `sp_form_content_SelectRowByFormId`(IN _forms_id int)
 BEGIN
     SET NAMES UTF8;
     SELECT `id`, `name`, `label`, `text`, `textarea`, `forms_id` FROM `form_content` WHERE `forms_id` = _forms_id;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_form_content_UpdateRow`(IN _id int, IN _name varchar(250), IN _label varchar(250), IN _text tinyint, IN _textarea tinyint, IN _forms_id int)
+CREATE PROCEDURE `sp_form_content_UpdateRow`(IN _id int, IN _name varchar(250), IN _label varchar(250), IN _text tinyint, IN _textarea tinyint, IN _forms_id int)
 BEGIN
    UPDATE `form_content`
    SET `name` = _name, `label` = _label, `text` = _text, `textarea` = _textarea, `forms_id` = _forms_id 
         WHERE `id` = _id;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_log_DeleteRow`(IN _id int)
+CREATE PROCEDURE `sp_log_DeleteRow`(IN _id int)
 BEGIN
     DELETE FROM `log` WHERE `id` = _id ;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_log_Insert`(IN _HTTP_USER_AGENT varchar(255), IN _REMOTE_ADDR varchar(255), IN _QUERY_STRING varchar(255), IN _REQUEST_URI varchar(255), IN _REQUEST_TIME bigint, IN _CITY int)
+CREATE PROCEDURE `sp_log_Insert`(IN _HTTP_USER_AGENT varchar(255), IN _REMOTE_ADDR varchar(255), IN _QUERY_STRING varchar(255), IN _REQUEST_URI varchar(255), IN _REQUEST_TIME bigint, IN _CITY int)
 BEGIN
    INSERT INTO `log`
    (`HTTP_USER_AGENT` , `REMOTE_ADDR` , `QUERY_STRING` , `REQUEST_URI` , `REQUEST_TIME` , `CITY` )
          VALUES(_HTTP_USER_AGENT , _REMOTE_ADDR , _QUERY_STRING , _REQUEST_URI , _REQUEST_TIME , _CITY );
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_log_SelectAll`()
+CREATE PROCEDURE `sp_log_SelectAll`()
 BEGIN
     SET NAMES UTF8;
 	SELECT `id`, `HTTP_USER_AGENT`, `REMOTE_ADDR`, `QUERY_STRING`, `REQUEST_URI`, `REQUEST_TIME`, `CITY` FROM `log` ;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_log_SelectRow`(IN _id int)
+CREATE PROCEDURE `sp_log_SelectRow`(IN _id int)
 BEGIN
     SET NAMES UTF8;
     SELECT `id`, `HTTP_USER_AGENT`, `REMOTE_ADDR`, `QUERY_STRING`, `REQUEST_URI`, `REQUEST_TIME`, `CITY` FROM `log` WHERE `id` = _id;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_log_SelectSomeRows`(IN _count int)
+CREATE PROCEDURE `sp_log_SelectSomeRows`(IN _count int)
 BEGIN
     SET NAMES UTF8;
     SELECT `id`, `HTTP_USER_AGENT`, `REMOTE_ADDR`, `QUERY_STRING`, `REQUEST_URI`, `REQUEST_TIME`, `CITY` FROM `log` LIMIT _count;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_log_UpdateRow`(IN _id int, IN _HTTP_USER_AGENT varchar(255), IN _REMOTE_ADDR varchar(255), IN _QUERY_STRING varchar(255), IN _REQUEST_URI varchar(255), IN _REQUEST_TIME bigint, IN _CITY int)
+CREATE PROCEDURE `sp_log_UpdateRow`(IN _id int, IN _HTTP_USER_AGENT varchar(255), IN _REMOTE_ADDR varchar(255), IN _QUERY_STRING varchar(255), IN _REQUEST_URI varchar(255), IN _REQUEST_TIME bigint, IN _CITY int)
 BEGIN
    UPDATE `log`
    SET `HTTP_USER_AGENT` = _HTTP_USER_AGENT, `REMOTE_ADDR` = _REMOTE_ADDR, `QUERY_STRING` = _QUERY_STRING, `REQUEST_URI` = _REQUEST_URI, `REQUEST_TIME` = _REQUEST_TIME, `CITY` = _CITY 
         WHERE `id` = _id;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_types_DeleteRow`(IN _id int)
+CREATE PROCEDURE `sp_types_DeleteRow`(IN _id int)
 BEGIN
     DELETE FROM `types` WHERE `id` = _id ;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_types_Insert`(IN _name varchar(250))
+CREATE PROCEDURE `sp_types_Insert`(IN _name varchar(250))
 BEGIN
    INSERT INTO `types`
    (`name` )
          VALUES(_name );
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_types_SelectAll`()
+CREATE PROCEDURE `sp_types_SelectAll`()
 BEGIN
     SET NAMES UTF8;
 	SELECT `id`, `name` FROM `types` ;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_types_SelectRow`(IN _id int)
+CREATE PROCEDURE `sp_types_SelectRow`(IN _id int)
 BEGIN
     SET NAMES UTF8;
     SELECT `id`, `name` FROM `types` WHERE `id` = _id;
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_types_UpdateRow`(IN _id int, IN _name varchar(250))
+CREATE PROCEDURE `sp_types_UpdateRow`(IN _id int, IN _name varchar(250))
 BEGIN
    UPDATE `types`
    SET `name` = _name 
@@ -291,7 +324,44 @@ CREATE TABLE IF NOT EXISTS `admins` (
   `permission` int(11) NOT NULL,
   `city_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=32 ;
+
+--
+-- Dumping data for table `admins`
+--
+
+INSERT INTO `admins` (`id`, `first_name`, `last_name`, `melli_code`, `mobile`, `mail`, `password`, `permission`, `city_id`) VALUES
+(1, '', '', '', '', '', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 0, 1),
+(2, '', '', '', '', '', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 0, 2),
+(3, '', '', '', '', '', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 0, 3),
+(4, '', '', '', '', '', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 0, 4),
+(5, '', '', '', '', '', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 0, 5),
+(6, '', '', '', '', '', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 0, 6),
+(7, '', '', '', '', '', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 0, 7),
+(8, '', 'بابایی', '', '', 'info@barincard.ir', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 1, 8),
+(9, '', '', '', '', '', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 0, 9),
+(10, '', '', '', '', '', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 0, 10),
+(11, '', '', '', '', '', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 0, 11),
+(12, '', '', '', '', '', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 0, 12),
+(13, '', '', '', '', '', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 0, 13),
+(14, '', '', '', '', '', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 0, 14),
+(15, '', '', '', '', '', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 0, 15),
+(16, '', '', '', '', '', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 0, 16),
+(17, '', '', '', '', '', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 0, 17),
+(18, '', '', '', '', '', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 0, 18),
+(19, '', '', '', '', '', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 0, 19),
+(20, '', '', '', '', '', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 0, 20),
+(21, '', '', '', '', '', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 0, 21),
+(22, '', '', '', '', '', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 0, 22),
+(23, '', '', '', '', '', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 0, 23),
+(24, '', '', '', '', '', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 0, 24),
+(25, '', '', '', '', '', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 0, 25),
+(26, '', '', '', '', '', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 0, 26),
+(27, '', '', '', '', '', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 0, 27),
+(28, '', '', '', '', '', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 0, 28),
+(29, '', '', '', '', '', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 0, 29),
+(30, '', '', '', '', '', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 0, 30),
+(31, '', '', '', '', '', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', 0, 31);
 
 -- --------------------------------------------------------
 
@@ -346,7 +416,7 @@ CREATE TABLE IF NOT EXISTS `centers` (
   `google_map` varchar(250) NOT NULL,
   `code` varchar(250) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1321 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1322 ;
 
 --
 -- Dumping data for table `centers`
@@ -1683,7 +1753,8 @@ INSERT INTO `centers` (`id`, `center_name`, `center_manager`, `discount`, `addre
 (1317, 'عینک بی نظیر', 'سید عباس رقم خوان', 15, 'آزاد شهر-بین فلکه اول و دوم', '37217690', '09131524533', '', '', 3, 31, '', '1612/930922', '<p>ساخت&nbsp;&nbsp;عینک شنا&nbsp;، آفتابی و ورزشی با نمره چشم - ساخت عدسی های تدریجی و ذودید- ستر آرایشی، طبی و طبی رنگی 10% الی 15% تخفیف</p>\r\n<p>لنز و عدسی 10% تخفیف-عینک 15% تخفیف-</p>\r\n<p>شعبه مرکزی: یزد-خیابان دهم فروردین -انتهای کوچه روشن</p>\r\n<p>تلفن:03536263802</p>\r\n<p>همراه:09133568406</p>  ', 0, '', '1612930922'),
 (1318, 'پخش مواد غذایی 121', 'عباسعلی مومنی', 3, 'بلوار دهه فجر-بلوار علامه جعفری', '36204282', '09131519362', '', '', 3, 31, '', '1612/930923', 'عمده&nbsp;فروشی،&nbsp;خرده&nbsp;فروشی&nbsp;به&nbsp;قیمت&nbsp;عمده&nbsp;با 3%&nbsp;تخفیف  ', 0, '', '1612930923'),
 (1319, 'فروشگاه موسقی آپادانا', 'امیر میرزایی', 20, 'میدان آزادی-ابتدای بلوار طالقانی-روبروی مجتمع ستاره', '37268765', '09139515480', '', 'Amirmirzaei54@yahoo.com', 3, 31, '', '1612/930924', '<p>کلیه&nbsp;آلات&nbsp;موسقی 10%&nbsp;تخفیف&nbsp;به&nbsp;صورت&nbsp;نقدی، کمتر&nbsp;از 500000&nbsp;تومان&nbsp;در&nbsp;دو&nbsp;قسط</p>\r\n<p>بیشتر&nbsp;از 500000&nbsp;در&nbsp;چهار&nbsp;قسط</p>\r\n<p>تدریس&nbsp;خصوصی&nbsp;تار،&nbsp;ستار،&nbsp;تنپک&nbsp;و&nbsp;سنتور&nbsp;با 20%&nbsp;تخفبف&nbsp;</p>  ', 0, '', '1612930924'),
-(1320, 'صافکاری و نقاشی امید', 'مهدی آخوندی', 10, 'صفائیه-بلوار جهاد -بین کوچه شماره 5و7', '38267962', '09131540394', 'www.safkariomid.blogfa.com', '', 1, 31, '', '1612/9309225', 'صافکاری و نقاسی، بر رنگ ، شاسی کشی و ...<br>کلیه خدمات با 10% تخفیف  ', 0, '', '16129309225');
+(1320, 'صافکاری و نقاشی امید', 'مهدی آخوندی', 10, 'صفائیه-بلوار جهاد -بین کوچه شماره 5و7', '38267962', '09131540394', 'www.safkariomid.blogfa.com', '', 1, 31, '', '1612/9309225', 'صافکاری و نقاسی، بر رنگ ، شاسی کشی و ...<br>کلیه خدمات با 10% تخفیف  ', 0, '', '16129309225'),
+(1321, '', '', 0, '', '', '', '', '', 1, 8, '1', 'image', '', 1395360000, '', '');
 
 -- --------------------------------------------------------
 
@@ -3030,7 +3101,7 @@ CREATE TABLE IF NOT EXISTS `log` (
   `REQUEST_TIME` bigint(20) NOT NULL,
   `CITY` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=33 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=53 ;
 
 --
 -- Dumping data for table `log`
@@ -3068,7 +3139,27 @@ INSERT INTO `log` (`id`, `HTTP_USER_AGENT`, `REMOTE_ADDR`, `QUERY_STRING`, `REQU
 (29, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '127.0.0.1', 'page=product', '/barin/?page=product', 1420117028, 8),
 (30, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '127.0.0.1', 'page=product', '/barin/?page=product', 1420117104, 8),
 (31, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '127.0.0.1', 'page=product', '/barin/?page=product', 1420117620, 8),
-(32, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '127.0.0.1', 'page=product', '/barin/?page=product', 1420117698, 8);
+(32, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '127.0.0.1', 'page=product', '/barin/?page=product', 1420117698, 8),
+(33, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '::1', '', '/Barin/index.php', 1420293981, 8),
+(34, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '::1', 'city=tehran&cat_id=3&id=480', '/barin/tehran/3/480/', 1420293998, 8),
+(35, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '::1', '', '/barin/', 1420350670, 8),
+(36, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '::1', 'city=tehran&cat_id=1&page_title=page&page_id=1', '/barin/tehran/1/page/1/', 1420350843, 8),
+(37, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '::1', 'city=tehran&cat_id=1&page_title=page&page_id=34', '/barin/tehran/1/page/34/', 1420350853, 8),
+(38, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '::1', 'city=tehran&cat_id=1&page_title=page&page_id=10', '/barin/tehran/1/page/10/', 1420350858, 8),
+(39, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '::1', 'city=tehran&cat_id=1&page_title=page&page_id=14', '/barin/tehran/1/page/14/', 1420350884, 8),
+(40, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '::1', 'city=tehran&cat_id=1&id=340', '/barin/tehran/1/340/', 1420350897, 8),
+(41, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '::1', 'user=user&page=newsletter', '/barin/user/newsletter/', 1420350950, 8),
+(42, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '::1', 'city=tehran&cat_id=1&id=340', '/barin/tehran/1/340/', 1420350952, 8),
+(43, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '::1', 'city=tehran&cat_id=1&id=340', '/barin/tehran/1/340/', 1420350989, 8),
+(44, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '::1', 'user=user&page=contact', '/barin/user/contact/', 1420351021, 8),
+(45, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '::1', 'city=tehran', '/barin/tehran/', 1420351091, 8),
+(46, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '::1', 'city=kordestan', '/barin/kordestan/', 1420351097, 20),
+(47, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '::1', 'city=semnan', '/barin/semnan/', 1420351155, 15),
+(48, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '::1', 'city=semnan&cat_id=1&page_title=page&page_id=1', '/barin/semnan/1/page/1/', 1420351164, 15),
+(49, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '::1', 'city=semnan', '/barin/semnan/', 1420351176, 15),
+(50, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '::1', 'city=semnan&cat_id=1&page_title=page&page_id=1', '/barin/semnan/1/page/1/', 1420351181, 15),
+(51, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '::1', 'city=qazvin', '/barin/qazvin/', 1420351205, 18),
+(52, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0', '::1', 'city=qazvin', '/barin/qazvin/', 1420351368, 18);
 
 -- --------------------------------------------------------
 
