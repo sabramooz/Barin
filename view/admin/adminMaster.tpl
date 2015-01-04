@@ -389,7 +389,7 @@
             <a href="?page=changePass">تغییر رمز عبور</a>
         </li>
         <li>
-            <a href="#">ویرایش اطلاعات شخصی</a>
+            <a href="?page=adminManage">مدیریت ادمین ها</a>
         </li>
     </ul>
 </li>
