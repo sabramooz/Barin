@@ -4,7 +4,9 @@
 	#ini_set('display_errors','1');
 	### smarty config ####
 	
+	//define('SITE_ADDRESS','http://'.$_SERVER['SERVER_NAME'].'/');
   //define('SITE_ADDRESS','http://barincard.com/');
+  ob_start();
   define('SITE_ADDRESS','http://localhost/barin/');	
 
   define('SITE_ROOT', dirname(dirname(dirname(__FILE__))));
@@ -25,7 +27,7 @@
     define('DB_SERVER', 'localhost');
     define('DB_USERNAME', 'root');
     define('DB_PASSWORD', '');
-    define('DB_DATABASE', 'barin');
+    define('DB_DATABASE', 'barincar_barin');
     define('PDO_DSN', 'mysql:host=' . DB_SERVER . ';dbname=' . DB_DATABASE);
 	
 	

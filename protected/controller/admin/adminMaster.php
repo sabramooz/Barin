@@ -3,7 +3,7 @@
   {
       public
         $pageTitle = 'صفحه اصلی'
-       ,$page = 'home' 
+       ,$page = 'log' 
        ,$username = 'قلی' 
         
         ;

@@ -17,10 +17,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `barin`
+-- Database: `barincar_barin`
 --
-CREATE DATABASE IF NOT EXISTS `barin` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `barin`;
+CREATE DATABASE IF NOT EXISTS `barincar_barin` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `barincar_barin`;
 
 DELIMITER $$
 --

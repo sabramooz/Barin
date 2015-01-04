@@ -9,7 +9,7 @@ class Log{
 											INNER JOIN `city` ON log.CITY = city.id
 						 								GROUP BY (`REMOTE_ADDR`)  LIMIT 10 ; " ;
 
-		$this->result = databaseHandler::getAll($query);
+		$this->result = DatabaseHandler::getAll($query);
 		
 		
 		foreach($this->result as $key => $value){

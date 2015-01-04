@@ -1,5 +1,6 @@
 <?php
 session_start();
+ob_start();
 include('protected/configs/config.php');
 if(isset($_POST['submit'])){
 	$login = DatabaseHandler::getRow("SELECT * FROM admins WHERE mail = '$_POST[username]' AND password = SHA1('$_POST[password]') AND permission = '1' ; ");
