@@ -57,7 +57,7 @@
             <a href="{$obj->site_address}user/signup/"><i class="fa fa-user"></i></a>
         </div>
 
-        <div class="col-md-3 col-sm-4 col-xs-6"><a class="brand" href="?main"><img class="img-responsive" src="{$obj->site_address}view/front/images/logo.png"></a></div>
+        <div class="col-md-3 col-sm-4 col-xs-6"><a class="brand" href="{$obj->site_address}{$obj->city_name}/"><img class="img-responsive" src="{$obj->site_address}view/front/images/logo.png"></a></div>
         <div class="clearfix"></div>
 
     </header>
