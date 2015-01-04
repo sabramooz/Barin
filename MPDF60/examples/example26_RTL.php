@@ -2,7 +2,7 @@
 include('../../core/core.php');
 include('../../core/class.DatabaseHandler.php');
 $center = '';
-$query = "SELECT * from `centers` WHERE city_id = '8'LIMIT 100";
+$query = "SELECT * from `centers` WHERE city_id = '8' LIMIT 200";
 $out = DatabaseHandler::GetAll($query);
 
 foreach($out as $row){
@@ -163,9 +163,9 @@ $mpdf->WriteHTML($stylesheet,1);	// The parameter 1 tells that this is css/style
 $mpdf->WriteHTML($html);
 $mpdf->AddPage();
 
-$mpdf->SetColumns(2,'J');
-$mpdf->WriteHTML($html);
-$mpdf->SetColumns(0);
+//$mpdf->SetColumns(2,'J');
+//$mpdf->WriteHTML($html);
+//$mpdf->SetColumns(0);
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

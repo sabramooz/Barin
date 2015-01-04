@@ -30,7 +30,7 @@
                     {/section}
                     </ul>
                 </li>
-                <li class="pull-right hidden-xs"><a href="{$obj->site_address}user/centers/">مراکز طرف قرارداد <i class="fa fa-home"></i></a></li>
+                <li class="pull-right hidden-xs"><a href="{$obj->site_address}{$obj->latin_name}/centers/">مراکز طرف قرارداد <i class="fa fa-home"></i></a></li>
                 <li class="pull-right hidden-xs"><a href="{$obj->site_address}user/contact/">تماس با ما <i class="fa fa-envelope"></i></a></li>
                 
             </ul>
@@ -51,8 +51,8 @@
             <a href="{$obj->site_address}user/signup/">ثبت نام کنید<span class="fa fa-user"></span></a>
         </div>
         <div class="member-xs visible-xs pull-right text-right">
-            <a href="#"><i class="fa fa-sign-in"></i></a>
-            <a href="#"><i class="fa fa-user"></i></a>
+            <a href="{$obj->site_address}user/login/"><i class="fa fa-sign-in"></i></a>
+            <a href="{$obj->site_address}user/signup/"><i class="fa fa-user"></i></a>
         </div>
 
         <div class="col-md-3 col-sm-4 col-xs-6"><a class="brand" href="?main"><img class="img-responsive" src="{$obj->site_address}view/front/images/logo.png"></a></div>
@@ -63,7 +63,7 @@
     <nav class="navbar navbar-default" role="navigation">
         <div class=" social-network text-right">
             <a href="#" class="social-s rss"></a>
-            <a href="#" class="social-s pdf"></a>
+            <a href="{$obj->site_address}pdf.php?city={$obj->city_name}" class="social-s pdf"></a>
         </div>
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -140,7 +140,7 @@
                     <li><a href="{$obj->site_address}user/aboutUs/">برین کارت چیست؟</a> </li>
                     <li><a href="{$obj->site_address}user/contact/">تماس با ما</a> </li>
                     <li><a href="{$obj->site_address}user/agents/">شرایط اخذ نمایندگی</a> </li>
-                    <li><a href="#">دانلود لیست کامل مراکز</a> </li>
+                    <li><a href="{$obj->site_address}pdf.php?city={$obj->city_name}">دانلود لیست کامل مراکز</a> </li>
                     <li><a href="{$obj->site_address}user/newsletter/">برین در جراید</a> </li>
                     <li><a href="http://forum.barincard.com">تالار گفتمان</a> </li>
                 </ul>
