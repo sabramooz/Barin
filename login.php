@@ -39,7 +39,7 @@ if(isset($_POST['submit'])){
     <!-- TODO: Add a favicon -->
     <link rel="shortcut icon" href="assets/images/ico/fab.ico">
 
-    <title>Fickle - Login</title>
+    <title>ورود به صفحه مدیریت</title>
 
     <!--Page loading plugin Start -->
     <link rel="stylesheet" href="view/admin/css/rtl-css/plugins/pace-rtl.css">
