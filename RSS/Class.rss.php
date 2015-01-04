@@ -108,7 +108,7 @@ class rss_feed  {
  
     // create array with topic IDs
     $a_topic_ids = array();
-    $sql = 'SELECT * FROM centers ;';
+    $sql = 'SELECT * FROM centers limit 10;';
      // 'WHERE date_published <= ' . "'" . $conn->real_escape_string($rss_date) . "'" .
      // 'AND date_published IS NOT NULL ' .
      // 'ORDER BY date_published DESC ' .
@@ -149,7 +149,7 @@ class rss_feed  {
       //$a_rss_item['link'] = $this->site_url . '/' . $topic['url'];
  
       // description
-      $a_rss_item['description'] = $topic['detail'];
+      $a_rss_item['description'] = str_replace('<br>',' ',str_replace('&nbsp;',' ',$topic['detail']));
  
       /*if($topic['image']) {
         $img_url = $this->site_url . $topic['image'];
