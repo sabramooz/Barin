@@ -4,7 +4,7 @@
 	#ini_set('display_errors','1');
 	### smarty config ####
 	
-	//define('SITE_ADDRESS','http://'.$_SERVER['SERVER_NAME'].'/');
+  //define('SITE_ADDRESS','http://'.$_SERVER['SERVER_NAME'].'/');
   //define('SITE_ADDRESS','http://barincard.com/');
   ob_start();
   define('SITE_ADDRESS','http://localhost/barin/');	

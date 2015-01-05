@@ -5,7 +5,7 @@
     <h3 class="panel-title">تغییر رمز عبور</h3>
   </div>
   <div class="panel-body signup">
-
+	{$obj->error}
 	<form method="post" role="form" class="form-horizontal">
 			<div class="form-group">
             	<label class="col-sm-2 col-xs-12  control-label" for="password">
@@ -26,7 +26,7 @@
             	<label class="col-sm-2 col-xs-12  control-label " for="renew_password">
                 <span class="glyphicon glyphicon-asterisk optional"></span>تکرار رمز عبور جدید : </label>
             	<div class="col-sm-4 col-md-3 col-xs-12 ">
-            		<input type="password" name="discount" tabindex="2" class="form-control">
+            		<input type="password" name="re_new_password" tabindex="2" class="form-control">
             	</div>
             </div>
             
