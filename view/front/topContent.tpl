@@ -27,9 +27,6 @@
                     <div>
                         <a u=image href="#"><img src="{$obj->site_address}view/front/images/3.jpg" /></a>
                     </div>
-                    <div>
-                        <a u=image href="#"><img src="{$obj->site_address}view/front/images/4.jpg" /></a>
-                    </div>
                 </div>
                 <!-- bullet navigator container -->
                 <div u="navigator" class="jssorb13" style="position: absolute; bottom: 16px; right: 6px;">
@@ -45,9 +42,11 @@
             <div class="text-center">
                 <br>
                 <h2 class="text-center">پیشنهاد ویژه <i class="fa fa-bullhorn"></i></h2>
-                <h3 class="text-center">پذیرایی ویژه در رستوران لوکس طهرانی</h3>
-                <p class="description">پذیرایی لوکس در رستوران شیک لوکس طهرانی با منوی باز با 50% تخفیف و پرداخت تنها 10,000 تومان به جای 20,000 تومان</p>
-                <a class="off text-center">50%<p>تخفیف</p></a>
+                <h3 class="text-center">خدمات ویژه در استخر شهربانو</h3>
+                <p class="description">
+               			تلفن هماهنگی : 55460120
+                </p>
+                <a class="off text-center">40%<p>تخفیف</p></a>
                 <div class="time-remain text-center">
                     <h5>زمان باقی مانده</h5>
                     <p class="digital" id="defaultCountdown" dir="rtl"></p>
