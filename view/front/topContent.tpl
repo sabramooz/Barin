@@ -27,9 +27,6 @@
                     <div>
                         <a u=image href="#"><img src="{$obj->site_address}view/front/images/3.jpg" /></a>
                     </div>
-                    <div>
-                        <a u=image href="#"><img src="{$obj->site_address}view/front/images/4.jpg" /></a>
-                    </div>
                 </div>
                 <!-- bullet navigator container -->
                 <div u="navigator" class="jssorb13" style="position: absolute; bottom: 16px; right: 6px;">
