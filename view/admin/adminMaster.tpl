@@ -86,197 +86,13 @@
 <!--Top Navigation Start-->
 
 <ul>
-    <li class="dropdown">
-        <!--All task drop down start-->
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-            <span class="fa fa-tasks"></span>
-            <span class="badge badge-lightBlue">3</span>
-        </a>
-        <div class="dropdown-menu right top-dropDown-1">
-            <h4>All Task</h4>
-            <ul class="goal-item">
-                <li>
-                    <a href="#">
-                        <div class="goal-user-image">
-                            <img class="rounded" src="view/admin/images/userimage/avatar3-80.png" alt="user image" />
-                        </div>
-                        <div class="goal-content">
-                            تم اصلی
-                            <div class="progress progress-striped active">
-                                <div class="progress-bar ls-light-blue-progress six-sec-ease-in-out" aria-valuetransitiongoal="100"></div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="goal-user-image">
-                            <img class="rounded" src="view/admin/images/userimage/avatar2-80.png" alt="user image" />
-                        </div>
-                        <div class="goal-content">
-                            گرافیک
-                            <div class="progress progress-striped active">
-                                <div class="progress-bar ls-red-progress six-sec-ease-in-out" aria-valuetransitiongoal="40"></div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="goal-user-image">
-                            <img class="rounded" src="view/admin/images/userimage/avatar1-80.png" alt="user image" />
-                        </div>
-                        <div class="goal-content">
-                            پلاگین
-                            <div class="progress progress-striped active">
-                                <div class="progress-bar ls-light-green-progress six-sec-ease-in-out" aria-valuetransitiongoal="60"></div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li class="only-link">
-                    <a href="#">همه</a>
-                </li>
-            </ul>
-        </div>
-        <!--All task drop down end-->
-    </li>
-    <li class="dropdown">
-        <!--Notification drop down start-->
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-            <span class="fa fa-bell-o"></span>
-            <span class="badge badge-red">6</span>
-        </a>
-
-        <div class="dropdown-menu right top-notification">
-            <h4>نوتیفیکیشن</h4>
-            <ul class="ls-feed">
-                <li>
-                    <a href="#">
-                                        <span class="label label-red">
-                                            <i class="fa fa-check white"></i>
-                                        </span>
-                        4 برنامه پندینگ
-                        <span class="date">Just now</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                                        <span class="label label-light-green">
-                                            <i class="fa fa-bar-chart-o"></i>
-                                        </span>
-                        گزارش 1392
-                        <span class="date">30 min</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                                        <span class="label label-lightBlue">
-                                            <i class="fa fa-shopping-cart"></i>
-                                        </span>
-                        سفارش جدید
-                        <span class="date">45 min</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                                        <span class="label label-lightBlue">
-                                            <i class="fa fa-user"></i>
-                                        </span>
-                        5 عضو جدید
-                        <span class="date">50 min</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                                        <span class="label label-red">
-                                            <i class="fa fa-bell"></i>
-                                        </span>
-                        سخت افزار سرور
-                        <span class="date">1 hr</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                                        <span class="label label-blue">
-                                            <i class="fa fa-briefcase"></i>
-                                        </span>
-                        گزارش ها
-                        <span class="lightGreen">2014</span>
-                        <span class="date">5 hrs</span>
-                    </a>
-                </li>
-                <li class="only-link">
-                    <a href="#">همه</a>
-                </li>
-            </ul>
-        </div>
-        <!--Notification drop down end-->
-    </li>
-    <li class="dropdown">
-        <!--Email drop down start-->
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-            <span class="fa fa-envelope-o"></span>
-            <span class="badge badge-red">3</span>
-        </a>
-
-        <div class="dropdown-menu right email-notification">
-            <h4>ایمیل</h4>
-            <ul class="email-top">
-                <li>
-                    <a href="#">
-                        <div class="email-top-image">
-                            <img class="rounded" src="view/admin/images/userimage/avatar3-80.png" alt="user image" />
-                        </div>
-                        <div class="email-top-content">
-                            پویا صبرآموز <div>مثال 1</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="email-top-image">
-                            <img class="rounded" src="view/admin/images/userimage/avatar2-80.png" alt="user image" />
-                        </div>
-                        <div class="email-top-content">
-                            پویا صبرآموز <div>مثال 2</div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="email-top-image">
-                            <img class="rounded" src="view/admin/images/userimage/avatar1-80.png" alt="user image" />
-                        </div>
-                        <div class="email-top-content">
-                            پویا صبرآموز <div>مثال 3</div>
-                        </div>
-                    </a>
-                </li>
-                <li class="only-link">
-                    <a href="">همه</a>
-                </li>
-            </ul>
-        </div>
-        <!--Email drop down end-->
-    </li>
-    <li class="hidden-xs">
-        <a class="right-sidebar" href="#">
-            <i class="fa fa-comment-o"></i>
-        </a>
-    </li>
-    <li class="hidden-xs">
-        <a class="right-sidebar-setting" href="#">
-            <i class="fa fa-cogs"></i>
+    <li>
+        <a href="#">
+            {$obj->mail.mail}
         </a>
     </li>
     <li>
-        <a href="#">
-            <i class="fa fa-lock"></i>
-        </a>
-    </li>
-    <li>
-        <a href="#">
+        <a href="logout.php">
             <i class="fa fa-power-off"></i>
         </a>
     </li>
@@ -385,7 +201,7 @@
         </li>
     </ul>
 </li>
-
+{if $obj->flag eq 1}
 <li>
     <a href="#">
         <i class="fa fa-cogs"></i> <span>تنظیمات پروفایل</span>
@@ -399,9 +215,9 @@
         </li>
     </ul>
 </li>
-
+{/if}
 <li>
-    <a href="?page=home">
+    <a href="logout.php">
         <i class="fa fa-power-off"></i> <span>خروج</span>
     </a>
 </li>
