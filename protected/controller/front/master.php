@@ -29,11 +29,8 @@
 		   $this->persian_name = Utility::CityNameChange2($this->latin_name);
 		   $query = "SELECT * FROM centers WHERE (city_id='$city_id' AND discount<>0) ORDER BY id DESC LIMIT 6";
 		   $this->result = databasehandler::getAll($query);
-		   $this->style = "background-image: url('".SITE_ADDRESS."view/front/images/cities/".$city_id.".jpg');";
-		   $pre = "background-color:#FFF;background-position:50px 0;";
-			if($city_id != 8){
-			$this->style = $pre.$this->style;	
-				}
+		   $this->style = "background-color:#FFF;background-position:50px 0; background-image: url('".SITE_ADDRESS."view/front/images/cities/".$city_id.".jpg');";
+		   $pre = "";
 		  
 		  ## liste shahr ha + tedade marakez dar shahr ha ##
 		    $this->city = CITY::city_SelectAll();
