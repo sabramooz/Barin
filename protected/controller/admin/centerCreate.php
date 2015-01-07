@@ -1,6 +1,6 @@
 <?php
 class CenterCreate{
-	public $types,$category;
+	public $types,$category, $cities;
 	public function __construct(){
 		
 		$this->types = TYPES::types_SelectAll();

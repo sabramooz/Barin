@@ -3,7 +3,7 @@
   {
      public $error;
       function __construct()
-      {
+      {	$this->cities = City::city_SelectAll();
        
 		  if(isset($_POST['signup'])){
 			$first_name = $_POST['first_name'];

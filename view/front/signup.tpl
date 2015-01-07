@@ -37,23 +37,23 @@
                 <input type="password" class="form-control" placeholder="تکرار کلمه عبور" name="repassword">
             </div>
         </div>
-        
-        <div class="radio">
-        	<strong>جنسیت: </strong>
-            
-              <label>
-                مرد
-                <input type="radio" name="gender" id="optionsRadios1" value="man" checked>
-              </label>
-              /
-              <label>زن
-                <input type="radio" name="gender" id="optionsRadios2" value="woman">
-              </label>
-        </div><br>
+        <div class="form-group">
+        <label class="col-sm-2 col-xs-4 control-label pull-right">جنسیت</label>
+            <div class="col-sm-4 col-xs-4 pull-right">
+                <select name="gender" class="form-control">
+                  <option>مرد</option>
+                  <option>زن</option>
+              	</select>
+            </div>
+        </div>
         <div class="form-group">
             <label class="col-sm-2 col-xs-4 control-label pull-right">شهر</label>
             <div class="col-sm-10 col-xs-8 pull-right">
-                <input type="password" class="form-control" placeholder="شهر" name="city">
+                <select name="city" class="form-control">
+              {section name=i loop=$obj->cities}
+                  <option value="{$obj->cities[i].id}">{$obj->cities[i].persian_name}</option>
+              {/section}
+              </select>
             </div>
         </div>
 

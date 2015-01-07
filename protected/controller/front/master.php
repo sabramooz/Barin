@@ -10,14 +10,22 @@
 	   ,$persian_name
 	   ,$site_address
 	   ,$city_name
+	   ,$login_flag = 1
        ,$userInfo = array() 
+	   ,$name
       ;
       function __construct()
       {
 		  ########### define for htaccess #############
 		  $this->site_address = SITE_ADDRESS;
 		  #############################################
-		  
+
+		  if(isset($_SESSION['MM_USERS_ID'])){
+			  
+			  $this->login_flag = 0;
+			  $this->name = DatabaseHandler::getRow("SELECT * FROM users WHERE id = '$_SESSION[MM_USERS_ID]' LIMIT 1 ");
+			  //var_dump( $this->result);
+			  }
 		  
 		  if(!isset($_GET['city'])){
 			  //header("Location: http://localhost/barin/tehran/");

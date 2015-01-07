@@ -48,6 +48,7 @@
     <div class="xs-top visible-xs">
     </div>
     <header class="container-fluid header-top hidden-xs" style="{$obj->style}">
+    	{if $obj->login_flag eq 1}
         <div class="col-md-2 col-xs-6 member pull-right text-right hidden-xs">
             <a href="{$obj->site_address}user/login/">ورود کاربر<span class="fa fa-sign-in"></span></a>
             <a href="{$obj->site_address}user/signup/">ثبت نام کنید<span class="fa fa-user"></span></a>
@@ -56,7 +57,16 @@
             <a href="{$obj->site_address}user/login/"><i class="fa fa-sign-in"></i></a>
             <a href="{$obj->site_address}user/signup/"><i class="fa fa-user"></i></a>
         </div>
-
+        {elseif $obj->login_flag eq 0}
+        <div class="col-md-3 col-xs-6 member pull-right text-right hidden-xs">
+            <a href="#">{$obj->name.first_name} {$obj->name.last_name} خوش آمدید<span class="fa fa-user"></span></a>
+            <a href="{$obj->site_address}logout2.php">خروج<span class="fa fa-power-off"></span></a>
+        </div>
+        <div class="member-xs visible-xs pull-right text-right">
+            <a href="#"><i class="fa fa-user"></i></a>
+            <a href="logout2.php"><i class="fa fa-power-off"></i></a>
+        </div>
+		{/if}
         <div class="col-md-3 col-sm-4 col-xs-6"><a class="brand" href="{$obj->site_address}{$obj->city_name}/"><img class="img-responsive" src="{$obj->site_address}view/front/images/logo.png"></a></div>
         <div class="clearfix"></div>
 
