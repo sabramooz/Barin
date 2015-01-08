@@ -4,7 +4,7 @@
             <!-- Jssor Slider Begin -->
             <!-- You can move inline styles to css file or css block. -->
             <div id="slider1_container" style="position: relative; width: 600px; height: 500px; background-color: #000; overflow: hidden; ">
-
+				
                 <!-- Loading Screen -->
                 <div u="loading" style="position: absolute; top: 0; left: 0;">
                     <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
@@ -14,7 +14,7 @@
                 top: 0; left: 0;width: 100%;height:100%;">
                     </div>
                 </div>
-
+				
                 <!-- Slides Container -->
                 <div u="slides" style="cursor: move; position: absolute; left: 0; top: 0; width: 600px; height: 500px;
             overflow: hidden;">
@@ -38,17 +38,18 @@
             </div>
             <!-- Jssor Slider End -->
         </div>
-        <div class="col-md-5">
+        <div class="col-md-5" style="padding-top:70px">
+        	<img class="special-offer hidden-sm hidden-xs" src="{$obj->site_address}view/front/images/special.png">
             <div class="text-center">
                 <br>
-                <h2 class="text-center">پیشنهاد ویژه <i class="fa fa-bullhorn"></i></h2>
+                <h2 class="text-center visible-xs visible-sm">پیشنهاد ویژه <i class="fa fa-bullhorn"></i></h2>
                 <h3 class="text-center">خدمات ویژه در استخر شهربانو</h3>
                 <p class="description">
                			تلفن هماهنگی : 55460120
                 </p>
-                <a class="off text-center">40%<p>تخفیف</p></a>
+                <a class="off text-center">%40</a>
                 <div class="time-remain text-center">
-                    <h5>زمان باقی مانده</h5>
+                    <h4>زمان باقی مانده</h4>
                     <p class="digital" id="defaultCountdown" dir="rtl"></p>
                 </div>
                 <br>

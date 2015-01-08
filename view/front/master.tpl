@@ -111,7 +111,7 @@
     
     <div class="clearfix"></div>
     <hr>
-    <section class="side-bar col-sm-3 hidden-xs text-center">
+    <!--<section class="side-bar col-sm-3 hidden-xs text-center">
         <div class="panel panel-primary text-center">
             <div class="panel-heading">نماد اعتماد ملی الکترونیک</div>
             <div class="panel-body">
@@ -127,9 +127,9 @@
         <div class="advertise"><a href="http://rayweb.ir"><img src="{$obj->site_address}view/front/images/rayweb.gif"> </a></div>
         <div class="advertise"><a href="#"><img src="{$obj->site_address}view/front/images/advertise.gif"> </a></div>
         <div class="advertise"><a href="http://rayweb.ir"><img src="{$obj->site_address}view/front/images/rayweb.gif"> </a></div>
-    </section>
-    <section class="main-content col-sm-9">
-    
+    </section>-->
+    <section class="main-content container">
+   
     
  {include file={$obj->page}}
 

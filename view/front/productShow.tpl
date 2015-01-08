@@ -3,6 +3,7 @@
 		{section name=i loop=$obj->result}
         <div class="col-md-4">
             <div class="content">
+            	<img class="content-tag" src="{$obj->site_address}view/front/images/tag.png" style="min-height:0">
                 {if $obj->result[i].name}
                 			<img src="{$obj->site_address}view/front/images/centers/{$obj->city}/{$obj->result[i].name}" class="img-responsive">
                 {else}
