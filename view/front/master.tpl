@@ -21,9 +21,10 @@
     <div class="navbar-top navbar-fixed-top">
         <div class="col-xs-7 col-md-6 pull-right town-choose">
             <ul class="nav navbar-nav navbar-right town-choose">
-            	<li class="pull-right"><a></a></li>
+            	
+            	<li class="pull-right"><a><i class="fa fa-angle-double-left"></i> انتخاب استان </a></li>
                 <li class="pull-right dropdown active">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-caret-down"></i> استان {$obj->persian_name} <i class="fa fa-map-marker"></i></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-caret-down"></i>  {$obj->persian_name} <i class="fa fa-map-marker"></i></a>
                     <ul class="dropdown-menu col-md-3" role="menu">
                     {section name=i loop=$obj->city}
                         <li><a href="{$obj->site_address}{$obj->city[i].latin_name}/">( {$obj->array[i].count} ) {$obj->city[i].persian_name}</a></li>
