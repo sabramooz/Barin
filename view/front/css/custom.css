@@ -369,20 +369,20 @@ del{
     background-image: url("../images/cloob_c.png");
 }
 .rss{
-    background-image: url("../images/rss.png");
+    background-image: url("../images/rss1.png");
     left: 0;
     top: -4px;
 }
 .rss:hover{
-    background-image: url("../images/rss_h.png");
+    background-image: url("../images/rss_h1.png");
 }
 .pdf{
-    background-image: url("../images/pdf.png");
+    background-image: url("../images/pdf1.png");
     left: 75px;
     top: -4px;
 }
 .pdf:hover{
-    background-image: url("../images/pdf_h.png");
+    background-image: url("../images/pdf_h1.png");
 }
 .main-content ul li{
     font-size: 18px;
