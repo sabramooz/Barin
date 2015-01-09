@@ -90,7 +90,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h2 class="modal-title text-center" id="myModalLabel" dir="rtl">تا <span style="color:#66afe9;font-size:33px">80٪ </span>تخفیف بگیرید!</h2>
+        <h2 class="modal-title text-center" id="myModalLabel" dir="rtl">تا <span style="color:#fff;font-size:33px;">80٪ </span>تخفیف بگیرید!</h2>
       </div>
       <div class="modal-body" dir="rtl">
         <p>barincard.ir  تنها پرتال استثنایی در ایران می باشد که به شما اجازه دسترسی به بهترین پیشنهادات در سطح شهر را می دهد. مواردی از قبیل سلامتی، ورزش رستوران ها و بسیار بیشتر... </p>
@@ -102,6 +102,7 @@
                 <input type="submit" class="btn btn-success" value="مرا مطلع کن">
             </form>
         </div>
+        <br>
         <hr>
         
         <div class="text-center">

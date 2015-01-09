@@ -15,7 +15,7 @@
 body{
     /*background-image: url("../images/grain.png");*/
 	/*background:#e9e8e8 none repeat fixed;*/
-	  background:#eff0f0 none repeat fixed;
+	  background:#e8eaea none repeat fixed;
     font-family: koodak, "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 }
@@ -192,7 +192,7 @@ footer{
     color: #eee;
 }
 .footer-top a:hover{
-    color: #000;
+    color: #66afe9;
     text-decoration: none;
 }
 .footer-top i{
@@ -205,13 +205,14 @@ footer{
 	
 }
 .footer-top ul li i{
-	color:#66afe9;
+	color:#fff;
 	}
 .footer-top ul li:hover i{
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
+	color:#66afe9
 }
 .footer-top ul{
     border-right: dashed 1px #ccc;
@@ -487,4 +488,7 @@ del{
 	right:-29px;
 	top:-39px;
 	
+	}
+.modal-header{
+	background-color:#66afe9;
 	}

@@ -184,7 +184,7 @@
             <div class="col-md-4 text-center" dir="rtl">
             	<h2>عضویت در خبرنامه</h2>
             	<form class="form-inline">
-                	<input type="email" class="form-control" placeholder="ایمیل خود را وارد کنید"><input type="submit" class="btn btn-success" value="ثبت">
+                	<input type="email" class="form-control" placeholder="ایمیل خود را وارد کنید"><input type="submit" class="btn btn-primary" value="عضویت">
                 </form>
             </div>
             <div class="clearfix"></div>
