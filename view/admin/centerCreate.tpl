@@ -5,7 +5,7 @@
     <h3 class="panel-title">ثبت فروشگاه جدید</h3>
   </div>
   <div class="panel-body signup">
-
+	{$obj->error}
 	<form method="post" role="form" class="form-horizontal">
 			<div class="form-group">
             	<label class="col-sm-2 col-xs-12  control-label" for="center_name">
@@ -27,14 +27,6 @@
                 درصد تخفیف : </label>
             	<div class="col-sm-4 col-md-3 col-xs-12 ">
             		<input type="text" name="discount" tabindex="2" class="form-control">
-            	</div>
-            </div>
-            
-            <div class="form-group">
-            	<label class="col-sm-2 col-xs-12  control-label " for="price">
-                قیمت : </label>
-            	<div class="col-sm-4 col-md-3 col-xs-12 ">
-            		<input type="text" name="price" tabindex="2" class="form-control">
             	</div>
             </div>
             
@@ -158,12 +150,12 @@
             
             <div class="form-group">
             	<label class="col-sm-2 col-xs-12  control-label " for="code">
-                جزئیات : </label>
+                ویژگی ها : </label>
             	<div class="col-sm-4 col-md-3 col-xs-12 ">
-            		<textarea type="text" name="detail" tabindex="2" class="form-control"></textarea>
+                    <textarea id="input" style="width:400px; height:200px" class="form-control" name="detail"></textarea>
             	</div>
             </div>
-            
+            <script src='view/admin/js/tiny-editor-custom.js'></script>
             <div class="form-group">
             	<label class="col-sm-2 col-xs-12  control-label " for="type_id">
                 گروه تخفیف : </label>

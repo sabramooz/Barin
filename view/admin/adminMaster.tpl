@@ -51,6 +51,10 @@
     <!-- custom style -->
     <link href="view/admin/css/custom.css" rel="stylesheet">
     
+    <!-- tiny editor style -->
+    <link href="view/admin/css/tiny-editor.css" rel="stylesheet">
+    <script src="view/admin/js/tiny-editor.js"></script>
+    
     <!-- Custom styles for this template -->
 
 
