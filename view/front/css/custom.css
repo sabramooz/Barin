@@ -414,7 +414,7 @@ hr-design{
 	/*text-shadow:0 0 5px #333;*/
 	color:#333;
 	font-size:13px;
-	box-shadow:0 0 10px #333;
+	border:1px solid #CCC;
 	background-color:#FFF;
 	}
 .radio strong{
