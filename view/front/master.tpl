@@ -38,8 +38,20 @@
         </div>
         <div class="col-md-6 col-xs-5 search">
         	<ul class="nav navbar-nav pull-right visible-lg"><li class="active"><a href="callto:09123456789"><i class="fa fa-phone"></i> 88759591 </a></li></ul>
-            <div class="input-group hidden-xs">
-            	<!--<script>
+            <form action="http://74.125.232.144/search" method="get" target="_blank">
+                	<input value="barincard.com" name="domains" type="hidden">
+                    <input value="barincard.com" name="sitesearch" type="hidden">
+                    <input value="UTF-8" name="oe" type="hidden">
+                    <input value="UTF-8" name="ie" type="hidden">
+                    <input value="fa" name="hl" type="hidden">
+            <div class="input-group hidden-xs">             
+                <input type="text" name="q" class="form-control" dir="rtl" placeholder="جستجو...">
+                <span class="input-group-btn">
+                    <button class="btn btn-info" type="submit"><i class="fa fa-search"></i></button>
+                </span>
+                </form>
+            </div><!-- /input-group -->
+            <!--<script>
 				  (function() {
 					var cx = '000137308345226113180:nwobwg1hnkq';
 					var gcse = document.createElement('script');
@@ -52,11 +64,6 @@
 				  })();
 				</script>
 				<gcse:search></gcse:search>-->
-                <input type="text" class="form-control" dir="rtl" placeholder="جستجو...">
-                <span class="input-group-btn">
-                    <button class="btn btn-info" type="button"><i class="fa fa-search"></i></button>
-                </span>
-            </div><!-- /input-group -->
         </div>
     </div>
     <div class="xs-top visible-xs">
