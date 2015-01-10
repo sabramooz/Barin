@@ -39,6 +39,19 @@
         <div class="col-md-6 col-xs-5 search">
         	<ul class="nav navbar-nav pull-right visible-lg"><li class="active"><a href="callto:09123456789"><i class="fa fa-phone"></i> 88759591 </a></li></ul>
             <div class="input-group hidden-xs">
+            	<!--<script>
+				  (function() {
+					var cx = '000137308345226113180:nwobwg1hnkq';
+					var gcse = document.createElement('script');
+					gcse.type = 'text/javascript';
+					gcse.async = true;
+					gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+						'//www.google.com/cse/cse.js?cx=' + cx;
+					var s = document.getElementsByTagName('script')[0];
+					s.parentNode.insertBefore(gcse, s);
+				  })();
+				</script>
+				<gcse:search></gcse:search>-->
                 <input type="text" class="form-control" dir="rtl" placeholder="جستجو...">
                 <span class="input-group-btn">
                     <button class="btn btn-info" type="button"><i class="fa fa-search"></i></button>
