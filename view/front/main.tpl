@@ -37,13 +37,21 @@
             <img class="content-tag" src="{$obj->site_address}view/front/images/tag.png" style="min-height:0">
             <img class="off-tag" src="{$obj->site_address}view/front/images/off.png" style="min-height:0">
                 {if $obj->refahi[i].name}
-                			<img src="{$obj->site_address}view/front/images/centers/{$obj->city}/{$obj->refahi[i].name}" class="img-responsive">
+                			<div class="content-img" style="position:relative;">
+                            <div class="content-hover" style=" position:absolute;">
+                                <div class="caption text-center"><p>{$obj->refahi[i].center_name}</p>
+                                    <div class="text-center"><a class="btn btn-primary btn-lg" href="{$obj->site_address}{$obj->latin_name}/{$obj->refahi[i].type_id}/{$obj->refahi[i].item_id}/">مشاهده</a></div>
+                                    
+                                </div>
+                            </div>
+                			<img width="400" height="200" src="{$obj->site_address}view/front/images/centers/{$obj->city}/{$obj->refahi[i].name}" class="img-responsive">
+                            </div>
                 {else}
                             <img src="{$obj->site_address}view/front/images/no_image.jpg" class="img-responsive">
                  {/if}
                 <h4 class="text-right">{$obj->refahi[i].center_name}</h4>
                 <p class="price" dir="rtl">{$obj->refahi[i].discount} % </p>
-                <a href="{$obj->site_address}{$obj->latin_name}/{$obj->refahi[i].type_id}/{$obj->refahi[i].item_id}/"> مشاهده </a>
+                
             </div>
         </div>
 		{/section}
@@ -58,13 +66,21 @@
             <img class="content-tag" src="{$obj->site_address}view/front/images/tag.png" style="min-height:0">
             <img class="off-tag" src="{$obj->site_address}view/front/images/off.png" style="min-height:0">
                 {if $obj->pezeshki[i].name}
-                			<img src="{$obj->site_address}view/front/images/centers/{$obj->city}/{$obj->pezeshki[i].name}" class="img-responsive">
+                			<div class="content-img" style="position:relative;">
+                            <div class="content-hover" style=" position:absolute;">
+                                <div class="caption text-center"><p>{$obj->pezeshki[i].center_name}</p>
+                                    <div class="text-center"><a class="btn btn-primary btn-lg" href="{$obj->site_address}{$obj->latin_name}/{$obj->pezeshki[i].type_id}/{$obj->pezeshki[i].item_id}/">مشاهده</a></div>
+                                    
+                                </div>
+                            </div>
+                			<img width="400" height="200" src="{$obj->site_address}view/front/images/centers/{$obj->city}/{$obj->pezeshki[i].name}" class="img-responsive">
+                            </div>
                 {else}
                             <img src="{$obj->site_address}view/front/images/no_image.jpg" class="img-responsive">
                  {/if}
                 <h4 class="text-right">{$obj->pezeshki[i].center_name}</h4>
                 <p class="price" dir="rtl">{$obj->pezeshki[i].discount} % </p>
-                <a href="{$obj->site_address}{$obj->latin_name}/{$obj->pezeshki[i].type_id}/{$obj->pezeshki[i].item_id}/"> مشاهده </a>
+                
             </div>
         </div>
 		{/section}
@@ -79,13 +95,21 @@
             <img class="content-tag" src="{$obj->site_address}view/front/images/tag.png" style="min-height:0">
             <img class="off-tag" src="{$obj->site_address}view/front/images/off.png" style="min-height:0">
                 {if $obj->kharidkala[j].name}
-                			<img src="{$obj->site_address}view/front/images/centers/{$obj->city}/{$obj->kharidkala[j].name}" class="img-responsive">
+                			<div class="content-img" style="position:relative;">
+                            <div class="content-hover" style=" position:absolute;">
+                                <div class="caption text-center"><p>{$obj->kharidkala[j].center_name}</p>
+                                    <div class="text-center"><a class="btn btn-primary btn-lg" href="{$obj->site_address}{$obj->latin_name}/{$obj->kharidkala[j].type_id}/{$obj->kharidkala[j].item_id}/">مشاهده</a></div>
+                                    
+                                </div>
+                            </div>
+                			<img width="400" height="200" src="{$obj->site_address}view/front/images/centers/{$obj->city}/{$obj->kharidkala[j].name}" class="img-responsive">
+                            </div>
                 {else}
                             <img src="{$obj->site_address}view/front/images/no_image.jpg" class="img-responsive">
                 {/if}
                 <h4 class="text-right">{$obj->kharidkala[j].center_name}</h4>
                 <p class="price" dir="rtl">{$obj->kharidkala[j].discount} % </p>
-                <a href="{$obj->site_address}{$obj->latin_name}/{$obj->kharidkala[j].type_id}/{$obj->kharidkala[j].item_id}/"> مشاهده </a>
+                
             </div>
         </div>
 		{/section}

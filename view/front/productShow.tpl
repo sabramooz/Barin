@@ -5,8 +5,16 @@
             <div class="content">
             	<img class="content-tag" src="{$obj->site_address}view/front/images/tag.png" style="min-height:0">
                 {if $obj->result[i].name}
-                			<img src="{$obj->site_address}view/front/images/centers/{$obj->city}/{$obj->result[i].name}" class="img-responsive">
+                			<div class="content-img" style="position:relative;">
+                            <div class="content-hover" style=" position:absolute;">
+                                <div class="caption text-center"><p>{$obj->refahi[i].center_name}</p>
+                                    <div class="text-center"><a class="btn btn-primary btn-lg" href="{$obj->site_address}{$obj->latin_name}/{$obj->result[i].type_id}/{$obj->result[i].item_id}/">مشاهده</a></div>
+                                    
+                                </div>
+                            </div>
+                			<img width="400" height="200" src="{$obj->site_address}view/front/images/centers/{$obj->city}/{$obj->result[i].name}" class="img-responsive">
                 {else}
+                			</div>
                             <img src="{$obj->site_address}view/front/images/no_image.jpg" class="img-responsive">
                  {/if}
                 <h4 class="text-right">{$obj->result[i].center_name}</h4>
