@@ -1,5 +1,5 @@
 {load_presentation_object filename='product' assign='obj'}
-<section class="top-content row">
+<section class="top-content row" style="border:1px solid #CCC;">
         <div class="slide-show col-md-5 col-sm-8">
             <!-- Jssor Slider Begin -->
             <!-- You can move inline styles to css file or css block. -->
