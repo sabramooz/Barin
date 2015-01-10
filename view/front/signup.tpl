@@ -47,7 +47,7 @@
             </div>
         </div>
         <div class="form-group">
-            <label class="col-sm-2 col-xs-4 control-label pull-right">شهر</label>
+            <label class="col-sm-2 col-xs-4 control-label pull-right">استان</label>
             <div class="col-sm-10 col-xs-8 pull-right">
                 <select name="city" class="form-control">
               {section name=i loop=$obj->cities}
