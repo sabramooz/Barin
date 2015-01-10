@@ -18,8 +18,8 @@
         </div>
 		{/section} 
         <div class="clearfix"></div> 
-        
-        
+        <div class="container" style="padding-right:45px"><img src="{$obj->site_address}view/front/images/mobile.jpg" class="img-responsive" alt="mobile" style="border:1px solid #ccc;"></div>
+        <div class="clearfix"></div>
         <h2 dir="rtl" class="text-right"><i class="fa fa-cutlery" style="color:#66afe9"></i> خدمات رفاهی</h2>
         <hr>
         {section name=i loop=$obj->refahi}
