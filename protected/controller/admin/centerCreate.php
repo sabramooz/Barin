@@ -18,7 +18,9 @@ class CenterCreate{
 									, $_POST['category_id'], 'image',$_POST['detail'],$timestamp, $_POST['google_map'], 
 									$_POST['code']);
 				if($result){
-					$this->error = 'فروشگاه مورد نظر با موفقیت ثبت شد.';
+					$id = DatabaseHandler::getOne("SELECT id FROM centers WHERE 
+														center_name = '$_POST[center_name]' AND center_manager = '$_POST[center_manager]' ;");
+					header("Location: admin.php?page=centerImage&id=$id");
 					}
 			
 		}
