@@ -184,9 +184,9 @@
                 <h1>شبکه های اجتماعی</h1>
                 <hr>
                 <ul class="list-unstyled social-network" style="border-right: none">
-                    <li><a href="#" class="social facebook"></a></li>
-                    <li><a href="#" class="social twitter"></a></li>
-                    <li><a href="#" class="social google-plus"></a></li>
+                    <li><a href="https://www.facebook.com/barincard" class="social facebook"></a></li>
+                    <li><a href="https://twitter.com/barincard" class="social twitter"></a></li>
+                    <li><a href="https://plus.google.com/u/0/102285078458651558295/posts" class="social google-plus"></a></li>
                     <li><a href="#" class="social cloob"></a></li>
                 </ul>
             </div>
