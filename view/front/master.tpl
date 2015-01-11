@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>برین کارت</title>
-    <meta name="keywords" contenet="کارت تخفیف , تخفیف کارت ,بیشترین تخفیف, کارت تخفیف برین" http-equiv="Content-Type" content="text/html">
-    <meta name="description" content="کارت تخفیف , تخفیف کارت ,بیشترین تخفیف, کارت تخفیف برین">
+    <meta name="keywords" contenet="برین ,برین کارت ,کارت تخفیف , تخفیف کارت ,بیشترین تخفیف, کارت تخفیف برین" http-equiv="Content-Type" content="text/html">
+    <meta name="description" content="برین ,برین کارت ,کارت تخفیف , تخفیف کارت ,بیشترین تخفیف, کارت تخفیف برین">
     <meta name="author" content="rayweb.ir">
     <link rel="icon" href="{$obj->site_address}favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="{$obj->site_address}view/front/css/bootstrap.min.css">
