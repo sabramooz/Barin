@@ -138,20 +138,23 @@
         </div>
         <br>
         <hr>
-<!--        <div class="clearfix"></div>
+        <div class="clearfix"></div>
         
-        <div style="float:right">
-       		 <img class="img-responsive" src="{$obj->site_address}view/front/images/pezeshki.jpg" width="30%">            
+        <div class="col-sm-4">
+       		 <img class="img-responsive" src="{$obj->site_address}view/front/images/pezeshki.jpg">
+             <h5 class="text-center">خدمات پزشکی</h5>        
         </div>
-        <div style="float:right">
-       		 <img class="img-responsive" src="{$obj->site_address}view/front/images/refahi.jpg" width="30%">
+        <div class="col-sm-4">
+       		 <img class="img-responsive" src="{$obj->site_address}view/front/images/refahi.jpg">
+             <h5 class="text-center">خدمات رفاهی</h5> 
    		</div>
-    	<div style="float:right">
-       		 <img class="img-responsive" src="{$obj->site_address}view/front/images/kala.jpg" width="30%">
+    	<div class="col-sm-4">
+       		 <img class="img-responsive" src="{$obj->site_address}view/front/images/kala.jpg">
+             <h5 class="text-center">خدمات خرید کالا</h5> 
    		</div>
          <div class="clearfix"></div>   
-        -->
         
+        <hr>
         
         <div class="text-center">
         	<img src="{$obj->site_address}view/front/images/featured.png">
