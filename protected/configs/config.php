@@ -70,6 +70,16 @@
     
   }
   spl_autoload_register('autoload');
-  require 'protected/message/msg_config.php';
-  require 'protected/configs/jdf.php';
+  
+  if(file_exists('protected/message/msg_config.php')){
+	  require 'protected/message/msg_config.php';
+	  }else{
+		require '../protected/message/msg_config.php';  
+		  }
+		  
+	if(file_exists('protected/configs/jdf.php')){
+	  require 'protected/configs/jdf.php';
+	  }else{
+		require '../protected/configs/jdf.php';  
+		  }
 ?>

@@ -1,8 +1,13 @@
-<?php $a_db = array(
-  "db_server" => "localhost",
-  "db_name" => "barin",
-  "db_user" => "root",
-  "db_passwd" => "",
+<?php
+error_reporting(E_ALL);
+	ini_set('display_errors','1');
+
+include '../protected/configs/config.php';
+ $a_db = array(
+  "db_server" => DB_SERVER,
+  "db_name" => DB_DATABASE,
+  "db_user" => DB_USERNAME,
+  "db_passwd" => DB_PASSWORD,
 );
 
 header('Content-type: application/xml');
@@ -19,7 +24,7 @@ $dateChannel = new DateTime(date("D, d M Y H:i:s e"));
 $test = $dateChannel->format("D, d M Y H:i:s e");
 $a_channel = array(
   "title" => "برین کارت",
-  "link" => "http://www.pontikis.net",
+  "link" => "http://www.barincard.com",
   "description" => "مراکز طرف قرارداد",
   "language" => "en",
   "pubDate" => $test,
@@ -28,8 +33,8 @@ $a_channel = array(
   //"image_link" => "http://www.pontikis.net",
   //"image_url" => "http://www.pontikis.net/feed/rss.png",
 );
-$site_url = 'http://localhost/barin/rss'; // configure appropriately
-$site_name = 'barin'; // configure appropriately
+$site_url = SITE_ADDRESS.'rss/index.php'; // configure appropriately
+$site_name = 'Barin Card'; // configure appropriately
  
 $rss = new rss_feed($a_db,$xmlns, $a_channel, $site_url, $site_name);
 echo $rss->create_feed();?>

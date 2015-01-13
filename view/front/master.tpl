@@ -98,7 +98,7 @@
     <div class="clearfix"></div>
     <nav class="navbar navbar-default" role="navigation">
         <div class=" social-network text-right">
-            <a href="#" class="social-s rss"></a>
+            <a href="{$obj->site_address}rss/index.php" target="_blank" class="social-s rss"></a>
             <a href="{$obj->site_address}pdf.php?city={$obj->city_name}" class="social-s pdf"></a>
         </div>
         <div class="container-fluid">

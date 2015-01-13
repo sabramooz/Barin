@@ -39,7 +39,7 @@
                 <br><br>
                 <h3 class="text-center">{$obj->result.center_name}</h3>
                 <p class="description">زیر مجموعه : {$obj->result.category_id}</p>
-                <a class="off text-center">{$obj->result.discount}%<p>تخفیف</p></a>
+                <a class="off text-center">{$obj->result.discount}%</a>
                 <br>
                 <a href="?page=buy" class="btn btn-info btn-block">خرید کارت <i class="fa fa-eye"></i></a>
             </div>

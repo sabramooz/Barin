@@ -68,7 +68,7 @@ class rss_feed  {
     foreach($rss_items as $rss_item) {
       $xml .= '<item>' . "\n";
       $xml .= '<title>' . $rss_item['title'] . '</title>' . "\n";
-    //  $xml .= '<link>' . $rss_item['link'] . '</link>' . "\n";
+      $xml .= '<link>' . $rss_item['link'] . '</link>' . "\n";
       $xml .= '<description>' . $rss_item['description'] . '</description>' . "\n";
     //  $xml .= '<pubDate>' . $rss_item['pubDate'] . '</pubDate>' . "\n";
  //     $xml .= '<category>' . $rss_item['category'] . '</category>' . "\n";
@@ -108,7 +108,7 @@ class rss_feed  {
  
     // create array with topic IDs
     $a_topic_ids = array();
-    $sql = 'SELECT * FROM centers limit 10;';
+    $sql = 'SELECT * FROM centers ORDER BY id DESC limit 30;';
      // 'WHERE date_published <= ' . "'" . $conn->real_escape_string($rss_date) . "'" .
      // 'AND date_published IS NOT NULL ' .
      // 'ORDER BY date_published DESC ' .
@@ -132,7 +132,9 @@ class rss_feed  {
     foreach($a_topic_ids as $topic_id) {
  
       // get topic properties
-      $sql=' SELECT * FROM centers WHERE id=' . $topic_id;
+      $sql=" SELECT centers.city_id,centers.center_name,centers.id,centers.type_id,centers.detail,city.latin_name FROM centers
+	  								INNER JOIN city ON centers.city_id = city.id
+	  										 WHERE centers.id='$topic_id'" ;
       $rs=$conn->query($sql);
  
       if($rs === false) {
@@ -145,8 +147,8 @@ class rss_feed  {
       // title
       $a_rss_item['title'] = $topic['center_name'];
  
-      // link
-      //$a_rss_item['link'] = $this->site_url . '/' . $topic['url'];
+      // link tehran/1/405/
+      $a_rss_item['link'] = SITE_ADDRESS.$topic['latin_name'].'/'.$topic['type_id'].'/'.$topic['id'].'/';
  
       // description
       $a_rss_item['description'] = str_replace('<br>',' ',str_replace('&nbsp;',' ',$topic['detail']));
