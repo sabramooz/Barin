@@ -181,6 +181,7 @@
                     <li><a href="{$obj->site_address}pdf.php?city={$obj->city_name}">دانلود لیست کامل مراکز</a> </li>
                     <li><a href="{$obj->site_address}user/newsletter/">برین در جراید</a> </li>
                     <li><a href="http://forum.barincard.com/Upload/index.php">تالار گفتمان</a> </li>
+                    <li><a href="#">درباره مدیریت</a></li>
                 </ul>
             </div>
             <div class="col-md-4 text-center">

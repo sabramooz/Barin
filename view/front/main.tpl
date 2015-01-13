@@ -126,7 +126,8 @@
         <h2 class="modal-title text-center" id="myModalLabel" dir="rtl">تا <span style="color:#fff;font-size:33px;">80٪ </span>تخفیف بگیرید!</h2>
       </div>
       <div class="modal-body" dir="rtl">
-        <p>barincard.ir  تنها پرتال استثنایی در ایران می باشد که به شما اجازه دسترسی به بهترین پیشنهادات در سطح شهر را می دهد. مواردی از قبیل سلامتی، ورزش رستوران ها و بسیار بیشتر... </p>
+        <p>با استفاده از کارت های تخفیف برین تا <span style="color:#66afe9">80%</span> از مراکز طرف قرارداد تخفیف بگیرید !</p>
+        <hr>
         <p>برای اطلاع از برین کارت ‌های روزانه ایمیل و تلفن همراه خود را وارد کنید</p>
         <div>
         	<form class="form-inline">
@@ -137,6 +138,20 @@
         </div>
         <br>
         <hr>
+<!--        <div class="clearfix"></div>
+        
+        <div style="float:right">
+       		 <img class="img-responsive" src="{$obj->site_address}view/front/images/pezeshki.jpg" width="30%">            
+        </div>
+        <div style="float:right">
+       		 <img class="img-responsive" src="{$obj->site_address}view/front/images/refahi.jpg" width="30%">
+   		</div>
+    	<div style="float:right">
+       		 <img class="img-responsive" src="{$obj->site_address}view/front/images/kala.jpg" width="30%">
+   		</div>
+         <div class="clearfix"></div>   
+        -->
+        
         
         <div class="text-center">
         	<img src="{$obj->site_address}view/front/images/featured.png">
