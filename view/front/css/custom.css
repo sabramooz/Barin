@@ -99,7 +99,7 @@ nav{
     transition: all .5s;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
-    background-color: #66afe9 !important;
+    background-color: #ffbd66 !important;
     color: #fff;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
