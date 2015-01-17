@@ -34,8 +34,8 @@
                     {/section}
                     </ul>
                 </li>
-                <li class="pull-right hidden-xs"><a href="{$obj->site_address}{$obj->latin_name}/centers/">مراکز طرف قرارداد <i class="fa fa-home"></i></a></li>
-                <li class="pull-right hidden-xs"><a href="{$obj->site_address}user/contact/">تماس با ما <i class="fa fa-envelope"></i></a></li>
+                <li class="pull-right hidden-xs {if $obj->toggleActive eq centers} active {/if}"><a href="{$obj->site_address}{$obj->latin_name}/centers/">مراکز طرف قرارداد <i class="fa fa-home"></i></a></li>
+                <li class="pull-right hidden-xs {if $obj->toggleActive eq contact} active {/if}"><a href="{$obj->site_address}user/contact/">تماس با ما <i class="fa fa-envelope"></i></a></li>
                 
             </ul>
         </div>
@@ -117,11 +117,11 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="pull-right active"><a href="{$obj->site_address}{$obj->city_name}/">صفحه اصلی <i class="fa fa-home"></i></a></li>
-                    <li class="pull-right "><a href="{$obj->site_address}{$obj->city_name}/1/page/1/">خدمات رفاهی <i class="fa fa-cutlery"></i></a></li>
-                    <li class="pull-right "><a href="{$obj->site_address}{$obj->city_name}/2/page/1/">خدمات پزشکی <i class="fa fa-plus-square"></i></a></li>
-                    <li class="pull-right "><a href="{$obj->site_address}{$obj->city_name}/3/page/1/">خدمات خرید کالا <i class="fa fa-shopping-cart"></i></a></li>
-                    <li class="pull-right "><a href="{$obj->site_address}user/buy/">سفارش برین کارت <i class="fa fa-credit-card"></i></a></li>
+                    <li class="pull-right {if $obj->toggleActive eq home_page} active {/if}"><a href="{$obj->site_address}{$obj->city_name}/">صفحه اصلی <i class="fa fa-home"></i></a></li>
+                    <li class="pull-right {if $obj->toggleActive eq 1} active {/if}"><a href="{$obj->site_address}{$obj->city_name}/1/page/1/">خدمات رفاهی <i class="fa fa-cutlery "></i></a></li>
+                    <li class="pull-right {if $obj->toggleActive eq 2} active {/if}"><a href="{$obj->site_address}{$obj->city_name}/2/page/1/">خدمات پزشکی <i class="fa fa-plus-square"></i></a></li>
+                    <li class="pull-right {if $obj->toggleActive eq 3} active {/if}"><a href="{$obj->site_address}{$obj->city_name}/3/page/1/">خدمات خرید کالا <i class="fa fa-shopping-cart"></i></a></li>
+                    <li class="pull-right {if $obj->toggleActive eq buy} active {/if}"><a href="{$obj->site_address}user/buy/">سفارش برین کارت <i class="fa fa-credit-card"></i></a></li>
                     <li class="visible-xs"><a href="{$obj->site_address}user/login/">ورود کاربر <i class="fa fa-sign-in"></i></a></li>
                     <li class="visible-xs"><a href="{$obj->site_address}user/signup/">ثبت نام <i class="fa fa-user"></i></a></li>
                 </ul>
