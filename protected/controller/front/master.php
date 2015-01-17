@@ -13,12 +13,22 @@
 	   ,$login_flag = 1
        ,$userInfo = array() 
 	   ,$name
+	   ,$toggleActive
       ;
       function __construct()
       {
 		  ########### define for htaccess #############
 		  $this->site_address = SITE_ADDRESS;
 		  #############################################
+
+			if(isset($_GET['cat_id'])){
+				$this->toggleActive = $_GET['cat_id'];
+				}else{
+				$this->toggleActive = 'home_page';	
+					}
+			if(isset($_GET['page'])){
+				$this->toggleActive = $_GET['page'];
+				}
 
 		  if(isset($_SESSION['MM_USERS_ID'])){
 			  
