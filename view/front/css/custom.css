@@ -546,3 +546,13 @@ hr-design{
 .modal-header{
 	background-color:#66afe9;
 	}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+	transition:all 0.5s ease 0s;
+	background-color:#ffbd66 !important;
+	}
+.active{
+	background-color:#ffbd66;
+	}
+.nav > li > a:hover, .nav > li > a:focus {
+	background-color:#ffbd66;
+	}
