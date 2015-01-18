@@ -63,7 +63,7 @@
           if(isset($_GET['page']))
           {
               $this->page = $_GET['page'];
-			  echo $this->page;
+			  //echo $this->page;
           }
 		  if(!isset($_GET['cat_id']) && !isset($_GET['id'])  && !isset($_GET['user'])){
 			 $this->top = 'topContent.tpl';
