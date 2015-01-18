@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="{$obj->site_address}view/front/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="{$obj->site_address}view/front/css/custom.css">
     <link rel="stylesheet" type="text/css" href="{$obj->site_address}view/front/css/slider.css">
+    <link rel="stylesheet" type="text/css" href="{$obj->site_address}view/front/css/lightbox.css">
     <link rel="stylesheet" type="text/css" href="{$obj->site_address}view/front/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="{$obj->site_address}view/front/css/jquery.countdown.css">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -179,7 +180,7 @@
                     <li><a href="{$obj->site_address}user/contact/">تماس با ما</a> </li>
                     <li><a href="{$obj->site_address}user/agents/">شرایط اخذ نمایندگی</a> </li>
                     <li><a href="{$obj->site_address}pdf.php?city={$obj->city_name}">دانلود لیست کامل مراکز</a> </li>
-                    <li><a href="{$obj->site_address}user/newsletter/">برین در جراید</a> </li>
+                    <li><a href="{$obj->site_address}user/press/">برین در جراید</a> </li>
                     <li><a href="http://forum.barincard.com/Upload/index.php">تالار گفتمان</a> </li>
                     <li><a href="#">درباره مدیریت</a></li>
                 </ul>
@@ -228,6 +229,7 @@
 <script type="text/javascript" src="{$obj->site_address}view/front/js/jquery.plugin.js"></script>
 <script type="text/javascript" src="{$obj->site_address}view/front/js/jquery.countdown.js"></script>
 <script src="{$obj->site_address}view/front/js/custom.js"></script>
+<script src="{$obj->site_address}view/front/js/lightbox.min.js"></script>
 <script src="{$obj->site_address}view/front/js/timeago.js"></script>
 <script src="{$obj->site_address}view/front/js/jquery.timeago.fa.js"></script>
 <script>
