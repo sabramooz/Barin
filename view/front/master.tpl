@@ -222,6 +222,7 @@
     </footer>
 
 <script src="{$obj->site_address}view/front/js/jquery.js"></script>
+<script src="{$obj->site_address}view/front/js/lightbox.min.js"></script>
 <script src="{$obj->site_address}view/front/js/jssor.js"></script>
 <script src="{$obj->site_address}view/front/js/jssor.slider.min.js"></script>
 <script src="{$obj->site_address}view/front/js/slider.js"></script>
@@ -229,7 +230,6 @@
 <script type="text/javascript" src="{$obj->site_address}view/front/js/jquery.plugin.js"></script>
 <script type="text/javascript" src="{$obj->site_address}view/front/js/jquery.countdown.js"></script>
 <script src="{$obj->site_address}view/front/js/custom.js"></script>
-<script src="{$obj->site_address}view/front/js/lightbox.min.js"></script>
 <script src="{$obj->site_address}view/front/js/timeago.js"></script>
 <script src="{$obj->site_address}view/front/js/jquery.timeago.fa.js"></script>
 <script>

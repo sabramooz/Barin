@@ -556,3 +556,6 @@ hr-design{
 .nav > li > a:hover, .nav > li > a:focus {
 	background-color:#ffbd66;
 	}
+.lightbox-margin{
+	margin-bottom:40px;
+	}
