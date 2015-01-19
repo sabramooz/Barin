@@ -1,6 +1,6 @@
 {load_presentation_object filename='press' assign='obj'}
 <div class="container form-bg">
-	<h1 class="text-center">برین در جراید</h1>
+	<h1 class="text-center">برین در مطبوعات</h1>
     <hr>
     <div class="col-sm-4 col-md-4 text-center lightbox-margin">
 		<div class="row" style="margin-right:0 !important;margin-left:0 !important ">
