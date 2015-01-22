@@ -18,7 +18,7 @@
 				}else{
 					$_POST['permission'] = 1;
 					}
-					echo 'avali'.$_POST['password'].'<br>'.$this->admins['password'];
+					//echo 'avali'.$_POST['password'].'<br>'.$this->admins['password'];
 			if($this->admins['password'] == $_POST['password']){
 				
 				}else{
