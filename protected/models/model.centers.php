@@ -30,7 +30,7 @@ Class CENTERS
         return DatabaseHandler::Execute($sql, $params);
     }
      public static function centers_Insert($center_name, $center_manager, $discount, $address, $tel, $mobile, $website, $mail, $type_id, $city_id, $category_id, $image, $detail, $left_date, $google_map, $code)
-    {
+    {	
         $sql = 'CALL `sp_centers_Insert`(:center_name, :center_manager, :discount, :address, :tel, :mobile, :website, :mail, :type_id, :city_id, :category_id, :image, :detail, :left_date, :google_map, :code)';
         $params = array (':center_name' => $center_name, ':center_manager' => $center_manager, ':discount' => $discount, ':address' => $address, ':tel' => $tel, ':mobile' => $mobile, ':website' => $website, ':mail' => $mail, ':type_id' => $type_id, ':city_id' => $city_id, ':category_id' => $category_id, ':image' => $image, ':detail' => $detail, ':left_date' => $left_date, ':google_map' => $google_map, ':code' => $code);
         DatabaseHandler::Close(); 

@@ -174,7 +174,7 @@
             	<div class="col-sm-4 col-md-3 col-xs-12 ">
             		<select type="text" name="category_id" tabindex="2" class="form-control">
                     	{section name=i loop=$obj->category}
-                                <option value="{$obj->category[i].id}">{$obj->category[i].category_name}</option>
+                                <option value="{$obj->category[i].category_name}">{$obj->category[i].category_name}</option>
                         {/section}
                    	</select>
             	</div>

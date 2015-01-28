@@ -3,7 +3,7 @@
   {
 	 public $cities,$go_city,$admins;
 	public function __construct(){
-		$this->cities = City::city_SelectAll();
+		$this->cities = CITY::city_SelectAll();
 			
 		
 		if(isset($_POST['go_city'])){
