@@ -56,6 +56,12 @@
 				<img class="example-image img-thumbnail" src="{$obj->site_address}view/front/images/press/pic19-t.jpg" alt=""/></a>
 		</div>             
 	</div>
+    <div class="col-sm-4 col-md-4 text-center lightbox-margin">
+		<div class="row" style="margin-right:0 !important;margin-left:0 !important ">
+			<a class="example-image-link" href="{$obj->site_address}view/front/images/press/pic25.jpg" data-lightbox="example-set">
+				<img class="example-image img-thumbnail" src="{$obj->site_address}view/front/images/press/pic25-t.jpg" alt=""/></a>
+		</div>             
+	</div>
 </div>
 <div class="clearfix"></div>
 <hr>
