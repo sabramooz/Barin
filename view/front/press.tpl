@@ -3,4 +3,6 @@
 	<h1 class="text-center">برین در جراید</h1>
 	<a href="{$obj->site_address}user/newspaper/" class="btn btn-default btn-block btn-lg"><i class="fa fa-newspaper-o"></i> برین در روزنامه ها </a>
     <a href="{$obj->site_address}user/site/" class="btn btn-default btn-block btn-lg"><i class="fa fa-desktop"></i> برین در سایت ها </a>
+    <a href="{$obj->site_address}user/agency/" class="btn btn-default btn-block btn-lg"><i class="fa fa-desktop"></i> برین در خبرگزاری ها </a>
+    <a href="{$obj->site_address}user/advertise/" class="btn btn-default btn-block btn-lg"><i class="fa fa-bullhorn"></i> تبلیغات برین </a>
 </div>
