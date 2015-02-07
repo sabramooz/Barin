@@ -11,6 +11,7 @@
     <link rel="icon" href="{$obj->site_address}favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="{$obj->site_address}view/front/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="{$obj->site_address}view/front/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="{$obj->site_address}view/front/css/magazine.css">
     <link rel="stylesheet" type="text/css" href="{$obj->site_address}view/front/css/slider.css">
     <link rel="stylesheet" type="text/css" href="{$obj->site_address}view/front/css/lightbox.css">
     <link rel="stylesheet" type="text/css" href="{$obj->site_address}view/front/font-awesome/css/font-awesome.min.css">
@@ -232,6 +233,13 @@
 <script src="{$obj->site_address}view/front/js/custom.js"></script>
 <script src="{$obj->site_address}view/front/js/timeago.js"></script>
 <script src="{$obj->site_address}view/front/js/jquery.timeago.fa.js"></script>
+<script src="{$obj->site_address}view/front/js/turn.js"></script>
+<script src="{$obj->site_address}view/front/js/zoom.min.js"></script>
+<script src="{$obj->site_address}view/front/js/modernizr.2.5.3.min.js"></script>
+<script src="{$obj->site_address}view/front/js/hash.js"></script>
+<script src="{$obj->site_address}view/front/js/magazine.js"></script>
+
+<script src="{$obj->site_address}view/front/js/magazine.custom.js"></script>
 <script>
 	  $(".timeago").timeago();
 </script>
