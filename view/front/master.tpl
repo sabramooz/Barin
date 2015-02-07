@@ -182,6 +182,7 @@
                     <li><a href="{$obj->site_address}user/agents/">شرایط اخذ نمایندگی</a> </li>
                     <li><a href="{$obj->site_address}pdf.php?city={$obj->city_name}">دانلود لیست کامل مراکز</a> </li>
                     <li><a href="{$obj->site_address}user/press/">برین در جراید</a> </li>
+                    <li><a href="{$obj->site_address}user/magazine/">مجله دیجیتال برین</a> </li>
                     <li><a href="http://forum.barincard.com/Upload/index.php">تالار گفتمان</a> </li>
                     <li><a href="#">درباره مدیریت</a></li>
                 </ul>
