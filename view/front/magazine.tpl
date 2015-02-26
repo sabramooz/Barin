@@ -1,59 +1,1580 @@
 {load_presentation_object filename='magazine' assign='obj'}
 
-<div id="canvas">
 
-<div class="zoom-icon zoom-icon-in"></div>
 
-<div class="magazine-viewport">
-	<div class="container">
-		<div class="magazine">
-			<!-- Next button -->
-			<div ignore="1" class="next-button"></div>
-			<!-- Previous button -->
-			<div ignore="1" class="previous-button"></div>
-		</div>
-	</div>
-</div>
+<!-- DIV YOUR WEBSITE --> 
+<div style="width:100%;margin:0 auto">
+    
+ 
+<!-- BEGIN FLIPBOOK STRUCTURE -->  
+<div id="fb5-ajax">	
+         
+         
+      <!-- BEGIN HTML BOOK -->      
+      <div data-current="book5" class="fb5" id="fb5">      
+            
+            <!-- PRELOADER -->
+            <div class="fb5-preloader">
+            <div id="wBall_1" class="wBall">
+            <div class="wInnerBall">
+            </div>
+            </div>
+            <div id="wBall_2" class="wBall">
+            <div class="wInnerBall">
+            </div>
+            </div>
+            <div id="wBall_3" class="wBall">
+            <div class="wInnerBall">
+            </div>
+            </div>
+            <div id="wBall_4" class="wBall">
+            <div class="wInnerBall">
+            </div>
+            </div>
+            <div id="wBall_5" class="wBall">
+            <div class="wInnerBall">
+            </div>
+            </div>
+            </div>      
+      
+                           
+            <!-- BACKGROUND FOR BOOK -->  
+            <div class="fb5-bcg-book"></div>                      
+          
+            <!-- BEGIN CONTAINER BOOK -->
+            <div id="fb5-container-book">
+     
+                <!-- BEGIN deep linking -->  
+                <section id="fb5-deeplinking">
+                     <ul>
+                          <li data-address="page1" data-page="1"></li>
+                          <li data-address="page2-page3" data-page="2"></li>
+                          <li data-address="page2-page3" data-page="3"></li>
+                          <li data-address="page4-5" data-page="4"></li>
+                          <li data-address="page4-5" data-page="5"></li>
+                          <li data-address="page6-page7" data-page="6"></li>
+                          <li data-address="page6-page7" data-page="7"></li>
+                          <li data-address="page8-page9" data-page="8"></li>
+                          <li data-address="page8-page9" data-page="9"></li>
+                          <li data-address="10-11" data-page="10"></li>
+                          <li data-address="10-11" data-page="11"></li>
+                          <li data-address="end" data-page="12"></li>
+                     </ul>
+                 </section>
+                <!-- END deep linking -->  
+            
+                
+                <!-- BEGIN ABOUT -->
+                <section id="fb5-about">
+                
+                </section>
+                <!-- END ABOUT -->
+                
+                
+                <!-- BEGIN BOOK -->
+                <div id="fb5-book">
+                
+                          
+                <!-- BEGIN PAGE 1-->          
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic01.jpg" class="">
+                       
+                     <!-- container page book --> 
+                     <div class="fb5-cont-page-book">
+                       
+                         <!-- description for page --> 
+                         <div class="fb5-page-book">
+                                         
+                         </div> 
+                                  
+                        <!-- number page and title  -->                
+                        <div class="fb5-meta">
+                                <span class="fb5-description">Collection 2014</span>
+                                <span class="fb5-num">3</span>
+                         </div> 
+                        
+                        
+                     </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 1 -->
+                  
+                  
+                  
+                  
+                <!-- BEGIN PAGE 2-->           
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic2-3.jpg" class="fb5-double fb5-first">
+                       
+                     <!-- container page book --> 
+                     <div class="fb5-cont-page-book">
+                       
+                         <!-- description for page from WYSWIG --> 
+                         <div class="fb5-page-book">
+                                         
+                         </div> 
+                                  
+                        <!-- number page and title for page -->                
+                        <div class="fb5-meta">
+                                <span class="fb5-num">4</span>
+                                <span class="fb5-description">Collection 2014</span>
+                        </div> 
+                        
+                        
+                      </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 2 -->                
+                
+                
+                
+                  
+                <!-- BEGIN PAGE 3 -->          
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic2-3.jpg" class="fb5-double fb5-second">
+                       
+                         <!-- container page book --> 
+                         <div class="fb5-cont-page-book">
+                           
+                                <!-- description for page from WYSWIG --> 
+                                <div class="fb5-page-book">
+                                                 
+                                </div> 
+                                          
+                                <!-- number page and title for page -->                
+                                <div class="fb5-meta">
+                                        <span class="fb5-description">Collection 2014</span>
+                                        <span class="fb5-num">5</span>
+                                </div>                     
+                            
+                          </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 3 --> 
+                
+                
+                <!-- BEGIN PAGE 2-->           
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic4-5.jpg" class="fb5-double fb5-first">
+                       
+                     <!-- container page book --> 
+                     <div class="fb5-cont-page-book">
+                       
+                         <!-- description for page from WYSWIG --> 
+                         <div class="fb5-page-book">
+                                         
+                         </div> 
+                                  
+                        <!-- number page and title for page -->                
+                        <div class="fb5-meta">
+                                <span class="fb5-num">4</span>
+                                <span class="fb5-description">Collection 2014</span>
+                        </div> 
+                        
+                        
+                      </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 2 -->                
+                
+                
+                
+                  
+                <!-- BEGIN PAGE 3 -->          
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic4-5.jpg" class="fb5-double fb5-second">
+                       
+                         <!-- container page book --> 
+                         <div class="fb5-cont-page-book">
+                           
+                                <!-- description for page from WYSWIG --> 
+                                <div class="fb5-page-book">
+                                                 
+                                </div> 
+                                          
+                                <!-- number page and title for page -->                
+                                <div class="fb5-meta">
+                                        <span class="fb5-description">Collection 2014</span>
+                                        <span class="fb5-num">5</span>
+                                </div>                     
+                            
+                          </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 3 -->
+                
+                
+                <!-- BEGIN PAGE 2-->           
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic6-7.jpg" class="fb5-double fb5-first">
+                       
+                     <!-- container page book --> 
+                     <div class="fb5-cont-page-book">
+                       
+                         <!-- description for page from WYSWIG --> 
+                         <div class="fb5-page-book">
+                                         
+                         </div> 
+                                  
+                        <!-- number page and title for page -->                
+                        <div class="fb5-meta">
+                                <span class="fb5-num">4</span>
+                                <span class="fb5-description">Collection 2014</span>
+                        </div> 
+                        
+                        
+                      </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 2 -->                
+                
+                
+                
+                  
+                <!-- BEGIN PAGE 3 -->          
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic6-7.jpg" class="fb5-double fb5-second">
+                       
+                         <!-- container page book --> 
+                         <div class="fb5-cont-page-book">
+                           
+                                <!-- description for page from WYSWIG --> 
+                                <div class="fb5-page-book">
+                                                 
+                                </div> 
+                                          
+                                <!-- number page and title for page -->                
+                                <div class="fb5-meta">
+                                        <span class="fb5-description">Collection 2014</span>
+                                        <span class="fb5-num">5</span>
+                                </div>                     
+                            
+                          </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 3 -->
+                
+                
+                <!-- BEGIN PAGE 2-->           
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic8-9.jpg" class="fb5-double fb5-first">
+                       
+                     <!-- container page book --> 
+                     <div class="fb5-cont-page-book">
+                       
+                         <!-- description for page from WYSWIG --> 
+                         <div class="fb5-page-book">
+                                         
+                         </div> 
+                                  
+                        <!-- number page and title for page -->                
+                        <div class="fb5-meta">
+                                <span class="fb5-num">4</span>
+                                <span class="fb5-description">Collection 2014</span>
+                        </div> 
+                        
+                        
+                      </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 2 -->                
+                
+                
+                
+                  
+                <!-- BEGIN PAGE 3 -->          
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic8-9.jpg" class="fb5-double fb5-second">
+                       
+                         <!-- container page book --> 
+                         <div class="fb5-cont-page-book">
+                           
+                                <!-- description for page from WYSWIG --> 
+                                <div class="fb5-page-book">
+                                                 
+                                </div> 
+                                          
+                                <!-- number page and title for page -->                
+                                <div class="fb5-meta">
+                                        <span class="fb5-description">Collection 2014</span>
+                                        <span class="fb5-num">5</span>
+                                </div>                     
+                            
+                          </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 3 -->
+                
+                
+                <!-- BEGIN PAGE 2-->           
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic10-11.jpg" class="fb5-double fb5-first">
+                       
+                     <!-- container page book --> 
+                     <div class="fb5-cont-page-book">
+                       
+                         <!-- description for page from WYSWIG --> 
+                         <div class="fb5-page-book">
+                                         
+                         </div> 
+                                  
+                        <!-- number page and title for page -->                
+                        <div class="fb5-meta">
+                                <span class="fb5-num">4</span>
+                                <span class="fb5-description">Collection 2014</span>
+                        </div> 
+                        
+                        
+                      </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 2 -->                
+                
+                
+                
+                  
+                <!-- BEGIN PAGE 3 -->          
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic10-11.jpg" class="fb5-double fb5-second">
+                       
+                         <!-- container page book --> 
+                         <div class="fb5-cont-page-book">
+                           
+                                <!-- description for page from WYSWIG --> 
+                                <div class="fb5-page-book">
+                                                 
+                                </div> 
+                                          
+                                <!-- number page and title for page -->                
+                                <div class="fb5-meta">
+                                        <span class="fb5-description">Collection 2014</span>
+                                        <span class="fb5-num">5</span>
+                                </div>                     
+                            
+                          </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 3 -->
+                
+                
+                <!-- BEGIN PAGE 2-->           
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic12-13.jpg" class="fb5-double fb5-first">
+                       
+                     <!-- container page book --> 
+                     <div class="fb5-cont-page-book">
+                       
+                         <!-- description for page from WYSWIG --> 
+                         <div class="fb5-page-book">
+                                         
+                         </div> 
+                                  
+                        <!-- number page and title for page -->                
+                        <div class="fb5-meta">
+                                <span class="fb5-num">4</span>
+                                <span class="fb5-description">Collection 2014</span>
+                        </div> 
+                        
+                        
+                      </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 2 -->                
+                
+                
+                
+                  
+                <!-- BEGIN PAGE 3 -->          
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic12-13.jpg" class="fb5-double fb5-second">
+                       
+                         <!-- container page book --> 
+                         <div class="fb5-cont-page-book">
+                           
+                                <!-- description for page from WYSWIG --> 
+                                <div class="fb5-page-book">
+                                                 
+                                </div> 
+                                          
+                                <!-- number page and title for page -->                
+                                <div class="fb5-meta">
+                                        <span class="fb5-description">Collection 2014</span>
+                                        <span class="fb5-num">5</span>
+                                </div>                     
+                            
+                          </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 3 -->
+                
+                
+                <!-- BEGIN PAGE 2-->           
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic14-15.jpg" class="fb5-double fb5-first">
+                       
+                     <!-- container page book --> 
+                     <div class="fb5-cont-page-book">
+                       
+                         <!-- description for page from WYSWIG --> 
+                         <div class="fb5-page-book">
+                                         
+                         </div> 
+                                  
+                        <!-- number page and title for page -->                
+                        <div class="fb5-meta">
+                                <span class="fb5-num">4</span>
+                                <span class="fb5-description">Collection 2014</span>
+                        </div> 
+                        
+                        
+                      </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 2 -->                
+                
+                
+                
+                  
+                <!-- BEGIN PAGE 3 -->          
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic14-15.jpg" class="fb5-double fb5-second">
+                       
+                         <!-- container page book --> 
+                         <div class="fb5-cont-page-book">
+                           
+                                <!-- description for page from WYSWIG --> 
+                                <div class="fb5-page-book">
+                                                 
+                                </div> 
+                                          
+                                <!-- number page and title for page -->                
+                                <div class="fb5-meta">
+                                        <span class="fb5-description">Collection 2014</span>
+                                        <span class="fb5-num">5</span>
+                                </div>                     
+                            
+                          </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 3 -->
+                
+                
+                <!-- BEGIN PAGE 2-->           
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic16-17.jpg" class="fb5-double fb5-first">
+                       
+                     <!-- container page book --> 
+                     <div class="fb5-cont-page-book">
+                       
+                         <!-- description for page from WYSWIG --> 
+                         <div class="fb5-page-book">
+                                         
+                         </div> 
+                                  
+                        <!-- number page and title for page -->                
+                        <div class="fb5-meta">
+                                <span class="fb5-num">4</span>
+                                <span class="fb5-description">Collection 2014</span>
+                        </div> 
+                        
+                        
+                      </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 2 -->                
+                
+                
+                
+                  
+                <!-- BEGIN PAGE 3 -->          
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic16-17.jpg" class="fb5-double fb5-second">
+                       
+                         <!-- container page book --> 
+                         <div class="fb5-cont-page-book">
+                           
+                                <!-- description for page from WYSWIG --> 
+                                <div class="fb5-page-book">
+                                                 
+                                </div> 
+                                          
+                                <!-- number page and title for page -->                
+                                <div class="fb5-meta">
+                                        <span class="fb5-description">Collection 2014</span>
+                                        <span class="fb5-num">5</span>
+                                </div>                     
+                            
+                          </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 3 -->
+                
+                
+                <!-- BEGIN PAGE 2-->           
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic18-19.jpg" class="fb5-double fb5-first">
+                       
+                     <!-- container page book --> 
+                     <div class="fb5-cont-page-book">
+                       
+                         <!-- description for page from WYSWIG --> 
+                         <div class="fb5-page-book">
+                                         
+                         </div> 
+                                  
+                        <!-- number page and title for page -->                
+                        <div class="fb5-meta">
+                                <span class="fb5-num">4</span>
+                                <span class="fb5-description">Collection 2014</span>
+                        </div> 
+                        
+                        
+                      </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 2 -->                
+                
+                
+                
+                  
+                <!-- BEGIN PAGE 3 -->          
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic18-19.jpg" class="fb5-double fb5-second">
+                       
+                         <!-- container page book --> 
+                         <div class="fb5-cont-page-book">
+                           
+                                <!-- description for page from WYSWIG --> 
+                                <div class="fb5-page-book">
+                                                 
+                                </div> 
+                                          
+                                <!-- number page and title for page -->                
+                                <div class="fb5-meta">
+                                        <span class="fb5-description">Collection 2014</span>
+                                        <span class="fb5-num">5</span>
+                                </div>                     
+                            
+                          </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 3 -->
+                
+                
+                <!-- BEGIN PAGE 2-->           
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic20-21.jpg" class="fb5-double fb5-first">
+                       
+                     <!-- container page book --> 
+                     <div class="fb5-cont-page-book">
+                       
+                         <!-- description for page from WYSWIG --> 
+                         <div class="fb5-page-book">
+                                         
+                         </div> 
+                                  
+                        <!-- number page and title for page -->                
+                        <div class="fb5-meta">
+                                <span class="fb5-num">4</span>
+                                <span class="fb5-description">Collection 2014</span>
+                        </div> 
+                        
+                        
+                      </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 2 -->                
+                
+                
+                
+                  
+                <!-- BEGIN PAGE 3 -->          
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic20-21.jpg" class="fb5-double fb5-second">
+                       
+                         <!-- container page book --> 
+                         <div class="fb5-cont-page-book">
+                           
+                                <!-- description for page from WYSWIG --> 
+                                <div class="fb5-page-book">
+                                                 
+                                </div> 
+                                          
+                                <!-- number page and title for page -->                
+                                <div class="fb5-meta">
+                                        <span class="fb5-description">Collection 2014</span>
+                                        <span class="fb5-num">5</span>
+                                </div>                     
+                            
+                          </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 3 -->
+                
+                
+                <!-- BEGIN PAGE 2-->           
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic22-23.jpg" class="fb5-double fb5-first">
+                       
+                     <!-- container page book --> 
+                     <div class="fb5-cont-page-book">
+                       
+                         <!-- description for page from WYSWIG --> 
+                         <div class="fb5-page-book">
+                                         
+                         </div> 
+                                  
+                        <!-- number page and title for page -->                
+                        <div class="fb5-meta">
+                                <span class="fb5-num">4</span>
+                                <span class="fb5-description">Collection 2014</span>
+                        </div> 
+                        
+                        
+                      </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 2 -->                
+                
+                
+                
+                  
+                <!-- BEGIN PAGE 3 -->          
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic22-23.jpg" class="fb5-double fb5-second">
+                       
+                         <!-- container page book --> 
+                         <div class="fb5-cont-page-book">
+                           
+                                <!-- description for page from WYSWIG --> 
+                                <div class="fb5-page-book">
+                                                 
+                                </div> 
+                                          
+                                <!-- number page and title for page -->                
+                                <div class="fb5-meta">
+                                        <span class="fb5-description">Collection 2014</span>
+                                        <span class="fb5-num">5</span>
+                                </div>                     
+                            
+                          </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 3 -->
+                
+                
+                <!-- BEGIN PAGE 2-->           
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic24-25.jpg" class="fb5-double fb5-first">
+                       
+                     <!-- container page book --> 
+                     <div class="fb5-cont-page-book">
+                       
+                         <!-- description for page from WYSWIG --> 
+                         <div class="fb5-page-book">
+                                         
+                         </div> 
+                                  
+                        <!-- number page and title for page -->                
+                        <div class="fb5-meta">
+                                <span class="fb5-num">4</span>
+                                <span class="fb5-description">Collection 2014</span>
+                        </div> 
+                        
+                        
+                      </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 2 -->                
+                
+                
+                
+                  
+                <!-- BEGIN PAGE 3 -->          
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic24-25.jpg" class="fb5-double fb5-second">
+                       
+                         <!-- container page book --> 
+                         <div class="fb5-cont-page-book">
+                           
+                                <!-- description for page from WYSWIG --> 
+                                <div class="fb5-page-book">
+                                                 
+                                </div> 
+                                          
+                                <!-- number page and title for page -->                
+                                <div class="fb5-meta">
+                                        <span class="fb5-description">Collection 2014</span>
+                                        <span class="fb5-num">5</span>
+                                </div>                     
+                            
+                          </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 3 -->
+                
+                
+                <!-- BEGIN PAGE 2-->           
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic26-27.jpg" class="fb5-double fb5-first">
+                       
+                     <!-- container page book --> 
+                     <div class="fb5-cont-page-book">
+                       
+                         <!-- description for page from WYSWIG --> 
+                         <div class="fb5-page-book">
+                                         
+                         </div> 
+                                  
+                        <!-- number page and title for page -->                
+                        <div class="fb5-meta">
+                                <span class="fb5-num">4</span>
+                                <span class="fb5-description">Collection 2014</span>
+                        </div> 
+                        
+                        
+                      </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 2 -->                
+                
+                
+                
+                  
+                <!-- BEGIN PAGE 3 -->          
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic26-27.jpg" class="fb5-double fb5-second">
+                       
+                         <!-- container page book --> 
+                         <div class="fb5-cont-page-book">
+                           
+                                <!-- description for page from WYSWIG --> 
+                                <div class="fb5-page-book">
+                                                 
+                                </div> 
+                                          
+                                <!-- number page and title for page -->                
+                                <div class="fb5-meta">
+                                        <span class="fb5-description">Collection 2014</span>
+                                        <span class="fb5-num">5</span>
+                                </div>                     
+                            
+                          </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 3 -->
+                
+                
+                <!-- BEGIN PAGE 2-->           
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic28-29.jpg" class="fb5-double fb5-first">
+                       
+                     <!-- container page book --> 
+                     <div class="fb5-cont-page-book">
+                       
+                         <!-- description for page from WYSWIG --> 
+                         <div class="fb5-page-book">
+                                         
+                         </div> 
+                                  
+                        <!-- number page and title for page -->                
+                        <div class="fb5-meta">
+                                <span class="fb5-num">4</span>
+                                <span class="fb5-description">Collection 2014</span>
+                        </div> 
+                        
+                        
+                      </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 2 -->                
+                
+                
+                
+                  
+                <!-- BEGIN PAGE 3 -->          
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic28-29.jpg" class="fb5-double fb5-second">
+                       
+                         <!-- container page book --> 
+                         <div class="fb5-cont-page-book">
+                           
+                                <!-- description for page from WYSWIG --> 
+                                <div class="fb5-page-book">
+                                                 
+                                </div> 
+                                          
+                                <!-- number page and title for page -->                
+                                <div class="fb5-meta">
+                                        <span class="fb5-description">Collection 2014</span>
+                                        <span class="fb5-num">5</span>
+                                </div>                     
+                            
+                          </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 3 -->
+                
+                
+                <!-- BEGIN PAGE 2-->           
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic30-31.jpg" class="fb5-double fb5-first">
+                       
+                     <!-- container page book --> 
+                     <div class="fb5-cont-page-book">
+                       
+                         <!-- description for page from WYSWIG --> 
+                         <div class="fb5-page-book">
+                                         
+                         </div> 
+                                  
+                        <!-- number page and title for page -->                
+                        <div class="fb5-meta">
+                                <span class="fb5-num">4</span>
+                                <span class="fb5-description">Collection 2014</span>
+                        </div> 
+                        
+                        
+                      </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 2 -->                
+                
+                
+                
+                  
+                <!-- BEGIN PAGE 3 -->          
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic30-31.jpg" class="fb5-double fb5-second">
+                       
+                         <!-- container page book --> 
+                         <div class="fb5-cont-page-book">
+                           
+                                <!-- description for page from WYSWIG --> 
+                                <div class="fb5-page-book">
+                                                 
+                                </div> 
+                                          
+                                <!-- number page and title for page -->                
+                                <div class="fb5-meta">
+                                        <span class="fb5-description">Collection 2014</span>
+                                        <span class="fb5-num">5</span>
+                                </div>                     
+                            
+                          </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 3 -->
+                
+                
+                <!-- BEGIN PAGE 2-->           
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic32-33.jpg" class="fb5-double fb5-first">
+                       
+                     <!-- container page book --> 
+                     <div class="fb5-cont-page-book">
+                       
+                         <!-- description for page from WYSWIG --> 
+                         <div class="fb5-page-book">
+                                         
+                         </div> 
+                                  
+                        <!-- number page and title for page -->                
+                        <div class="fb5-meta">
+                                <span class="fb5-num">4</span>
+                                <span class="fb5-description">Collection 2014</span>
+                        </div> 
+                        
+                        
+                      </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 2 -->                
+                
+                
+                
+                  
+                <!-- BEGIN PAGE 3 -->          
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic32-33.jpg" class="fb5-double fb5-second">
+                       
+                         <!-- container page book --> 
+                         <div class="fb5-cont-page-book">
+                           
+                                <!-- description for page from WYSWIG --> 
+                                <div class="fb5-page-book">
+                                                 
+                                </div> 
+                                          
+                                <!-- number page and title for page -->                
+                                <div class="fb5-meta">
+                                        <span class="fb5-description">Collection 2014</span>
+                                        <span class="fb5-num">5</span>
+                                </div>                     
+                            
+                          </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 3 -->
+                
+                
+                <!-- BEGIN PAGE 2-->           
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic34-35.jpg" class="fb5-double fb5-first">
+                       
+                     <!-- container page book --> 
+                     <div class="fb5-cont-page-book">
+                       
+                         <!-- description for page from WYSWIG --> 
+                         <div class="fb5-page-book">
+                                         
+                         </div> 
+                                  
+                        <!-- number page and title for page -->                
+                        <div class="fb5-meta">
+                                <span class="fb5-num">4</span>
+                                <span class="fb5-description">Collection 2014</span>
+                        </div> 
+                        
+                        
+                      </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 2 -->                
+                
+                
+                
+                  
+                <!-- BEGIN PAGE 3 -->          
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic34-35.jpg" class="fb5-double fb5-second">
+                       
+                         <!-- container page book --> 
+                         <div class="fb5-cont-page-book">
+                           
+                                <!-- description for page from WYSWIG --> 
+                                <div class="fb5-page-book">
+                                                 
+                                </div> 
+                                          
+                                <!-- number page and title for page -->                
+                                <div class="fb5-meta">
+                                        <span class="fb5-description">Collection 2014</span>
+                                        <span class="fb5-num">5</span>
+                                </div>                     
+                            
+                          </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 3 -->
+                
+                
+                <!-- BEGIN PAGE 2-->           
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic36-37.jpg" class="fb5-double fb5-first">
+                       
+                     <!-- container page book --> 
+                     <div class="fb5-cont-page-book">
+                       
+                         <!-- description for page from WYSWIG --> 
+                         <div class="fb5-page-book">
+                                         
+                         </div> 
+                                  
+                        <!-- number page and title for page -->                
+                        <div class="fb5-meta">
+                                <span class="fb5-num">4</span>
+                                <span class="fb5-description">Collection 2014</span>
+                        </div> 
+                        
+                        
+                      </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 2 -->                
+                
+                
+                
+                  
+                <!-- BEGIN PAGE 3 -->          
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic36-37.jpg" class="fb5-double fb5-second">
+                       
+                         <!-- container page book --> 
+                         <div class="fb5-cont-page-book">
+                           
+                                <!-- description for page from WYSWIG --> 
+                                <div class="fb5-page-book">
+                                                 
+                                </div> 
+                                          
+                                <!-- number page and title for page -->                
+                                <div class="fb5-meta">
+                                        <span class="fb5-description">Collection 2014</span>
+                                        <span class="fb5-num">5</span>
+                                </div>                     
+                            
+                          </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 3 -->
+                
+                
+                <!-- BEGIN PAGE 2-->           
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic38-39.jpg" class="fb5-double fb5-first">
+                       
+                     <!-- container page book --> 
+                     <div class="fb5-cont-page-book">
+                       
+                         <!-- description for page from WYSWIG --> 
+                         <div class="fb5-page-book">
+                                         
+                         </div> 
+                                  
+                        <!-- number page and title for page -->                
+                        <div class="fb5-meta">
+                                <span class="fb5-num">4</span>
+                                <span class="fb5-description">Collection 2014</span>
+                        </div> 
+                        
+                        
+                      </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 2 -->                
+                
+                
+                
+                  
+                <!-- BEGIN PAGE 3 -->          
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic38-39.jpg" class="fb5-double fb5-second">
+                       
+                         <!-- container page book --> 
+                         <div class="fb5-cont-page-book">
+                           
+                                <!-- description for page from WYSWIG --> 
+                                <div class="fb5-page-book">
+                                                 
+                                </div> 
+                                          
+                                <!-- number page and title for page -->                
+                                <div class="fb5-meta">
+                                        <span class="fb5-description">Collection 2014</span>
+                                        <span class="fb5-num">5</span>
+                                </div>                     
+                            
+                          </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 3 -->
+                
+                
+                <!-- BEGIN PAGE 2-->           
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic40-41.jpg" class="fb5-double fb5-first">
+                       
+                     <!-- container page book --> 
+                     <div class="fb5-cont-page-book">
+                       
+                         <!-- description for page from WYSWIG --> 
+                         <div class="fb5-page-book">
+                                         
+                         </div> 
+                                  
+                        <!-- number page and title for page -->                
+                        <div class="fb5-meta">
+                                <span class="fb5-num">4</span>
+                                <span class="fb5-description">Collection 2014</span>
+                        </div> 
+                        
+                        
+                      </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 2 -->                
+                
+                
+                
+                  
+                <!-- BEGIN PAGE 3 -->          
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic40-41.jpg" class="fb5-double fb5-second">
+                       
+                         <!-- container page book --> 
+                         <div class="fb5-cont-page-book">
+                           
+                                <!-- description for page from WYSWIG --> 
+                                <div class="fb5-page-book">
+                                                 
+                                </div> 
+                                          
+                                <!-- number page and title for page -->                
+                                <div class="fb5-meta">
+                                        <span class="fb5-description">Collection 2014</span>
+                                        <span class="fb5-num">5</span>
+                                </div>                     
+                            
+                          </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 3 -->
+                
+                
+                <!-- BEGIN PAGE 2-->           
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic42-43.jpg" class="fb5-double fb5-first">
+                       
+                     <!-- container page book --> 
+                     <div class="fb5-cont-page-book">
+                       
+                         <!-- description for page from WYSWIG --> 
+                         <div class="fb5-page-book">
+                                         
+                         </div> 
+                                  
+                        <!-- number page and title for page -->                
+                        <div class="fb5-meta">
+                                <span class="fb5-num">4</span>
+                                <span class="fb5-description">Collection 2014</span>
+                        </div> 
+                        
+                        
+                      </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 2 -->                
+                
+                
+                
+                  
+                <!-- BEGIN PAGE 3 -->          
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic42-43.jpg" class="fb5-double fb5-second">
+                       
+                         <!-- container page book --> 
+                         <div class="fb5-cont-page-book">
+                           
+                                <!-- description for page from WYSWIG --> 
+                                <div class="fb5-page-book">
+                                                 
+                                </div> 
+                                          
+                                <!-- number page and title for page -->                
+                                <div class="fb5-meta">
+                                        <span class="fb5-description">Collection 2014</span>
+                                        <span class="fb5-num">5</span>
+                                </div>                     
+                            
+                          </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 3 -->
+                
+                
+                <!-- BEGIN PAGE 2-->           
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic44-45.jpg" class="fb5-double fb5-first">
+                       
+                     <!-- container page book --> 
+                     <div class="fb5-cont-page-book">
+                       
+                         <!-- description for page from WYSWIG --> 
+                         <div class="fb5-page-book">
+                                         
+                         </div> 
+                                  
+                        <!-- number page and title for page -->                
+                        <div class="fb5-meta">
+                                <span class="fb5-num">4</span>
+                                <span class="fb5-description">Collection 2014</span>
+                        </div> 
+                        
+                        
+                      </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 2 -->                
+                
+                
+                
+                  
+                <!-- BEGIN PAGE 3 -->          
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic44-45.jpg" class="fb5-double fb5-second">
+                       
+                         <!-- container page book --> 
+                         <div class="fb5-cont-page-book">
+                           
+                                <!-- description for page from WYSWIG --> 
+                                <div class="fb5-page-book">
+                                                 
+                                </div> 
+                                          
+                                <!-- number page and title for page -->                
+                                <div class="fb5-meta">
+                                        <span class="fb5-description">Collection 2014</span>
+                                        <span class="fb5-num">5</span>
+                                </div>                     
+                            
+                          </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 3 -->
+                
+                
+                <!-- BEGIN PAGE 2-->           
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic46-47.jpg" class="fb5-double fb5-first">
+                       
+                     <!-- container page book --> 
+                     <div class="fb5-cont-page-book">
+                       
+                         <!-- description for page from WYSWIG --> 
+                         <div class="fb5-page-book">
+                                         
+                         </div> 
+                                  
+                        <!-- number page and title for page -->                
+                        <div class="fb5-meta">
+                                <span class="fb5-num">4</span>
+                                <span class="fb5-description">Collection 2014</span>
+                        </div> 
+                        
+                        
+                      </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 2 -->                
+                
+                
+                
+                  
+                <!-- BEGIN PAGE 3 -->          
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic46-47.jpg" class="fb5-double fb5-second">
+                       
+                         <!-- container page book --> 
+                         <div class="fb5-cont-page-book">
+                           
+                                <!-- description for page from WYSWIG --> 
+                                <div class="fb5-page-book">
+                                                 
+                                </div> 
+                                          
+                                <!-- number page and title for page -->                
+                                <div class="fb5-meta">
+                                        <span class="fb5-description">Collection 2014</span>
+                                        <span class="fb5-num">5</span>
+                                </div>                     
+                            
+                          </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 3 -->
+                
+                
+                <!-- BEGIN PAGE 2-->           
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic48-49.jpg" class="fb5-double fb5-first">
+                       
+                     <!-- container page book --> 
+                     <div class="fb5-cont-page-book">
+                       
+                         <!-- description for page from WYSWIG --> 
+                         <div class="fb5-page-book">
+                                         
+                         </div> 
+                                  
+                        <!-- number page and title for page -->                
+                        <div class="fb5-meta">
+                                <span class="fb5-num">4</span>
+                                <span class="fb5-description">Collection 2014</span>
+                        </div> 
+                        
+                        
+                      </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 2 -->                
+                
+                
+                
+                  
+                <!-- BEGIN PAGE 3 -->          
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic48-49.jpg" class="fb5-double fb5-second">
+                       
+                         <!-- container page book --> 
+                         <div class="fb5-cont-page-book">
+                           
+                                <!-- description for page from WYSWIG --> 
+                                <div class="fb5-page-book">
+                                                 
+                                </div> 
+                                          
+                                <!-- number page and title for page -->                
+                                <div class="fb5-meta">
+                                        <span class="fb5-description">Collection 2014</span>
+                                        <span class="fb5-num">5</span>
+                                </div>                     
+                            
+                          </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 3 -->
+                
+                
+                <!-- BEGIN PAGE 2-->           
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic50-51.jpg" class="fb5-double fb5-first">
+                       
+                     <!-- container page book --> 
+                     <div class="fb5-cont-page-book">
+                       
+                         <!-- description for page from WYSWIG --> 
+                         <div class="fb5-page-book">
+                                         
+                         </div> 
+                                  
+                        <!-- number page and title for page -->                
+                        <div class="fb5-meta">
+                                <span class="fb5-num">4</span>
+                                <span class="fb5-description">Collection 2014</span>
+                        </div> 
+                        
+                        
+                      </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 2 -->                
+                
+                
+                
+                  
+                <!-- BEGIN PAGE 3 -->          
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic50-51.jpg" class="fb5-double fb5-second">
+                       
+                         <!-- container page book --> 
+                         <div class="fb5-cont-page-book">
+                           
+                                <!-- description for page from WYSWIG --> 
+                                <div class="fb5-page-book">
+                                                 
+                                </div> 
+                                          
+                                <!-- number page and title for page -->                
+                                <div class="fb5-meta">
+                                        <span class="fb5-description">Collection 2014</span>
+                                        <span class="fb5-num">5</span>
+                                </div>                     
+                            
+                          </div> <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 3 -->          
+                                        
+                  
+                  
+                           
+                
+                
+                  
+                <!-- BEGIN PAGE 12 -->          
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic52.jpg" class="">
+                       
+                     <!-- container page book --> 
+                     <div class="fb5-cont-page-book">
+                       
+                             <!-- description for page from WYSWIG --> 
+                             <div class="fb5-page-book">
+                                             
+                             </div> 
+                                      
+                             <!-- number page and title for page -->                
+                             <div class="fb5-meta">
+                                    <span class="fb5-description">Collection 2014</span>
+                                    <span class="fb5-num">9</span>
+                             </div>                  
+                        
+                     </div>
+                      <!-- end container page book --> 
+                        
+                </div>
+                <!-- END PAGE 12 -->
+                        
+                  
+              </div>
+              <!-- END BOOK -->
+                           
+                
+              <!-- arrows -->
+              <a class="fb5-nav-arrow prev"></a>
+              <a class="fb5-nav-arrow next"></a>
+                
+                
+             </div>
+             <!-- END CONTAINER BOOK -->
+    
+    
+        <!-- BEGIN FOOTER -->
+        <div id="fb5-footer">
+        
+            <div class="fb5-bcg-tools"></div>
+             
+            <a id="fb5-logo" target="_blank" href="http://codecanyon.net/user/flashmaniac?ref=flashmaniac">
+                <img alt="" src="{$obj->site_address}view/front/img/logo.png">
+            </a>
+            
+            <div class="fb5-menu" id="fb5-center">
+                <ul>
+                
+                    <!-- icon download -->
+                    <li>
+                        <a title="DOWNLOAD (ZIP)  " class="fb5-download" href="http://page-flip.info/preview_diamond/img/file.pdf"></a>
+                    </li>
+                                        
+                    
+                    <!-- icon_zoom_in -->                              
+                    <li>
+                        <a title="ZOOM IN" class="fb5-zoom-in"></a>
+                    </li>                               
+                    
+                    <!-- icon_zoom_out -->
+                     
+                    <li>
+                        <a title="ZOOM OUT " class="fb5-zoom-out"></a>
+                    </li>                                
+                    
+                    <!-- icon_zoom_auto -->
+                    <li>
+                        <a title="ZOOM AUTO " class="fb5-zoom-auto"></a>
+                    </li>                                
+                    
+                    <!-- icon_zoom_original -->
+                    <li>
+                        <a title="ZOOM ORIGINAL (SCALE 1:1)" class="fb5-zoom-original"></a>
+                    </li>
+                                     
+                    
+                    <!-- icon_allpages -->
+                    <li>
+                        <a title="SHOW ALL PAGES " class="fb5-show-all"></a>
+                    </li>
+                                                    
+                    
+                    <!-- icon_home -->
+                    <li>
+                        <a title="SHOW HOME PAGE " class="fb5-home"></a>
+                    </li>
+                                    
+                </ul>
+            </div>
+            
+            <div class="fb5-menu" id="fb5-right">
+                <ul> 
+                    <!-- icon page manager -->                 
+                    <li class="fb5-goto">
+                        <label for="fb5-page-number" id="fb5-label-page-number">PAGE</label>
+                        <input type="text" id="fb5-page-number">
+                        <button type="button">GO</button>
+                    </li>    
+                     
+                    <!-- icon contact form -->                 
+                    <li>
+                        <a title="SEND MESSAGE" class="contact"></a>
+                    </li>                           
+                                    
+                    <!-- icon fullscreen -->                 
+                    <li>
+                        <a title="FULL / NORMAL SCREEN" class="fb5-fullscreen"></a>
+                    </li>                                       
+                                    
+                </ul>
+            </div>
+            
+            
+        
+        </div>
+        <!-- END FOOTER -->
+    
+    
+        <!-- BEGIN CONTACT FORM -->
+            <div id="fb5-contact" class="fb5-overlay">
+    
+         <form>
+            <a class="fb5-close">X</a>
+    
+            <fieldset>
+                <h3>CONTACT</h3>
+    
+                <p>
+                    <input type="text" class="req" id="fb5-form-name" value="name...">
+                </p>
+    
+                <p>
+                    <input type="text" class="req" id="fb5-form-email" value="email...">
+                </p>
+    
+                <p>
+                    <textarea class="req" id="fb5-form-message">message...</textarea>
+                </p>
+    
+                <p>
+                    <button type="submit">SEND MESSAGE</button>
+                </p>
+            </fieldset>
+            
+            <fieldset class="fb5-thanks">
+                <h1>Thanks for your email</h1>
+    <p>Lorem ipsum dolor sit amet, vel ad sint fugit, velit nostro pertinax ex qui, no ceteros civibus explicari est. Eleifend electram ea mea, omittam reprehendunt nam at. Putant argumentum cum ex. At soluta principes dissentias nam, elit voluptatum vel ex.</p>		</fieldset>
+         </form>
+    
+       </div>
+          <!-- END CONTACT FORM -->
+    
+    
+        <!-- BEGIN ALL PAGES -->
+          <div id="fb5-all-pages" class="fb5-overlay">
+    
+          <section class="fb5-container-pages">
+    
+            <div id="fb5-menu-holder">
+    
+                <ul id="fb5-slider">
+                
+                         <li class="1">
+                           <img alt="" data-src="{$obj->site_address}view/front/img/pages/thumbs/1_.jpg">
+                         </li>
+                
+                         <li class="2">
+                           <img alt="" data-src="{$obj->site_address}view/front/img/pages/thumbs/2_.jpg">
+                         </li>
+                        
+                         <li class="3">
+                           <img alt="" data-src="{$obj->site_address}view/front/img/pages/thumbs/3_.jpg">
+                         </li>
+                 
+                         <li class="4">
+                           <img alt="" data-src="pages/thumbs/4_5_.jpg">
+                         </li>
+                         
+                         <li class="6">
+                           <img alt="" data-src="pages/thumbs/6_.jpg">
+                         </li>
+                         
+                         <li class="7">
+                           <img alt="" data-src="pages/thumbs/7_.jpg">
+                         </li>
+                         
+                         <li class="8">
+                           <img alt="" data-src="pages/thumbs/8_.jpg">
+                         </li>
+                         
+                         <li class="9">
+                           <img alt="" data-src="pages/thumbs/9_.jpg">
+                         </li>
+                         
+                         <li class="10">
+                           <img alt="" data-src="pages/thumbs/10_11_.jpg">
+                         </li>
+                         
+                         <li class="12">
+                           <img alt="" data-src="pages/thumbs/12_.jpg">
+                         </li>                                              
+    
+                  </ul>
+            
+              </div>
+    
+          </section>
+    
+         </div>
+         <!-- END ALL PAGES -->
 
-<!-- Thumbnails -->
-<div class="thumbnails">
-	<div>
-		<ul>
-			<li class="i">
-				<!--<img src="{$obj->site_address}view/front/images/pages/1-thumb.jpg" width="76" height="100" class="page-1">-->
-				<span>1</span>
-			</li>
-			<li class="d">
-				<!--<img src="{$obj->site_address}view/front/images/pages/2-thumb.jpg" width="76" height="100" class="page-2">
-				<img src="{$obj->site_address}view/front/images/pages/3-thumb.jpg" width="76" height="100" class="page-3">-->
-				<span>2-3</span>
-			</li>
-			<li class="d">
-				<!--<img src="{$obj->site_address}view/front/images/pages/4-thumb.jpg" width="76" height="100" class="page-4">
-				<img src="{$obj->site_address}view/front/images/pages/5-thumb.jpg" width="76" height="100" class="page-5">-->
-				<span>4-5</span>
-			</li>
-			<li class="d">
-				<!--<img src="{$obj->site_address}view/front/images/pages/6-thumb.jpg" width="76" height="100" class="page-6">
-				<img src="{$obj->site_address}view/front/images/pages/7-thumb.jpg" width="76" height="100" class="page-7">-->
-				<span>6-7</span>
-			</li>
-			<li class="d">
-				<!--<img src="{$obj->site_address}view/front/images/pages/8-thumb.jpg" width="76" height="100" class="page-8">
-				<img src="{$obj->site_address}view/front/images/pages/9-thumb.jpg" width="76" height="100" class="page-9">-->
-				<span>8-9</span>
-			</li>
-			<li class="d">
-				<!--<img src="{$obj->site_address}view/front/images/pages/10-thumb.jpg" width="76" height="100" class="page-10">
-				<img src="{$obj->site_address}view/front/images/pages/11-thumb.jpg" width="76" height="100" class="page-11">-->
-				<span>10-11</span>
-			</li>
-			<li class="i">
-				<!--<img src="{$obj->site_address}view/front/images/pages/12-thumb.jpg" width="76" height="100" class="page-12">-->
-				<span>12</span>
-			</li>
-		</ul>
-	</div>	
+
+   </div>
+   <!-- END HTML BOOK -->
+
+
+    <!-- CONFIGURATION FLIPBOOK -->
+    <script>
+    $('#fb5').data('config',
+    {
+    "page_width":"550",
+    "page_height":"715",
+	"email_form":"office@somedomain.com",
+    "zoom_double_click":"1",
+    "zoom_step":"0.06",
+    "double_click_enabled":"true",
+    "tooltip_visible":"true",
+    "toolbar_visible":"true",
+    "gotopage_width":"30",
+    "deeplinking_enabled":"false",
+    "rtl":"false",
+    'full_area':'false',
+	'lazy_loading_thumbs':'false',
+	'lazy_loading_pages':'false'
+    })
+    </script>
+
+
 </div>
-</div>
+<!-- END FLIPBOOK STRUCTURE -->    
+
+
+
+</div> 
+<!-- END DIV YOUR WEBSITE --> 
 <div class="clearfix"></div>

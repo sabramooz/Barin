@@ -11,16 +11,31 @@
     <link rel="icon" href="{$obj->site_address}favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="{$obj->site_address}view/front/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="{$obj->site_address}view/front/css/custom.css">
-    <link rel="stylesheet" type="text/css" href="{$obj->site_address}view/front/css/magazine.css">
+    
     <link rel="stylesheet" type="text/css" href="{$obj->site_address}view/front/css/slider.css">
     <link rel="stylesheet" type="text/css" href="{$obj->site_address}view/front/css/lightbox.css">
     <link rel="stylesheet" type="text/css" href="{$obj->site_address}view/front/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="{$obj->site_address}view/front/css/jquery.countdown.css">
+    <link rel="stylesheet" type="text/css" href="{$obj->site_address}view/front/css/magazine.css">
+    <style>	
+	    html,body {
+          margin: 0;
+          padding: 0;
+		  overflow:auto !important;
+        }
+	</style>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="{$obj->site_address}view/front/js/jquery.js"></script>
+
+	<script src="{$obj->site_address}view/front/js/book/turn.js"></script>
+    <script src="{$obj->site_address}view/front/js/book/jquery.fullscreen.js"></script>
+    <script src="{$obj->site_address}view/front/js/book/jquery.address-1.6.min.js"></script>
+    <script src="{$obj->site_address}view/front/js/book/wait.js"></script>
+    <script src="{$obj->site_address}view/front/js/book/onload.js"></script>
 </head>
 <body>
     <div class="navbar-top navbar-fixed-top">
@@ -223,7 +238,8 @@
         </div>
     </footer>
 
-<script src="{$obj->site_address}view/front/js/jquery.js"></script>
+
+
 <script src="{$obj->site_address}view/front/js/lightbox.min.js"></script>
 <script src="{$obj->site_address}view/front/js/jssor.js"></script>
 <script src="{$obj->site_address}view/front/js/jssor.slider.min.js"></script>
@@ -238,9 +254,11 @@
 <script src="{$obj->site_address}view/front/js/zoom.min.js"></script>
 <script src="{$obj->site_address}view/front/js/modernizr.2.5.3.min.js"></script>
 <script src="{$obj->site_address}view/front/js/hash.js"></script>
-<script src="{$obj->site_address}view/front/js/magazine.js"></script>
 
-<script src="{$obj->site_address}view/front/js/magazine.custom.js"></script>
+
+
+
+
 <script>
 	  $(".timeago").timeago();
 </script>
