@@ -13,6 +13,7 @@
 	   ,$login_flag = 1
        ,$userInfo = array() 
 	   ,$name
+	   ,$magazineFlag = false
 	   ,$toggleActive
       ;
       function __construct()
@@ -20,7 +21,7 @@
 		  ########### define for htaccess #############
 		  $this->site_address = SITE_ADDRESS;
 		  #############################################
-
+	  
 			if(isset($_GET['cat_id'])){
 				$this->toggleActive = $_GET['cat_id'];
 				}else{
@@ -63,6 +64,9 @@
           if(isset($_GET['page']))
           {
               $this->page = $_GET['page'];
+			  if($_GET['page']=='magazine'){
+				  $this->magazineFlag = true;
+				  }
 			  //echo $this->page;
           }
 		  if(!isset($_GET['cat_id']) && !isset($_GET['id'])  && !isset($_GET['user'])){

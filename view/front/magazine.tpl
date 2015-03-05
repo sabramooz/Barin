@@ -72,11 +72,11 @@
                 
                 
                 <!-- BEGIN BOOK -->
-                <div id="fb5-book">
+                <div id="fb5-book" dir="rtl">
                 
                           
                 <!-- BEGIN PAGE 1-->          
-                <div data-background-image="{$obj->site_address}view/front/img/pages/pic01.jpg" class="">
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic01.jpg" style="background-size:cover" class="">
                        
                      <!-- container page book --> 
                      <div class="fb5-cont-page-book">
@@ -88,8 +88,8 @@
                                   
                         <!-- number page and title  -->                
                         <div class="fb5-meta">
-                                <span class="fb5-description">Collection 2014</span>
-                                <span class="fb5-num">3</span>
+                                <span class="fb5-description">مجله برین</span>
+                                
                          </div> 
                         
                         
@@ -114,8 +114,8 @@
                                   
                         <!-- number page and title for page -->                
                         <div class="fb5-meta">
-                                <span class="fb5-num">4</span>
-                                <span class="fb5-description">Collection 2014</span>
+                                <span class="fb5-num">1</span>
+                                <span class="fb5-description">مجله برین</span>
                         </div> 
                         
                         
@@ -140,8 +140,8 @@
                                           
                                 <!-- number page and title for page -->                
                                 <div class="fb5-meta">
-                                        <span class="fb5-description">Collection 2014</span>
-                                        <span class="fb5-num">5</span>
+                                        <span class="fb5-description">مجله برین</span>
+                                        <span class="fb5-num">2</span>
                                 </div>                     
                             
                           </div> <!-- end container page book --> 
@@ -163,8 +163,8 @@
                                   
                         <!-- number page and title for page -->                
                         <div class="fb5-meta">
-                                <span class="fb5-num">4</span>
-                                <span class="fb5-description">Collection 2014</span>
+                                <span class="fb5-num">3</span>
+                                <span class="fb5-description">مجله برین</span>
                         </div> 
                         
                         
@@ -189,8 +189,8 @@
                                           
                                 <!-- number page and title for page -->                
                                 <div class="fb5-meta">
-                                        <span class="fb5-description">Collection 2014</span>
-                                        <span class="fb5-num">5</span>
+                                        <span class="fb5-description">مجله برین</span>
+                                        <span class="fb5-num">4</span>
                                 </div>                     
                             
                           </div> <!-- end container page book --> 
@@ -212,8 +212,8 @@
                                   
                         <!-- number page and title for page -->                
                         <div class="fb5-meta">
-                                <span class="fb5-num">4</span>
-                                <span class="fb5-description">Collection 2014</span>
+                                <span class="fb5-num">5</span>
+                                <span class="fb5-description">مجله برین</span>
                         </div> 
                         
                         
@@ -238,8 +238,8 @@
                                           
                                 <!-- number page and title for page -->                
                                 <div class="fb5-meta">
-                                        <span class="fb5-description">Collection 2014</span>
-                                        <span class="fb5-num">5</span>
+                                        <span class="fb5-description">مجله برین</span>
+                                        <span class="fb5-num">6</span>
                                 </div>                     
                             
                           </div> <!-- end container page book --> 
@@ -261,8 +261,8 @@
                                   
                         <!-- number page and title for page -->                
                         <div class="fb5-meta">
-                                <span class="fb5-num">4</span>
-                                <span class="fb5-description">Collection 2014</span>
+                                <span class="fb5-num">7</span>
+                                <span class="fb5-description">مجله برین</span>
                         </div> 
                         
                         
@@ -287,8 +287,8 @@
                                           
                                 <!-- number page and title for page -->                
                                 <div class="fb5-meta">
-                                        <span class="fb5-description">Collection 2014</span>
-                                        <span class="fb5-num">5</span>
+                                        <span class="fb5-description">مجله برین</span>
+                                        <span class="fb5-num">8</span>
                                 </div>                     
                             
                           </div> <!-- end container page book --> 
@@ -310,8 +310,8 @@
                                   
                         <!-- number page and title for page -->                
                         <div class="fb5-meta">
-                                <span class="fb5-num">4</span>
-                                <span class="fb5-description">Collection 2014</span>
+                                <span class="fb5-num">9</span>
+                                <span class="fb5-description">مجله برین</span>
                         </div> 
                         
                         
@@ -336,8 +336,8 @@
                                           
                                 <!-- number page and title for page -->                
                                 <div class="fb5-meta">
-                                        <span class="fb5-description">Collection 2014</span>
-                                        <span class="fb5-num">5</span>
+                                        <span class="fb5-description">مجله برین</span>
+                                        <span class="fb5-num">10</span>
                                 </div>                     
                             
                           </div> <!-- end container page book --> 
@@ -359,8 +359,8 @@
                                   
                         <!-- number page and title for page -->                
                         <div class="fb5-meta">
-                                <span class="fb5-num">4</span>
-                                <span class="fb5-description">Collection 2014</span>
+                                <span class="fb5-num">11</span>
+                                <span class="fb5-description">مجله برین</span>
                         </div> 
                         
                         
@@ -385,8 +385,8 @@
                                           
                                 <!-- number page and title for page -->                
                                 <div class="fb5-meta">
-                                        <span class="fb5-description">Collection 2014</span>
-                                        <span class="fb5-num">5</span>
+                                        <span class="fb5-description">مجله برین</span>
+                                        <span class="fb5-num">12</span>
                                 </div>                     
                             
                           </div> <!-- end container page book --> 
@@ -408,8 +408,8 @@
                                   
                         <!-- number page and title for page -->                
                         <div class="fb5-meta">
-                                <span class="fb5-num">4</span>
-                                <span class="fb5-description">Collection 2014</span>
+                                <span class="fb5-num">13</span>
+                                <span class="fb5-description">مجله برین</span>
                         </div> 
                         
                         
@@ -434,8 +434,8 @@
                                           
                                 <!-- number page and title for page -->                
                                 <div class="fb5-meta">
-                                        <span class="fb5-description">Collection 2014</span>
-                                        <span class="fb5-num">5</span>
+                                        <span class="fb5-description">مجله برین</span>
+                                        <span class="fb5-num">14</span>
                                 </div>                     
                             
                           </div> <!-- end container page book --> 
@@ -457,8 +457,8 @@
                                   
                         <!-- number page and title for page -->                
                         <div class="fb5-meta">
-                                <span class="fb5-num">4</span>
-                                <span class="fb5-description">Collection 2014</span>
+                                <span class="fb5-num">15</span>
+                                <span class="fb5-description">مجله برین</span>
                         </div> 
                         
                         
@@ -483,8 +483,8 @@
                                           
                                 <!-- number page and title for page -->                
                                 <div class="fb5-meta">
-                                        <span class="fb5-description">Collection 2014</span>
-                                        <span class="fb5-num">5</span>
+                                        <span class="fb5-description">مجله برین</span>
+                                        <span class="fb5-num">16</span>
                                 </div>                     
                             
                           </div> <!-- end container page book --> 
@@ -506,8 +506,8 @@
                                   
                         <!-- number page and title for page -->                
                         <div class="fb5-meta">
-                                <span class="fb5-num">4</span>
-                                <span class="fb5-description">Collection 2014</span>
+                                <span class="fb5-num">17</span>
+                                <span class="fb5-description">مجله برین</span>
                         </div> 
                         
                         
@@ -532,8 +532,8 @@
                                           
                                 <!-- number page and title for page -->                
                                 <div class="fb5-meta">
-                                        <span class="fb5-description">Collection 2014</span>
-                                        <span class="fb5-num">5</span>
+                                        <span class="fb5-description">مجله برین</span>
+                                        <span class="fb5-num">18</span>
                                 </div>                     
                             
                           </div> <!-- end container page book --> 
@@ -555,8 +555,8 @@
                                   
                         <!-- number page and title for page -->                
                         <div class="fb5-meta">
-                                <span class="fb5-num">4</span>
-                                <span class="fb5-description">Collection 2014</span>
+                                <span class="fb5-num">19</span>
+                                <span class="fb5-description">مجله برین</span>
                         </div> 
                         
                         
@@ -581,8 +581,8 @@
                                           
                                 <!-- number page and title for page -->                
                                 <div class="fb5-meta">
-                                        <span class="fb5-description">Collection 2014</span>
-                                        <span class="fb5-num">5</span>
+                                        <span class="fb5-description">مجله برین</span>
+                                        <span class="fb5-num">20</span>
                                 </div>                     
                             
                           </div> <!-- end container page book --> 
@@ -604,8 +604,8 @@
                                   
                         <!-- number page and title for page -->                
                         <div class="fb5-meta">
-                                <span class="fb5-num">4</span>
-                                <span class="fb5-description">Collection 2014</span>
+                                <span class="fb5-num">21</span>
+                                <span class="fb5-description">مجله برین</span>
                         </div> 
                         
                         
@@ -630,8 +630,8 @@
                                           
                                 <!-- number page and title for page -->                
                                 <div class="fb5-meta">
-                                        <span class="fb5-description">Collection 2014</span>
-                                        <span class="fb5-num">5</span>
+                                        <span class="fb5-description">مجله برین</span>
+                                        <span class="fb5-num">22</span>
                                 </div>                     
                             
                           </div> <!-- end container page book --> 
@@ -653,8 +653,8 @@
                                   
                         <!-- number page and title for page -->                
                         <div class="fb5-meta">
-                                <span class="fb5-num">4</span>
-                                <span class="fb5-description">Collection 2014</span>
+                                <span class="fb5-num">23</span>
+                                <span class="fb5-description">مجله برین</span>
                         </div> 
                         
                         
@@ -679,7 +679,7 @@
                                           
                                 <!-- number page and title for page -->                
                                 <div class="fb5-meta">
-                                        <span class="fb5-description">Collection 2014</span>
+                                        <span class="fb5-description">مجله برین</span>
                                         <span class="fb5-num">5</span>
                                 </div>                     
                             
@@ -702,8 +702,8 @@
                                   
                         <!-- number page and title for page -->                
                         <div class="fb5-meta">
-                                <span class="fb5-num">4</span>
-                                <span class="fb5-description">Collection 2014</span>
+                                <span class="fb5-num">24</span>
+                                <span class="fb5-description">مجله برین</span>
                         </div> 
                         
                         
@@ -728,8 +728,8 @@
                                           
                                 <!-- number page and title for page -->                
                                 <div class="fb5-meta">
-                                        <span class="fb5-description">Collection 2014</span>
-                                        <span class="fb5-num">5</span>
+                                        <span class="fb5-description">مجله برین</span>
+                                        <span class="fb5-num">25</span>
                                 </div>                     
                             
                           </div> <!-- end container page book --> 
@@ -751,8 +751,8 @@
                                   
                         <!-- number page and title for page -->                
                         <div class="fb5-meta">
-                                <span class="fb5-num">4</span>
-                                <span class="fb5-description">Collection 2014</span>
+                                <span class="fb5-num">26</span>
+                                <span class="fb5-description">مجله برین</span>
                         </div> 
                         
                         
@@ -777,8 +777,8 @@
                                           
                                 <!-- number page and title for page -->                
                                 <div class="fb5-meta">
-                                        <span class="fb5-description">Collection 2014</span>
-                                        <span class="fb5-num">5</span>
+                                        <span class="fb5-description">مجله برین</span>
+                                        <span class="fb5-num">27</span>
                                 </div>                     
                             
                           </div> <!-- end container page book --> 
@@ -800,8 +800,8 @@
                                   
                         <!-- number page and title for page -->                
                         <div class="fb5-meta">
-                                <span class="fb5-num">4</span>
-                                <span class="fb5-description">Collection 2014</span>
+                                <span class="fb5-num">28</span>
+                                <span class="fb5-description">مجله برین</span>
                         </div> 
                         
                         
@@ -826,8 +826,8 @@
                                           
                                 <!-- number page and title for page -->                
                                 <div class="fb5-meta">
-                                        <span class="fb5-description">Collection 2014</span>
-                                        <span class="fb5-num">5</span>
+                                        <span class="fb5-description">مجله برین</span>
+                                        <span class="fb5-num">29</span>
                                 </div>                     
                             
                           </div> <!-- end container page book --> 
@@ -849,8 +849,8 @@
                                   
                         <!-- number page and title for page -->                
                         <div class="fb5-meta">
-                                <span class="fb5-num">4</span>
-                                <span class="fb5-description">Collection 2014</span>
+                                <span class="fb5-num">30</span>
+                                <span class="fb5-description">مجله برین</span>
                         </div> 
                         
                         
@@ -875,8 +875,8 @@
                                           
                                 <!-- number page and title for page -->                
                                 <div class="fb5-meta">
-                                        <span class="fb5-description">Collection 2014</span>
-                                        <span class="fb5-num">5</span>
+                                        <span class="fb5-description">مجله برین</span>
+                                        <span class="fb5-num">31</span>
                                 </div>                     
                             
                           </div> <!-- end container page book --> 
@@ -898,8 +898,8 @@
                                   
                         <!-- number page and title for page -->                
                         <div class="fb5-meta">
-                                <span class="fb5-num">4</span>
-                                <span class="fb5-description">Collection 2014</span>
+                                <span class="fb5-num">32</span>
+                                <span class="fb5-description">مجله برین</span>
                         </div> 
                         
                         
@@ -924,8 +924,8 @@
                                           
                                 <!-- number page and title for page -->                
                                 <div class="fb5-meta">
-                                        <span class="fb5-description">Collection 2014</span>
-                                        <span class="fb5-num">5</span>
+                                        <span class="fb5-description">مجله برین</span>
+                                        <span class="fb5-num">33</span>
                                 </div>                     
                             
                           </div> <!-- end container page book --> 
@@ -947,8 +947,8 @@
                                   
                         <!-- number page and title for page -->                
                         <div class="fb5-meta">
-                                <span class="fb5-num">4</span>
-                                <span class="fb5-description">Collection 2014</span>
+                                <span class="fb5-num">34</span>
+                                <span class="fb5-description">مجله برین</span>
                         </div> 
                         
                         
@@ -973,8 +973,8 @@
                                           
                                 <!-- number page and title for page -->                
                                 <div class="fb5-meta">
-                                        <span class="fb5-description">Collection 2014</span>
-                                        <span class="fb5-num">5</span>
+                                        <span class="fb5-description">مجله برین</span>
+                                        <span class="fb5-num">35</span>
                                 </div>                     
                             
                           </div> <!-- end container page book --> 
@@ -996,8 +996,8 @@
                                   
                         <!-- number page and title for page -->                
                         <div class="fb5-meta">
-                                <span class="fb5-num">4</span>
-                                <span class="fb5-description">Collection 2014</span>
+                                <span class="fb5-num">36</span>
+                                <span class="fb5-description">مجله برین</span>
                         </div> 
                         
                         
@@ -1022,8 +1022,8 @@
                                           
                                 <!-- number page and title for page -->                
                                 <div class="fb5-meta">
-                                        <span class="fb5-description">Collection 2014</span>
-                                        <span class="fb5-num">5</span>
+                                        <span class="fb5-description">مجله برین</span>
+                                        <span class="fb5-num">37</span>
                                 </div>                     
                             
                           </div> <!-- end container page book --> 
@@ -1045,8 +1045,8 @@
                                   
                         <!-- number page and title for page -->                
                         <div class="fb5-meta">
-                                <span class="fb5-num">4</span>
-                                <span class="fb5-description">Collection 2014</span>
+                                <span class="fb5-num">38</span>
+                                <span class="fb5-description">مجله برین</span>
                         </div> 
                         
                         
@@ -1071,8 +1071,8 @@
                                           
                                 <!-- number page and title for page -->                
                                 <div class="fb5-meta">
-                                        <span class="fb5-description">Collection 2014</span>
-                                        <span class="fb5-num">5</span>
+                                        <span class="fb5-description">مجله برین</span>
+                                        <span class="fb5-num">39</span>
                                 </div>                     
                             
                           </div> <!-- end container page book --> 
@@ -1094,8 +1094,8 @@
                                   
                         <!-- number page and title for page -->                
                         <div class="fb5-meta">
-                                <span class="fb5-num">4</span>
-                                <span class="fb5-description">Collection 2014</span>
+                                <span class="fb5-num">40</span>
+                                <span class="fb5-description">مجله برین</span>
                         </div> 
                         
                         
@@ -1120,8 +1120,8 @@
                                           
                                 <!-- number page and title for page -->                
                                 <div class="fb5-meta">
-                                        <span class="fb5-description">Collection 2014</span>
-                                        <span class="fb5-num">5</span>
+                                        <span class="fb5-description">مجله برین</span>
+                                        <span class="fb5-num">41</span>
                                 </div>                     
                             
                           </div> <!-- end container page book --> 
@@ -1143,8 +1143,8 @@
                                   
                         <!-- number page and title for page -->                
                         <div class="fb5-meta">
-                                <span class="fb5-num">4</span>
-                                <span class="fb5-description">Collection 2014</span>
+                                <span class="fb5-num">42</span>
+                                <span class="fb5-description">مجله برین</span>
                         </div> 
                         
                         
@@ -1169,8 +1169,8 @@
                                           
                                 <!-- number page and title for page -->                
                                 <div class="fb5-meta">
-                                        <span class="fb5-description">Collection 2014</span>
-                                        <span class="fb5-num">5</span>
+                                        <span class="fb5-description">مجله برین</span>
+                                        <span class="fb5-num">43</span>
                                 </div>                     
                             
                           </div> <!-- end container page book --> 
@@ -1192,8 +1192,8 @@
                                   
                         <!-- number page and title for page -->                
                         <div class="fb5-meta">
-                                <span class="fb5-num">4</span>
-                                <span class="fb5-description">Collection 2014</span>
+                                <span class="fb5-num">44</span>
+                                <span class="fb5-description">مجله برین</span>
                         </div> 
                         
                         
@@ -1218,8 +1218,8 @@
                                           
                                 <!-- number page and title for page -->                
                                 <div class="fb5-meta">
-                                        <span class="fb5-description">Collection 2014</span>
-                                        <span class="fb5-num">5</span>
+                                        <span class="fb5-description">مجله برین</span>
+                                        <span class="fb5-num">45</span>
                                 </div>                     
                             
                           </div> <!-- end container page book --> 
@@ -1241,8 +1241,8 @@
                                   
                         <!-- number page and title for page -->                
                         <div class="fb5-meta">
-                                <span class="fb5-num">4</span>
-                                <span class="fb5-description">Collection 2014</span>
+                                <span class="fb5-num">46</span>
+                                <span class="fb5-description">مجله برین</span>
                         </div> 
                         
                         
@@ -1267,8 +1267,8 @@
                                           
                                 <!-- number page and title for page -->                
                                 <div class="fb5-meta">
-                                        <span class="fb5-description">Collection 2014</span>
-                                        <span class="fb5-num">5</span>
+                                        <span class="fb5-description">مجله برین</span>
+                                        <span class="fb5-num">47</span>
                                 </div>                     
                             
                           </div> <!-- end container page book --> 
@@ -1290,8 +1290,8 @@
                                   
                         <!-- number page and title for page -->                
                         <div class="fb5-meta">
-                                <span class="fb5-num">4</span>
-                                <span class="fb5-description">Collection 2014</span>
+                                <span class="fb5-num">48</span>
+                                <span class="fb5-description">مجله برین</span>
                         </div> 
                         
                         
@@ -1316,8 +1316,8 @@
                                           
                                 <!-- number page and title for page -->                
                                 <div class="fb5-meta">
-                                        <span class="fb5-description">Collection 2014</span>
-                                        <span class="fb5-num">5</span>
+                                        <span class="fb5-description">مجله برین</span>
+                                        <span class="fb5-num">49</span>
                                 </div>                     
                             
                           </div> <!-- end container page book --> 
@@ -1332,7 +1332,7 @@
                 
                   
                 <!-- BEGIN PAGE 12 -->          
-                <div data-background-image="{$obj->site_address}view/front/img/pages/pic52.jpg" class="">
+                <div data-background-image="{$obj->site_address}view/front/img/pages/pic52.jpg" style="background-size:cover" class="" >
                        
                      <!-- container page book --> 
                      <div class="fb5-cont-page-book">
@@ -1344,8 +1344,8 @@
                                       
                              <!-- number page and title for page -->                
                              <div class="fb5-meta">
-                                    <span class="fb5-description">Collection 2014</span>
-                                    <span class="fb5-num">9</span>
+                                    <span class="fb5-description">مجله برین</span>
+                                    <span class="fb5-num"></span>
                              </div>                  
                         
                      </div>

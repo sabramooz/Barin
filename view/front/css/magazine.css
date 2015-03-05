@@ -2,8 +2,7 @@
 
 
 
-#fb5{
-   font-family:Arial,sans-serif;	
+#fb5{	
    font-size:14px;	
    position:relative;
    overflow:hidden;
@@ -307,7 +306,6 @@
 	#fb5 .fb5-meta .fb5-description {
 			font-size: 11px;
 			color: #666;
-	        font-family:Arial,sans-serif;
 	}
 
 	#fb5 .fb5-meta.fb5-left { 
@@ -575,9 +573,7 @@
   
 
   /* tools bar*/
-	    #fb5 .fb5-bcg-book{
-			background-image:url(../img/bg.jpg);
-		}
+	    
 		
 		#fb5 .fb5-tooltip{
 			 background:#64C8D3 !important; 

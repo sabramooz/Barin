@@ -30,12 +30,35 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="{$obj->site_address}view/front/js/jquery.js"></script>
+	{if $obj->magazineFlag eq true}
+		<script src="{$obj->site_address}view/front/js/book/turn.js"></script>
+        <script src="{$obj->site_address}view/front/js/book/jquery.fullscreen.js"></script>
+        <script src="{$obj->site_address}view/front/js/book/jquery.address-1.6.min.js"></script>
+        <script src="{$obj->site_address}view/front/js/book/wait.js"></script>
+        <script src="{$obj->site_address}view/front/js/book/onload.js"></script>
+    {/if}
+    <script src="{$obj->site_address}view/front/js/lightbox.min.js"></script>
+<script src="{$obj->site_address}view/front/js/jssor.js"></script>
+<script src="{$obj->site_address}view/front/js/jssor.slider.min.js"></script>
+<script src="{$obj->site_address}view/front/js/slider.js"></script>
+<script src="{$obj->site_address}view/front/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{$obj->site_address}view/front/js/jquery.plugin.js"></script>
+<script type="text/javascript" src="{$obj->site_address}view/front/js/jquery.countdown.js"></script>
+<script src="{$obj->site_address}view/front/js/custom.js"></script>
+<script src="{$obj->site_address}view/front/js/timeago.js"></script>
+<script src="{$obj->site_address}view/front/js/jquery.timeago.fa.js"></script>
+<script src="{$obj->site_address}view/front/js/turn.js"></script>
+<script src="{$obj->site_address}view/front/js/zoom.min.js"></script>
+<script src="{$obj->site_address}view/front/js/modernizr.2.5.3.min.js"></script>
+<script src="{$obj->site_address}view/front/js/hash.js"></script>
 
-	<script src="{$obj->site_address}view/front/js/book/turn.js"></script>
-    <script src="{$obj->site_address}view/front/js/book/jquery.fullscreen.js"></script>
-    <script src="{$obj->site_address}view/front/js/book/jquery.address-1.6.min.js"></script>
-    <script src="{$obj->site_address}view/front/js/book/wait.js"></script>
-    <script src="{$obj->site_address}view/front/js/book/onload.js"></script>
+
+
+
+
+<script>
+	  $(".timeago").timeago();
+</script>
 </head>
 <body>
     <div class="navbar-top navbar-fixed-top">
@@ -240,27 +263,6 @@
 
 
 
-<script src="{$obj->site_address}view/front/js/lightbox.min.js"></script>
-<script src="{$obj->site_address}view/front/js/jssor.js"></script>
-<script src="{$obj->site_address}view/front/js/jssor.slider.min.js"></script>
-<script src="{$obj->site_address}view/front/js/slider.js"></script>
-<script src="{$obj->site_address}view/front/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="{$obj->site_address}view/front/js/jquery.plugin.js"></script>
-<script type="text/javascript" src="{$obj->site_address}view/front/js/jquery.countdown.js"></script>
-<script src="{$obj->site_address}view/front/js/custom.js"></script>
-<script src="{$obj->site_address}view/front/js/timeago.js"></script>
-<script src="{$obj->site_address}view/front/js/jquery.timeago.fa.js"></script>
-<script src="{$obj->site_address}view/front/js/turn.js"></script>
-<script src="{$obj->site_address}view/front/js/zoom.min.js"></script>
-<script src="{$obj->site_address}view/front/js/modernizr.2.5.3.min.js"></script>
-<script src="{$obj->site_address}view/front/js/hash.js"></script>
 
-
-
-
-
-<script>
-	  $(".timeago").timeago();
-</script>
 </body>
 </html>
