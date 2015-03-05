@@ -22,7 +22,7 @@
 
 $(function () {
         var newYear = new Date(); 
-		newYear = new Date(2015, 1, 5); 
+		newYear = new Date(2015, 2, 21, 2, 15); 
 		$('#defaultCountdown').countdown({until: newYear});
         $('#year').text(austDay.getFullYear());
     });
